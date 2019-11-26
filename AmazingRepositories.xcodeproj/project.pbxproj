@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91DF841778BF4B3F4B50C022 /* Pods_AmazingRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9E8D068575E5FEC7B838D6 /* Pods_AmazingRepositoriesTests.framework */; };
+		9717309C12FE2AF532B0C42A /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646CE878C649BF4B68A4E254 /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework */; };
+		D1734508C20A40C682EA4E41 /* Pods_AmazingRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E061B4592579548B7BA38B /* Pods_AmazingRepositories.framework */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
 		FDF5DFE5238CA34600AB4F92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */; };
 		FDF5DFE7238CA34600AB4F92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE6238CA34600AB4F92 /* ViewController.swift */; };
@@ -34,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A1DD97A38C567E406AFEA2F /* Pods-AmazingRepositoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		574CC51B16442BCD293C1382 /* Pods-AmazingRepositories-AmazingRepositoriesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories-AmazingRepositoriesUITests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesUITests/Pods-AmazingRepositories-AmazingRepositoriesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		646CE878C649BF4B68A4E254 /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositories_AmazingRepositoriesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		834AB5BD09740475D75E104C /* Pods-AmazingRepositories-AmazingRepositoriesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories-AmazingRepositoriesUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesUITests/Pods-AmazingRepositories-AmazingRepositoriesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		896ED83FB9C8A9AF6EB52852 /* Pods-AmazingRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
+		C52E26758933316FB180B4F1 /* Pods-AmazingRepositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories.release.xcconfig"; sourceTree = "<group>"; };
+		C7736CE4403DFF40119EE3CC /* Pods-AmazingRepositories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories.debug.xcconfig"; sourceTree = "<group>"; };
+		C8E061B4592579548B7BA38B /* Pods_AmazingRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9E8D068575E5FEC7B838D6 /* Pods_AmazingRepositoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1734508C20A40C682EA4E41 /* Pods_AmazingRepositories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DF841778BF4B3F4B50C022 /* Pods_AmazingRepositoriesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9717309C12FE2AF532B0C42A /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CE01CD236B0D32D838C9133 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8E061B4592579548B7BA38B /* Pods_AmazingRepositories.framework */,
+				646CE878C649BF4B68A4E254 /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework */,
+				DD9E8D068575E5FEC7B838D6 /* Pods_AmazingRepositoriesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48164A95408A767F7B335EB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7736CE4403DFF40119EE3CC /* Pods-AmazingRepositories.debug.xcconfig */,
+				C52E26758933316FB180B4F1 /* Pods-AmazingRepositories.release.xcconfig */,
+				834AB5BD09740475D75E104C /* Pods-AmazingRepositories-AmazingRepositoriesUITests.debug.xcconfig */,
+				574CC51B16442BCD293C1382 /* Pods-AmazingRepositories-AmazingRepositoriesUITests.release.xcconfig */,
+				0A1DD97A38C567E406AFEA2F /* Pods-AmazingRepositoriesTests.debug.xcconfig */,
+				896ED83FB9C8A9AF6EB52852 /* Pods-AmazingRepositoriesTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FD31D9D5238CA50A00FAE610 /* Bootstrap */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +139,8 @@
 				FDF5DFF8238CA34700AB4F92 /* AmazingRepositoriesTests */,
 				FDF5E003238CA34700AB4F92 /* AmazingRepositoriesUITests */,
 				FDF5DFE0238CA34600AB4F92 /* Products */,
+				48164A95408A767F7B335EB3 /* Pods */,
+				3CE01CD236B0D32D838C9133 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF5E009238CA34700AB4F92 /* Build configuration list for PBXNativeTarget "AmazingRepositories" */;
 			buildPhases = (
+				39DA030860C49C543ED43E80 /* [CP] Check Pods Manifest.lock */,
 				FDF5DFDB238CA34500AB4F92 /* Sources */,
 				FDF5DFDC238CA34500AB4F92 /* Frameworks */,
 				FDF5DFDD238CA34500AB4F92 /* Resources */,
+				9BA503F065FCDBB5D427819E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF5E00C238CA34700AB4F92 /* Build configuration list for PBXNativeTarget "AmazingRepositoriesTests" */;
 			buildPhases = (
+				DEB65E772D605180423CBA07 /* [CP] Check Pods Manifest.lock */,
 				FDF5DFF1238CA34700AB4F92 /* Sources */,
 				FDF5DFF2238CA34700AB4F92 /* Frameworks */,
 				FDF5DFF3238CA34700AB4F92 /* Resources */,
@@ -183,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF5E00F238CA34700AB4F92 /* Build configuration list for PBXNativeTarget "AmazingRepositoriesUITests" */;
 			buildPhases = (
+				BF3E8988247858037460BF8D /* [CP] Check Pods Manifest.lock */,
 				FDF5DFFC238CA34700AB4F92 /* Sources */,
 				FDF5DFFD238CA34700AB4F92 /* Frameworks */,
 				FDF5DFFE238CA34700AB4F92 /* Resources */,
+				5C8277841E4055F979FA1EA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +311,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39DA030860C49C543ED43E80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazingRepositories-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C8277841E4055F979FA1EA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesUITests/Pods-AmazingRepositories-AmazingRepositoriesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesUITests/Pods-AmazingRepositories-AmazingRepositoriesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesUITests/Pods-AmazingRepositories-AmazingRepositoriesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BA503F065FCDBB5D427819E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF3E8988247858037460BF8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazingRepositories-AmazingRepositoriesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB65E772D605180423CBA07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazingRepositoriesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDF5DFDB238CA34500AB4F92 /* Sources */ = {
@@ -436,6 +585,7 @@
 		};
 		FDF5E00A238CA34700AB4F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7736CE4403DFF40119EE3CC /* Pods-AmazingRepositories.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +603,7 @@
 		};
 		FDF5E00B238CA34700AB4F92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52E26758933316FB180B4F1 /* Pods-AmazingRepositories.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +621,7 @@
 		};
 		FDF5E00D238CA34700AB4F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1DD97A38C567E406AFEA2F /* Pods-AmazingRepositoriesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +643,7 @@
 		};
 		FDF5E00E238CA34700AB4F92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896ED83FB9C8A9AF6EB52852 /* Pods-AmazingRepositoriesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +665,7 @@
 		};
 		FDF5E010238CA34700AB4F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 834AB5BD09740475D75E104C /* Pods-AmazingRepositories-AmazingRepositoriesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +685,7 @@
 		};
 		FDF5E011238CA34700AB4F92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574CC51B16442BCD293C1382 /* Pods-AmazingRepositories-AmazingRepositoriesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
