@@ -12,18 +12,13 @@ protocol ListRepositoriesDisplayLogic: class {
     
 }
 
-class ListRepositoriesViewController: UIViewController {
+class ListRepositoriesViewController: UITableViewController {
 
     var interactor: ListRepositoriesBusinessLogic?
     var router: (NSObjectProtocol & ListRepositoriesRoutingLogic & ListRepositoriesDataPassing)?
 
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        setup()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    override func loadView() {
+        super.loadView()
         setup()
     }
 
