@@ -3,16 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		91DF841778BF4B3F4B50C022 /* Pods_AmazingRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9E8D068575E5FEC7B838D6 /* Pods_AmazingRepositoriesTests.framework */; };
 		9717309C12FE2AF532B0C42A /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646CE878C649BF4B68A4E254 /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework */; };
 		D1734508C20A40C682EA4E41 /* Pods_AmazingRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E061B4592579548B7BA38B /* Pods_AmazingRepositories.framework */; };
+		FD31D9DF238CA75100FAE610 /* ListRepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9D9238CA75100FAE610 /* ListRepositoriesPresenter.swift */; };
+		FD31D9E0238CA75100FAE610 /* ListRepositoriesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9DA238CA75100FAE610 /* ListRepositoriesWorker.swift */; };
+		FD31D9E1238CA75100FAE610 /* ListRepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9DB238CA75100FAE610 /* ListRepositoriesRouter.swift */; };
+		FD31D9E2238CA75100FAE610 /* ListRepositoriesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9DC238CA75100FAE610 /* ListRepositoriesModels.swift */; };
+		FD31D9E3238CA75100FAE610 /* ListRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9DD238CA75100FAE610 /* ListRepositoriesViewController.swift */; };
+		FD31D9E4238CA75100FAE610 /* ListRepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9DE238CA75100FAE610 /* ListRepositoriesInteractor.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
 		FDF5DFE5238CA34600AB4F92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */; };
-		FDF5DFE7238CA34600AB4F92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE6238CA34600AB4F92 /* ViewController.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
 		FDF5DFEF238CA34700AB4F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */; };
 		FDF5DFFA238CA34700AB4F92 /* AmazingRepositoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFF9238CA34700AB4F92 /* AmazingRepositoriesTests.swift */; };
@@ -46,10 +51,15 @@
 		C7736CE4403DFF40119EE3CC /* Pods-AmazingRepositories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories.debug.xcconfig"; sourceTree = "<group>"; };
 		C8E061B4592579548B7BA38B /* Pods_AmazingRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9E8D068575E5FEC7B838D6 /* Pods_AmazingRepositoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD31D9D9238CA75100FAE610 /* ListRepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesPresenter.swift; sourceTree = "<group>"; };
+		FD31D9DA238CA75100FAE610 /* ListRepositoriesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesWorker.swift; sourceTree = "<group>"; };
+		FD31D9DB238CA75100FAE610 /* ListRepositoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesRouter.swift; sourceTree = "<group>"; };
+		FD31D9DC238CA75100FAE610 /* ListRepositoriesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesModels.swift; sourceTree = "<group>"; };
+		FD31D9DD238CA75100FAE610 /* ListRepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesViewController.swift; sourceTree = "<group>"; };
+		FD31D9DE238CA75100FAE610 /* ListRepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesInteractor.swift; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDF5DFE6238CA34600AB4F92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDF5DFEE238CA34700AB4F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDF5DFF0238CA34700AB4F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,7 +119,6 @@
 				0A1DD97A38C567E406AFEA2F /* Pods-AmazingRepositoriesTests.debug.xcconfig */,
 				896ED83FB9C8A9AF6EB52852 /* Pods-AmazingRepositoriesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,6 +139,27 @@
 				FDF5DFF0238CA34700AB4F92 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD31D9D7238CA72D00FAE610 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FD31D9D8238CA73800FAE610 /* List Repositories */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FD31D9D8238CA73800FAE610 /* List Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FD31D9DB238CA75100FAE610 /* ListRepositoriesRouter.swift */,
+				FD31D9DC238CA75100FAE610 /* ListRepositoriesModels.swift */,
+				FD31D9DA238CA75100FAE610 /* ListRepositoriesWorker.swift */,
+				FD31D9DE238CA75100FAE610 /* ListRepositoriesInteractor.swift */,
+				FD31D9D9238CA75100FAE610 /* ListRepositoriesPresenter.swift */,
+				FD31D9DD238CA75100FAE610 /* ListRepositoriesViewController.swift */,
+			);
+			path = "List Repositories";
 			sourceTree = "<group>";
 		};
 		FDF5DFD6238CA34500AB4F92 = {
@@ -159,7 +189,7 @@
 			children = (
 				FD31D9D5238CA50A00FAE610 /* Bootstrap */,
 				FD31D9D6238CA52400FAE610 /* Resources */,
-				FDF5DFE6238CA34600AB4F92 /* ViewController.swift */,
+				FD31D9D7238CA72D00FAE610 /* Scenes */,
 			);
 			path = AmazingRepositories;
 			sourceTree = "<group>";
@@ -420,7 +450,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDF5DFE7238CA34600AB4F92 /* ViewController.swift in Sources */,
+				FD31D9DF238CA75100FAE610 /* ListRepositoriesPresenter.swift in Sources */,
+				FD31D9E3238CA75100FAE610 /* ListRepositoriesViewController.swift in Sources */,
+				FD31D9E2238CA75100FAE610 /* ListRepositoriesModels.swift in Sources */,
+				FD31D9E1238CA75100FAE610 /* ListRepositoriesRouter.swift in Sources */,
+				FD31D9E4238CA75100FAE610 /* ListRepositoriesInteractor.swift in Sources */,
+				FD31D9E0238CA75100FAE610 /* ListRepositoriesWorker.swift in Sources */,
 				FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */,
 				FDF5DFE5238CA34600AB4F92 /* SceneDelegate.swift in Sources */,
 			);
