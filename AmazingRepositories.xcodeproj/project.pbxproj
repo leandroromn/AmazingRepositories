@@ -19,6 +19,7 @@
 		FD31D9E7238CA83600FAE610 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9E6238CA83600FAE610 /* Endpoint.swift */; };
 		FD31D9E9238CA8F100FAE610 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9E8238CA8F100FAE610 /* NetworkProvider.swift */; };
 		FD31D9EB238CA95C00FAE610 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9EA238CA95C00FAE610 /* NetworkError.swift */; };
+		FD31D9ED238CAA1700FAE610 /* Endpoint+Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9EC238CAA1700FAE610 /* Endpoint+Repositories.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
 		FDF5DFE5238CA34600AB4F92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		FD31D9E6238CA83600FAE610 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		FD31D9E8238CA8F100FAE610 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		FD31D9EA238CA95C00FAE610 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FD31D9EC238CAA1700FAE610 /* Endpoint+Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Repositories.swift"; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				FD31D9E6238CA83600FAE610 /* Endpoint.swift */,
+				FD31D9EC238CAA1700FAE610 /* Endpoint+Repositories.swift */,
 				FD31D9EA238CA95C00FAE610 /* NetworkError.swift */,
 				FD31D9E8238CA8F100FAE610 /* NetworkProvider.swift */,
 			);
@@ -469,6 +472,7 @@
 			files = (
 				FD31D9DF238CA75100FAE610 /* ListRepositoriesPresenter.swift in Sources */,
 				FD31D9E7238CA83600FAE610 /* Endpoint.swift in Sources */,
+				FD31D9ED238CAA1700FAE610 /* Endpoint+Repositories.swift in Sources */,
 				FD31D9E3238CA75100FAE610 /* ListRepositoriesViewController.swift in Sources */,
 				FD31D9E2238CA75100FAE610 /* ListRepositoriesModels.swift in Sources */,
 				FD31D9E1238CA75100FAE610 /* ListRepositoriesRouter.swift in Sources */,
