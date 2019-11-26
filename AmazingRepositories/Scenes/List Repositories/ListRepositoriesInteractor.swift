@@ -20,5 +20,9 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
 
     var presenter: ListRepositoriesPresentationLogic?
     var worker: ListRepositoriesWorker?
+    
+    init(worker: ListRepositoriesWorker = ListRepositoriesWorker()) {
+        self.worker = worker
+    }
 
 }
