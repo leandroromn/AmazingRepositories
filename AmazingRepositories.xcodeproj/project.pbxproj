@@ -74,6 +74,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD31D9D5238CA50A00FAE610 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */,
+				FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		FD31D9D6238CA52400FAE610 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */,
+				FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */,
+				FDF5DFF0238CA34700AB4F92 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		FDF5DFD6238CA34500AB4F92 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +116,9 @@
 		FDF5DFE1238CA34600AB4F92 /* AmazingRepositories */ = {
 			isa = PBXGroup;
 			children = (
-				FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */,
-				FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */,
+				FD31D9D5238CA50A00FAE610 /* Bootstrap */,
+				FD31D9D6238CA52400FAE610 /* Resources */,
 				FDF5DFE6238CA34600AB4F92 /* ViewController.swift */,
-				FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */,
-				FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */,
-				FDF5DFF0238CA34700AB4F92 /* Info.plist */,
 			);
 			path = AmazingRepositories;
 			sourceTree = "<group>";
@@ -423,7 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AmazingRepositories/Info.plist;
+				INFOPLIST_FILE = AmazingRepositories/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AmazingRepositories/Info.plist;
+				INFOPLIST_FILE = AmazingRepositories/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
