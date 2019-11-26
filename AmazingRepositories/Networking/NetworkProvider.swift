@@ -11,6 +11,10 @@ import PromiseKit
 
 struct NetworkProvider {
     
+    private init() { }
+    
+    static let shared = NetworkProvider()
+    
     func request<T: Codable>(_ endpoint: Endpoint) -> Promise<T> {
         return Promise { seal in
             guard let url = endpoint.url else { return seal.reject(NetworkError.badUrl) }
