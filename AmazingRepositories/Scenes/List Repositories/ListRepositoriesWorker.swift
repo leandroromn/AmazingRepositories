@@ -13,8 +13,8 @@ class ListRepositoriesWorker {
 
     let networkProvider = NetworkProvider.shared
     
-    func getStarredRepositories() -> Promise<ListRepositories.Response> {
-        return networkProvider.request(.search(matching: "language:swift", sortedBy: .numberOfForks))
+    func getStarredRepositories(query: String) -> Promise<ListRepositories.Response> {
+        return networkProvider.request(.search(matching: query, sortedBy: .numberOfForks))
     }
     
 }
