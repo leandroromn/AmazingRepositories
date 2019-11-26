@@ -9,11 +9,15 @@
 import UIKit
 
 protocol ListRepositoriesPresentationLogic {
-    
+    func fetchData()
 }
 
 class ListRepositoriesPresenter: ListRepositoriesPresentationLogic {
 
     weak var viewController: ListRepositoriesDisplayLogic?
+    
+    func fetchData() {
+        viewController?.fetchData()
+    }
     
 }

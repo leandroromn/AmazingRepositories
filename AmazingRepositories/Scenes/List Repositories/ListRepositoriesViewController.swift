@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ListRepositoriesDisplayLogic: class {
-    
+    func fetchData()
 }
 
 class ListRepositoriesViewController: UITableViewController {
@@ -35,8 +35,36 @@ class ListRepositoriesViewController: UITableViewController {
         router.dataStore = interactor
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        interactor?.requestStarredRepositories()
+    }
+    
 }
 
 extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
+    
+    func fetchData() {
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
+    }
+    
+}
+
+extension ListRepositoriesViewController {
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return interactor?.numberOfRows ?? 0
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        guard let repository = interactor?.cellForRow(at: indexPath.row) else { return UITableViewCell() }
+        
+        cell.textLabel?.text = repository.name
+        
+        return cell
+    }
     
 }

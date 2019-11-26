@@ -20,6 +20,22 @@ enum ListRepositories {
         
     }
     
+    struct ViewModel {
+        
+        let name: String
+        let stars: Int
+        let ownerName: String
+        let ownerPhoto: String
+        
+        init(repository: Repository) {
+            self.name = repository.name
+            self.stars = repository.stars
+            self.ownerName = repository.owner.name
+            self.ownerPhoto = repository.owner.photo
+        }
+        
+    }
+    
 }
 
 struct Repository: Codable {
