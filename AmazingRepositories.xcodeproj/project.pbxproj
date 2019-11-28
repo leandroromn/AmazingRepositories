@@ -20,6 +20,11 @@
 		FD31D9E9238CA8F100FAE610 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9E8238CA8F100FAE610 /* NetworkProvider.swift */; };
 		FD31D9EB238CA95C00FAE610 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9EA238CA95C00FAE610 /* NetworkError.swift */; };
 		FD31D9ED238CAA1700FAE610 /* Endpoint+Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9EC238CAA1700FAE610 /* Endpoint+Repositories.swift */; };
+		FD31D9F1238CB8EA00FAE610 /* CustomViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9F0238CB8EA00FAE610 /* CustomViewDelegate.swift */; };
+		FD31D9F3238CB92900FAE610 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9F2238CB92900FAE610 /* RepositoryTableViewCell.swift */; };
+		FD60EE60239074CD008701C5 /* UIFont+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */; };
+		FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */; };
+		FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
 		FDF5DFE5238CA34600AB4F92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
@@ -65,6 +70,11 @@
 		FD31D9E8238CA8F100FAE610 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		FD31D9EA238CA95C00FAE610 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		FD31D9EC238CAA1700FAE610 /* Endpoint+Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Repositories.swift"; sourceTree = "<group>"; };
+		FD31D9F0238CB8EA00FAE610 /* CustomViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewDelegate.swift; sourceTree = "<group>"; };
+		FD31D9F2238CB92900FAE610 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Theme.swift"; sourceTree = "<group>"; };
+		FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableHeaderView.swift; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +191,34 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		FD31D9EE238CB89B00FAE610 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDAB351C238DFD9E00FACF31 /* Extensions */,
+				FD31D9EF238CB8D600FAE610 /* Definitions */,
+				FD31D9F2238CB92900FAE610 /* RepositoryTableViewCell.swift */,
+				FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD31D9EF238CB8D600FAE610 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				FD31D9F0238CB8EA00FAE610 /* CustomViewDelegate.swift */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		FDAB351C238DFD9E00FACF31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */,
+				FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FDF5DFD6238CA34500AB4F92 = {
 			isa = PBXGroup;
 			children = (
@@ -208,8 +246,9 @@
 			children = (
 				FD31D9D5238CA50A00FAE610 /* Bootstrap */,
 				FD31D9D6238CA52400FAE610 /* Resources */,
-				FD31D9D7238CA72D00FAE610 /* Scenes */,
 				FD31D9E5238CA80E00FAE610 /* Networking */,
+				FD31D9D7238CA72D00FAE610 /* Scenes */,
+				FD31D9EE238CB89B00FAE610 /* Views */,
 			);
 			path = AmazingRepositories;
 			sourceTree = "<group>";
@@ -470,18 +509,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */,
 				FD31D9DF238CA75100FAE610 /* ListRepositoriesPresenter.swift in Sources */,
 				FD31D9E7238CA83600FAE610 /* Endpoint.swift in Sources */,
 				FD31D9ED238CAA1700FAE610 /* Endpoint+Repositories.swift in Sources */,
 				FD31D9E3238CA75100FAE610 /* ListRepositoriesViewController.swift in Sources */,
 				FD31D9E2238CA75100FAE610 /* ListRepositoriesModels.swift in Sources */,
+				FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */,
 				FD31D9E1238CA75100FAE610 /* ListRepositoriesRouter.swift in Sources */,
+				FD31D9F1238CB8EA00FAE610 /* CustomViewDelegate.swift in Sources */,
 				FD31D9E4238CA75100FAE610 /* ListRepositoriesInteractor.swift in Sources */,
 				FD31D9E0238CA75100FAE610 /* ListRepositoriesWorker.swift in Sources */,
+				FD31D9F3238CB92900FAE610 /* RepositoryTableViewCell.swift in Sources */,
 				FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */,
 				FDF5DFE5238CA34600AB4F92 /* SceneDelegate.swift in Sources */,
 				FD31D9EB238CA95C00FAE610 /* NetworkError.swift in Sources */,
 				FD31D9E9238CA8F100FAE610 /* NetworkProvider.swift in Sources */,
+				FD60EE60239074CD008701C5 /* UIFont+Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

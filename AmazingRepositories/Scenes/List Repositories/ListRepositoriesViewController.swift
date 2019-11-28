@@ -16,6 +16,10 @@ class ListRepositoriesViewController: UITableViewController {
 
     var interactor: ListRepositoriesBusinessLogic?
     var router: (NSObjectProtocol & ListRepositoriesRoutingLogic & ListRepositoriesDataPassing)?
+    
+    override var prefersStatusBarHidden: Bool {
+        true
+    }
 
     override func loadView() {
         super.loadView()
@@ -35,9 +39,30 @@ class ListRepositoriesViewController: UITableViewController {
         router.dataStore = interactor
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        if let headerView = tableView.tableHeaderView {
+            let height = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
+            var headerFrame = headerView.frame
+            if height != headerFrame.size.height {
+                headerFrame.size.height = height
+                headerView.frame = headerFrame
+                tableView.tableHeaderView = headerView
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
         interactor?.requestStarredRepositories()
+    }
+    
+    private func setupTableView() {
+        tableView.separatorColor = .clear
+        tableView.tableHeaderView = RepositoryTableHeaderView()
+        tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: RepositoryTableHeaderView.identifier)
     }
     
 }
@@ -59,10 +84,14 @@ extension ListRepositoriesViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        guard let repository = interactor?.cellForRow(at: indexPath.row) else { return UITableViewCell() }
+        guard
+            let cell = tableView.dequeueReusableCell(withIdentifier: RepositoryTableHeaderView.identifier) as? RepositoryTableViewCell,
+            let viewModel = interactor?.cellForRow(at: indexPath.row)
+        else {
+            return UITableViewCell()
+        }
         
-        cell.textLabel?.text = repository.name
+        cell.configure(viewModel: viewModel)
         
         return cell
     }

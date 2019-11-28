@@ -23,14 +23,14 @@ enum ListRepositories {
     struct ViewModel {
         
         let name: String
-        let stars: Int
+        let stars: String
         let ownerName: String
         let ownerPhoto: String
         
         init(repository: Repository) {
             self.name = repository.name
-            self.stars = repository.stars
-            self.ownerName = repository.owner.name
+            self.stars = "\(repository.stars) ⭐️"
+            self.ownerName = "Created by \(repository.owner.name)"
             self.ownerPhoto = repository.owner.photo
         }
         
