@@ -17,6 +17,8 @@ class ListRepositoriesViewController: UITableViewController {
     var interactor: ListRepositoriesBusinessLogic?
     var router: (NSObjectProtocol & ListRepositoriesRoutingLogic & ListRepositoriesDataPassing)?
     
+    private let customRefreshControl = UIRefreshControl()
+    
     override var prefersStatusBarHidden: Bool {
         true
     }
@@ -60,9 +62,16 @@ class ListRepositoriesViewController: UITableViewController {
     }
     
     private func setupTableView() {
+        refreshControl?.addTarget(self, action: #selector(refreshWeatherData(_:)), for: .valueChanged)
+        
         tableView.separatorColor = .clear
+        tableView.refreshControl = customRefreshControl
         tableView.tableHeaderView = RepositoryTableHeaderView()
         tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: RepositoryTableHeaderView.identifier)
+    }
+    
+    @objc private func refreshWeatherData(_ sender: Any) {
+        interactor?.requestStarredRepositories()
     }
     
 }
@@ -72,6 +81,7 @@ extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
     func fetchData() {
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()
+            self?.refreshControl?.endRefreshing()
         }
     }
     
