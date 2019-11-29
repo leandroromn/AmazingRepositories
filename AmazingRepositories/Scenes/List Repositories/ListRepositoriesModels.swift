@@ -29,7 +29,7 @@ enum ListRepositories {
         
         init(repository: Repository) {
             self.name = repository.name
-            self.stars = "\(repository.stars) ⭐️"
+            self.stars = repository.stars.abbrevation
             self.ownerName = "Created by \(repository.owner.name)"
             self.ownerPhoto = repository.owner.photo
         }
@@ -38,7 +38,7 @@ enum ListRepositories {
     
 }
 
-struct Repository: Codable {
+struct Repository: Codable, Comparable {
     
     let name: String
     let stars: Int
@@ -48,6 +48,14 @@ struct Repository: Codable {
         case name
         case stars = "stargazers_count"
         case owner
+    }
+    
+    static func < (lhs: Repository, rhs: Repository) -> Bool {
+        lhs.stars < rhs.stars
+    }
+    
+    static func == (lhs: Repository, rhs: Repository) -> Bool {
+        lhs.stars == rhs.stars
     }
     
 }

@@ -23,6 +23,8 @@
 		FD31D9F1238CB8EA00FAE610 /* CustomViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9F0238CB8EA00FAE610 /* CustomViewDelegate.swift */; };
 		FD31D9F3238CB92900FAE610 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9F2238CB92900FAE610 /* RepositoryTableViewCell.swift */; };
 		FD60EE60239074CD008701C5 /* UIFont+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */; };
+		FD60EE6223909C3D008701C5 /* CGFloat+Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60EE6123909C3D008701C5 /* CGFloat+Metrics.swift */; };
+		FD60EE642390A5E1008701C5 /* Int+SmallNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60EE632390A5E1008701C5 /* Int+SmallNumbers.swift */; };
 		FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */; };
 		FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
@@ -73,6 +75,8 @@
 		FD31D9F0238CB8EA00FAE610 /* CustomViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewDelegate.swift; sourceTree = "<group>"; };
 		FD31D9F2238CB92900FAE610 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Theme.swift"; sourceTree = "<group>"; };
+		FD60EE6123909C3D008701C5 /* CGFloat+Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Metrics.swift"; sourceTree = "<group>"; };
+		FD60EE632390A5E1008701C5 /* Int+SmallNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+SmallNumbers.swift"; sourceTree = "<group>"; };
 		FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableHeaderView.swift; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,6 +219,8 @@
 			children = (
 				FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */,
 				FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */,
+				FD60EE6123909C3D008701C5 /* CGFloat+Metrics.swift */,
+				FD60EE632390A5E1008701C5 /* Int+SmallNumbers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -515,7 +521,9 @@
 				FD31D9ED238CAA1700FAE610 /* Endpoint+Repositories.swift in Sources */,
 				FD31D9E3238CA75100FAE610 /* ListRepositoriesViewController.swift in Sources */,
 				FD31D9E2238CA75100FAE610 /* ListRepositoriesModels.swift in Sources */,
+				FD60EE6223909C3D008701C5 /* CGFloat+Metrics.swift in Sources */,
 				FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */,
+				FD60EE642390A5E1008701C5 /* Int+SmallNumbers.swift in Sources */,
 				FD31D9E1238CA75100FAE610 /* ListRepositoriesRouter.swift in Sources */,
 				FD31D9F1238CB8EA00FAE610 /* CustomViewDelegate.swift in Sources */,
 				FD31D9E4238CA75100FAE610 /* ListRepositoriesInteractor.swift in Sources */,

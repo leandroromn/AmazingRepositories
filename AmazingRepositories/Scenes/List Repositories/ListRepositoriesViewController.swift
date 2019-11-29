@@ -60,6 +60,8 @@ class ListRepositoriesViewController: UITableViewController {
         setupRefreshControl()
         setupTableView()
         interactor?.requestStarredRepositories()
+        
+        view.backgroundColor = .backgroundGray
     }
     
     private func setupRefreshControl() {
@@ -69,6 +71,8 @@ class ListRepositoriesViewController: UITableViewController {
     
     private func setupTableView() {
         tableView.separatorColor = .clear
+        tableView.backgroundColor = .clear
+        tableView.layer.backgroundColor = UIColor.clear.cgColor
         tableView.refreshControl = customRefreshControl
         tableView.tableHeaderView = RepositoryTableHeaderView()
         tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: RepositoryTableHeaderView.identifier)

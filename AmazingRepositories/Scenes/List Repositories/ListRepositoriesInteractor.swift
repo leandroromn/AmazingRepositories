@@ -39,7 +39,7 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
     
     private func handleRequestSuccess(_ response: ListRepositories.Response) {
         guard let repositories = response.repositories else { return }
-        self.repositories = repositories
+        self.repositories = repositories.sorted(by: >)
         presenter?.fetchData()
     }
     
