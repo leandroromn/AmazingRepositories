@@ -57,11 +57,12 @@ class ListRepositoriesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupRefreshControl()
-        setupTableView()
-        interactor?.requestRepositories(sortedBy: .numberOfStars)
         
-        view.backgroundColor = .backgroundGray
+        setupView()
+        setupTableView()
+        setupRefreshControl()
+        
+        interactor?.requestRepositories(sortedBy: .numberOfStars)
     }
     
     private func setupRefreshControl() {
@@ -77,6 +78,10 @@ class ListRepositoriesViewController: UITableViewController {
         tableView.refreshControl = customRefreshControl
         tableView.tableHeaderView = RepositoryTableHeaderView()
         tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: RepositoryTableHeaderView.identifier)
+    }
+    
+    private func setupView() {
+        view.backgroundColor = .backgroundGray
     }
     
     @objc private func refreshRepositories(_ sender: Any) {
