@@ -59,7 +59,7 @@ class ListRepositoriesViewController: UITableViewController {
         super.viewDidLoad()
         setupRefreshControl()
         setupTableView()
-        interactor?.requestStarredRepositories()
+        interactor?.requestRepositories(sortedBy: .numberOfStars)
         
         view.backgroundColor = .backgroundGray
     }
@@ -70,6 +70,7 @@ class ListRepositoriesViewController: UITableViewController {
     }
     
     private func setupTableView() {
+        tableView.prefetchDataSource = self
         tableView.separatorColor = .clear
         tableView.backgroundColor = .clear
         tableView.layer.backgroundColor = UIColor.clear.cgColor
@@ -79,7 +80,7 @@ class ListRepositoriesViewController: UITableViewController {
     }
     
     @objc private func refreshRepositories(_ sender: Any) {
-        interactor?.requestStarredRepositories()
+        interactor?.requestRepositories(sortedBy: .numberOfStars)
     }
     
 }
@@ -114,16 +115,14 @@ extension ListRepositoriesViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.alpha = 0
+}
 
-        UIView.animate(
-            withDuration: 0.5,
-            delay: 0.01 * Double(indexPath.row),
-            animations: {
-                cell.alpha = 1
-            }
-        )
-    }
+extension ListRepositoriesViewController: UITableViewDataSourcePrefetching {
     
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        for indexPath in indexPaths {
+            interactor?.requestNextPage(index: indexPath.row)
+        }
+    }
+        
 }

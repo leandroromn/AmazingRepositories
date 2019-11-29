@@ -16,12 +16,14 @@ enum Sorting: String {
 
 extension Endpoint {
     
-    static func search(matching query: String, sortedBy sorting: Sorting) -> Endpoint {
+    static func search(sortedBy sorting: Sorting, page: Int) -> Endpoint {
         Endpoint(
             path: "/search/repositories",
             queryItems: [
-                URLQueryItem(name: "q", value: query),
-                URLQueryItem(name: "sort", value: sorting.rawValue)
+                URLQueryItem(name: "q", value: "language:swift"),
+                URLQueryItem(name: "sort", value: sorting.rawValue),
+                URLQueryItem(name: "per_page", value: "30"),
+                URLQueryItem(name: "page", value: "\(page)")
             ]
         )
     }
