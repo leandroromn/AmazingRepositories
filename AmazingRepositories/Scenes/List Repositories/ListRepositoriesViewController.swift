@@ -57,20 +57,24 @@ class ListRepositoriesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupRefreshControl()
         setupTableView()
         interactor?.requestStarredRepositories()
     }
     
+    private func setupRefreshControl() {
+        refreshControl = customRefreshControl
+        refreshControl?.addTarget(self, action: #selector(refreshRepositories), for: .valueChanged)
+    }
+    
     private func setupTableView() {
-        refreshControl?.addTarget(self, action: #selector(refreshWeatherData(_:)), for: .valueChanged)
-        
         tableView.separatorColor = .clear
         tableView.refreshControl = customRefreshControl
         tableView.tableHeaderView = RepositoryTableHeaderView()
         tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: RepositoryTableHeaderView.identifier)
     }
     
-    @objc private func refreshWeatherData(_ sender: Any) {
+    @objc private func refreshRepositories(_ sender: Any) {
         interactor?.requestStarredRepositories()
     }
     
@@ -104,6 +108,18 @@ extension ListRepositoriesViewController {
         cell.configure(viewModel: viewModel)
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.alpha = 0
+
+        UIView.animate(
+            withDuration: 0.5,
+            delay: 0.01 * Double(indexPath.row),
+            animations: {
+                cell.alpha = 1
+            }
+        )
     }
     
 }

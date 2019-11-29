@@ -13,6 +13,7 @@ class RepositoryTableHeaderView: UIView {
     private lazy var contentView: UIView = {
         let view = UIView()
         
+        view.alpha = 0
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
@@ -22,7 +23,7 @@ class RepositoryTableHeaderView: UIView {
         let label = UILabel()
         
         label.text = "Starred"
-        label.font = .rounded(fontSize: 30, weight: .heavy)
+        label.font = .rounded(fontSize: 26, weight: .heavy)
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -32,10 +33,34 @@ class RepositoryTableHeaderView: UIView {
         let label = UILabel()
         
         label.text = "Repositories"
-        label.font = .rounded(fontSize: 30, weight: .regular)
+        label.font = .rounded(fontSize: 26, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
+    }()
+    
+    private lazy var listView: UIView = {
+        let view = UIView()
+        
+        view.backgroundColor = .white
+        view.layer.borderWidth = 3
+        view.layer.borderColor = UIColor.veryLightGray.cgColor
+        view.layer.masksToBounds = false
+        view.layer.cornerRadius = 19
+        view.clipsToBounds = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
+    private lazy var listImageView: UIImageView = {
+        let imageView = UIImageView()
+        
+        imageView.image = UIImage(systemName: "list.bullet")
+        imageView.tintColor = .darkGray
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        return imageView
     }()
     
     private lazy var separatorView: UIView = {
@@ -65,9 +90,11 @@ extension RepositoryTableHeaderView: CustomViewDelegate {
     func setupViews() {
         addSubview(contentView)
         
+        contentView.addSubview(listView)
+        listView.addSubview(listImageView)
         contentView.addSubview(typeLabel)
         contentView.addSubview(repositoryLabel)
-        
+
         addSubview(separatorView)
     }
     
@@ -76,16 +103,26 @@ extension RepositoryTableHeaderView: CustomViewDelegate {
         contentView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24).isActive = true
         contentView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24).isActive = true
         
+        listView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        listView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        listView.widthAnchor.constraint(equalToConstant: 38).isActive = true
+        listView.heightAnchor.constraint(equalToConstant: 38).isActive = true
+        
+        listImageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        listImageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        listImageView.centerXAnchor.constraint(equalTo: listView.centerXAnchor).isActive = true
+        listImageView.centerYAnchor.constraint(equalTo: listView.centerYAnchor).isActive = true
+        
         typeLabel.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         typeLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-        typeLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        
-        repositoryLabel.topAnchor.constraint(equalTo: typeLabel.bottomAnchor, constant: -5).isActive = true
+        typeLabel.trailingAnchor.constraint(equalTo: listView.leadingAnchor).isActive = true
+
+        repositoryLabel.topAnchor.constraint(equalTo: typeLabel.bottomAnchor, constant: -2).isActive = true
         repositoryLabel.leadingAnchor.constraint(equalTo: typeLabel.leadingAnchor).isActive = true
         repositoryLabel.trailingAnchor.constraint(equalTo: typeLabel.trailingAnchor).isActive = true
         repositoryLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-        
-        separatorView.topAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 8).isActive = true
+
+        separatorView.topAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 16).isActive = true
         separatorView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         separatorView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         separatorView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24).isActive = true
@@ -93,7 +130,13 @@ extension RepositoryTableHeaderView: CustomViewDelegate {
     }
     
     func setupExtraConfigurations() {
-        
+        UIView.animate(
+            withDuration: 0.5,
+            delay: 0.01 * 1,
+            animations: {
+                self.contentView.alpha = 1
+            }
+        )
     }
     
 }

@@ -12,7 +12,7 @@ import Kingfisher
 class RepositoryTableViewCell: UITableViewCell {
     
     let colours = [UIColor.lightPurple, UIColor.lightYellow]
-    let primaryColor: UIColor = .lightPurple
+    let primaryColor: UIColor = .lightYellow
     
     private lazy var roundedView: UIView = {
         let view = UIView()
@@ -114,9 +114,6 @@ extension RepositoryTableViewCell: CustomViewDelegate {
         photoImageView.trailingAnchor.constraint(equalTo: roundedView.trailingAnchor, constant: -18).isActive = true
         photoImageView.widthAnchor.constraint(equalToConstant: 60).isActive = true
         photoImageView.heightAnchor.constraint(equalToConstant: 60).isActive = true
-//        photoImageView.bottomAnchor.constraint(equalTo: roundedView.bottomAnchor, constant: -16).isActive = true
-//        photoImageView.widthAnchor.constraint(equalTo: photoImageView.heightAnchor, multiplier: 0.5/2).isActive = true
-//        photoImageView.heightAnchor.constraint(equalTo: photoImageView.heightAnchor, multiplier: 0.5/2).isActive = true
         
         titleLabel.topAnchor.constraint(equalTo: photoImageView.topAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: roundedView.leadingAnchor, constant: 18).isActive = true
