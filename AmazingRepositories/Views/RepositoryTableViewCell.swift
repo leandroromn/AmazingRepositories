@@ -43,6 +43,7 @@ class RepositoryTableViewCell: UITableViewCell {
         
         label.font = .rounded(fontSize: 13, weight: .semibold)
         label.textColor = UIColor(red:0.44, green:0.44, blue:0.51, alpha:1.0)
+        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -53,6 +54,7 @@ class RepositoryTableViewCell: UITableViewCell {
         
         label.font = .rounded(fontSize: 13, weight: .regular)
         label.textColor = UIColor(red:0.70, green:0.70, blue:0.72, alpha:1.0)
+        label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -64,6 +66,7 @@ class RepositoryTableViewCell: UITableViewCell {
         label.font = .rounded(fontSize: 13, weight: .bold)
         label.textColor = .darkGray
         label.textAlignment = .right
+        label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -75,7 +78,8 @@ class RepositoryTableViewCell: UITableViewCell {
         label.text = "stars"
         label.font = .rounded(fontSize: 12, weight: .regular)
         label.textColor = .lightGray
-        label.textAlignment = .center
+        label.textAlignment = .right
+        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -122,17 +126,16 @@ extension RepositoryTableViewCell: CustomViewDelegate {
         
         repositoryPhotoImageView.topAnchor.constraint(equalTo: secureView.topAnchor, constant: 16).isActive = true
         repositoryPhotoImageView.leadingAnchor.constraint(equalTo: secureView.leadingAnchor, constant: 16).isActive = true
-        repositoryPhotoImageView.bottomAnchor.constraint(equalTo: secureView.bottomAnchor, constant: -16).isActive = true
         repositoryPhotoImageView.widthAnchor.constraint(equalToConstant: 40).isActive = true
         repositoryPhotoImageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         repositoryStarsAmountLabel.topAnchor.constraint(equalTo: repositoryPhotoImageView.topAnchor).isActive = true
         repositoryStarsAmountLabel.trailingAnchor.constraint(equalTo: secureView.trailingAnchor, constant: -16).isActive = true
-        
+
         repositoryStarsLabel.topAnchor.constraint(equalTo: repositoryStarsAmountLabel.bottomAnchor).isActive = true
         repositoryStarsLabel.leadingAnchor.constraint(equalTo: repositoryStarsAmountLabel.leadingAnchor).isActive = true
         repositoryStarsLabel.trailingAnchor.constraint(equalTo: repositoryStarsAmountLabel.trailingAnchor).isActive = true
-        repositoryStarsLabel.bottomAnchor.constraint(equalTo: repositoryPhotoImageView.bottomAnchor).isActive = true
+        repositoryStarsLabel.bottomAnchor.constraint(equalTo: repositoryOwnerLabel.bottomAnchor).isActive = true
         
         repositoryNameLabel.topAnchor.constraint(equalTo: repositoryPhotoImageView.topAnchor, constant: 2).isActive = true
         repositoryNameLabel.leadingAnchor.constraint(equalTo: repositoryPhotoImageView.trailingAnchor, constant: 16).isActive = true
@@ -141,6 +144,7 @@ extension RepositoryTableViewCell: CustomViewDelegate {
         repositoryOwnerLabel.topAnchor.constraint(equalTo: repositoryNameLabel.bottomAnchor, constant: 2).isActive = true
         repositoryOwnerLabel.leadingAnchor.constraint(equalTo: repositoryNameLabel.leadingAnchor).isActive = true
         repositoryOwnerLabel.trailingAnchor.constraint(equalTo: repositoryNameLabel.trailingAnchor).isActive = true
+        repositoryOwnerLabel.bottomAnchor.constraint(equalTo: secureView.bottomAnchor, constant: -16).isActive = true
     }
     
     func setupExtraConfigurations() {

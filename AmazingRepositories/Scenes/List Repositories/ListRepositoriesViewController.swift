@@ -57,10 +57,10 @@ class ListRepositoriesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupView()
+
         setupTableView()
         setupRefreshControl()
+        setupView()
         
         interactor?.requestRepositories(sortedBy: .numberOfStars)
     }
