@@ -93,6 +93,10 @@ class RepositoryTableHeaderView: UIView {
         typeLabel.text = text
     }
     
+    @objc private func changeFilter() {
+        delegate?.changeRepositoriesFilter()
+    }
+    
 }
 
 extension RepositoryTableHeaderView: CustomViewDelegate {
@@ -149,10 +153,6 @@ extension RepositoryTableHeaderView: CustomViewDelegate {
         )
         
         listView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeFilter)))
-    }
-    
-    @objc private func changeFilter() {
-        delegate?.changeRepositoriesFilter()
     }
     
 }

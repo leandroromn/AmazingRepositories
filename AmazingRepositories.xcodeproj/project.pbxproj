@@ -25,6 +25,9 @@
 		FD60EE60239074CD008701C5 /* UIFont+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */; };
 		FD60EE6223909C3D008701C5 /* CGFloat+Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60EE6123909C3D008701C5 /* CGFloat+Metrics.swift */; };
 		FD60EE642390A5E1008701C5 /* Int+SmallNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60EE632390A5E1008701C5 /* Int+SmallNumbers.swift */; };
+		FD7BAB5C23941ABC00B20C01 /* LoadingActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BAB5B23941ABC00B20C01 /* LoadingActivityIndicator.swift */; };
+		FD7BAB5E23941B8200B20C01 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BAB5D23941B8200B20C01 /* UIViewController+Alerts.swift */; };
+		FD7BAB602394209000B20C01 /* EmptyClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BAB5F2394209000B20C01 /* EmptyClosure.swift */; };
 		FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */; };
 		FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
@@ -77,6 +80,9 @@
 		FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Theme.swift"; sourceTree = "<group>"; };
 		FD60EE6123909C3D008701C5 /* CGFloat+Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Metrics.swift"; sourceTree = "<group>"; };
 		FD60EE632390A5E1008701C5 /* Int+SmallNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+SmallNumbers.swift"; sourceTree = "<group>"; };
+		FD7BAB5B23941ABC00B20C01 /* LoadingActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingActivityIndicator.swift; sourceTree = "<group>"; };
+		FD7BAB5D23941B8200B20C01 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		FD7BAB5F2394209000B20C01 /* EmptyClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyClosure.swift; sourceTree = "<group>"; };
 		FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableHeaderView.swift; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +208,7 @@
 				FD31D9EF238CB8D600FAE610 /* Definitions */,
 				FD31D9F2238CB92900FAE610 /* RepositoryTableViewCell.swift */,
 				FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */,
+				FD7BAB5B23941ABC00B20C01 /* LoadingActivityIndicator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				FD31D9F0238CB8EA00FAE610 /* CustomViewDelegate.swift */,
+				FD7BAB5F2394209000B20C01 /* EmptyClosure.swift */,
 			);
 			path = Definitions;
 			sourceTree = "<group>";
@@ -221,6 +229,7 @@
 				FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */,
 				FD60EE6123909C3D008701C5 /* CGFloat+Metrics.swift */,
 				FD60EE632390A5E1008701C5 /* Int+SmallNumbers.swift */,
+				FD7BAB5D23941B8200B20C01 /* UIViewController+Alerts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -522,12 +531,15 @@
 				FD31D9E3238CA75100FAE610 /* ListRepositoriesViewController.swift in Sources */,
 				FD31D9E2238CA75100FAE610 /* ListRepositoriesModels.swift in Sources */,
 				FD60EE6223909C3D008701C5 /* CGFloat+Metrics.swift in Sources */,
+				FD7BAB602394209000B20C01 /* EmptyClosure.swift in Sources */,
 				FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */,
 				FD60EE642390A5E1008701C5 /* Int+SmallNumbers.swift in Sources */,
 				FD31D9E1238CA75100FAE610 /* ListRepositoriesRouter.swift in Sources */,
 				FD31D9F1238CB8EA00FAE610 /* CustomViewDelegate.swift in Sources */,
+				FD7BAB5E23941B8200B20C01 /* UIViewController+Alerts.swift in Sources */,
 				FD31D9E4238CA75100FAE610 /* ListRepositoriesInteractor.swift in Sources */,
 				FD31D9E0238CA75100FAE610 /* ListRepositoriesWorker.swift in Sources */,
+				FD7BAB5C23941ABC00B20C01 /* LoadingActivityIndicator.swift in Sources */,
 				FD31D9F3238CB92900FAE610 /* RepositoryTableViewCell.swift in Sources */,
 				FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */,
 				FDF5DFE5238CA34600AB4F92 /* SceneDelegate.swift in Sources */,

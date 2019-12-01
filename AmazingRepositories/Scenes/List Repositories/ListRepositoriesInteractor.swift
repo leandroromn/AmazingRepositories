@@ -42,11 +42,20 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
     
     func requestRepositories(sortedBy sorting: Sorting) {
         currentSorting = sorting
-        worker.searchRepositories(sortedBy: sorting, page: currentPage).done(handleRequestSuccess).catch(handleRequestFailure)
+        worker
+            .searchRepositories(sortedBy: sorting, page: currentPage)
+            .done(handleRequestSuccess)
+            .catch(handleRequestFailure)
+            .finally { [weak self] in
+                self?.presenter?.removeLoadingState()
+            }
     }
     
     func filterRepositories(sortedBy sorting: Sorting) {
+        resetCurrentPage()
         repositories.removeAll(keepingCapacity: true)
+        
+        presenter?.presentLoadingState()
         requestRepositories(sortedBy: sorting)
     }
     
@@ -54,12 +63,12 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
         guard let repositories = response.repositories else { return }
         self.repositories.append(contentsOf: repositories.sorted(by: >))
         
-        presenter?.reloadTableView()
         presenter?.presentSortingTitle(currentSorting: currentSorting)
+        presenter?.reloadTableView()
     }
     
     private func handleRequestFailure(_ error: Error) {
-        print(error.localizedDescription)
+        presenter?.presentError(error)
     }
     
     func requestNextPage(index: Int) {
@@ -70,14 +79,17 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
     }
     
     func refreshRepositories() {
-        currentPage = 0
-        currentSorting = .numberOfStars
+        resetCurrentPage()
         requestRepositories(sortedBy: currentSorting)
     }
     
     func cellForRow(at index: Int) -> ListRepositories.ViewModel {
         let repository = repositories[index]
         return ListRepositories.ViewModel(repository: repository)
+    }
+    
+    private func resetCurrentPage() {
+        currentPage = 0
     }
 
 }

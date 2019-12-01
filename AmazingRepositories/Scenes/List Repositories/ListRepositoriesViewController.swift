@@ -9,8 +9,11 @@
 import UIKit
 
 protocol ListRepositoriesDisplayLogic: class {
-    func reloadTableView()
+    func displayLoadingState()
+    func removeLoadingState()
     func displaySortingTitle(_ title: String)
+    func displayError(_ errorMessage: String)
+    func reloadTableView()
 }
 
 class ListRepositoriesViewController: UITableViewController {
@@ -63,7 +66,7 @@ class ListRepositoriesViewController: UITableViewController {
         setupRefreshControl()
         setupView()
         
-        interactor?.requestRepositories(sortedBy: .numberOfStars)
+        interactor?.filterRepositories(sortedBy: .numberOfStars)
     }
     
     private func setupRefreshControl() {
@@ -96,16 +99,31 @@ class ListRepositoriesViewController: UITableViewController {
 
 extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
     
-    func reloadTableView() {
-        DispatchQueue.main.async { [weak self] in
-            self?.tableView.reloadData()
-            self?.refreshControl?.endRefreshing()
+    func displayLoadingState() {
+        displayLoadingAlert()
+    }
+    
+    func removeLoadingState() {
+        if let vc = presentedViewController, vc is UIAlertController {
+            vc.dismiss(animated: true)
         }
     }
     
     func displaySortingTitle(_ title: String) {
         let tableHeaderView = tableView.tableHeaderView as? RepositoryTableHeaderView
         tableHeaderView?.changeSortingTitle(text: title)
+    }
+    
+    func displayError(_ errorMessage: String) {
+        removeLoadingState()
+        displayErrorAlert(errorMessage: errorMessage, action: interactor?.refreshRepositories)
+    }
+    
+    func reloadTableView() {
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+            self?.refreshControl?.endRefreshing()
+        }
     }
     
 }
