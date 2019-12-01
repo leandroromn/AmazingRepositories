@@ -89,7 +89,7 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
     }
     
     private func resetCurrentPage() {
-        currentPage = 0
+        currentPage = 1
     }
 
 }
