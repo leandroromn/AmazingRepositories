@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol RepositoryTableHeaderViewDelegate: class {
+    func changeRepositoriesFilter()
+}
+
 class RepositoryTableHeaderView: UIView {
 
     private lazy var contentView: UIView = {
@@ -74,6 +78,8 @@ class RepositoryTableHeaderView: UIView {
     
     static let identifier = "RepositoryCell"
     
+    weak var delegate: RepositoryTableHeaderViewDelegate?
+    
     init() {
         super.init(frame: .zero)
         setup()
@@ -81,6 +87,10 @@ class RepositoryTableHeaderView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func changeSortingTitle(text: String) {
+        typeLabel.text = text
     }
     
 }
@@ -137,6 +147,12 @@ extension RepositoryTableHeaderView: CustomViewDelegate {
                 self.contentView.alpha = 1
             }
         )
+        
+        listView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeFilter)))
+    }
+    
+    @objc private func changeFilter() {
+        delegate?.changeRepositoriesFilter()
     }
     
 }

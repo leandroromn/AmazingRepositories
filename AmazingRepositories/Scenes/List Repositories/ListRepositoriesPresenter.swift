@@ -9,15 +9,20 @@
 import UIKit
 
 protocol ListRepositoriesPresentationLogic {
-    func fetchData()
+    func reloadTableView()
+    func presentSortingTitle(currentSorting: Sorting)
 }
 
 class ListRepositoriesPresenter: ListRepositoriesPresentationLogic {
 
     weak var viewController: ListRepositoriesDisplayLogic?
     
-    func fetchData() {
-        viewController?.fetchData()
+    func reloadTableView() {
+        viewController?.reloadTableView()
+    }
+    
+    func presentSortingTitle(currentSorting: Sorting) {
+        viewController?.displaySortingTitle(currentSorting.title)
     }
     
 }

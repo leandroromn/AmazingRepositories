@@ -13,6 +13,7 @@ protocol ListRepositoriesBusinessLogic {
     func cellForRow(at index: Int) -> ListRepositories.ViewModel
     
     func requestRepositories(sortedBy sorting: Sorting)
+    func filterRepositories(sortedBy sorting: Sorting)
     func requestNextPage(index: Int)
     func refreshRepositories()
 }
@@ -44,10 +45,17 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
         worker.searchRepositories(sortedBy: sorting, page: currentPage).done(handleRequestSuccess).catch(handleRequestFailure)
     }
     
+    func filterRepositories(sortedBy sorting: Sorting) {
+        repositories.removeAll(keepingCapacity: true)
+        requestRepositories(sortedBy: sorting)
+    }
+    
     private func handleRequestSuccess(_ response: ListRepositories.Response) {
         guard let repositories = response.repositories else { return }
         self.repositories.append(contentsOf: repositories.sorted(by: >))
-        presenter?.fetchData()
+        
+        presenter?.reloadTableView()
+        presenter?.presentSortingTitle(currentSorting: currentSorting)
     }
     
     private func handleRequestFailure(_ error: Error) {

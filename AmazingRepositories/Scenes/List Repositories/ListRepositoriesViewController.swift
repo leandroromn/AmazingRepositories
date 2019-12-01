@@ -9,7 +9,8 @@
 import UIKit
 
 protocol ListRepositoriesDisplayLogic: class {
-    func fetchData()
+    func reloadTableView()
+    func displaySortingTitle(_ title: String)
 }
 
 class ListRepositoriesViewController: UITableViewController {
@@ -76,8 +77,11 @@ class ListRepositoriesViewController: UITableViewController {
         tableView.backgroundColor = .clear
         tableView.layer.backgroundColor = UIColor.clear.cgColor
         tableView.refreshControl = customRefreshControl
-        tableView.tableHeaderView = RepositoryTableHeaderView()
         tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: RepositoryTableHeaderView.identifier)
+        
+        let tableHeaderView = RepositoryTableHeaderView()
+        tableHeaderView.delegate = self
+        tableView.tableHeaderView = tableHeaderView
     }
     
     private func setupView() {
@@ -92,11 +96,16 @@ class ListRepositoriesViewController: UITableViewController {
 
 extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
     
-    func fetchData() {
+    func reloadTableView() {
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()
             self?.refreshControl?.endRefreshing()
         }
+    }
+    
+    func displaySortingTitle(_ title: String) {
+        let tableHeaderView = tableView.tableHeaderView as? RepositoryTableHeaderView
+        tableHeaderView?.changeSortingTitle(text: title)
     }
     
 }
@@ -130,4 +139,28 @@ extension ListRepositoriesViewController: UITableViewDataSourcePrefetching {
         }
     }
         
+}
+
+extension ListRepositoriesViewController: RepositoryTableHeaderViewDelegate {
+    
+    func changeRepositoriesFilter() {
+        let alert = UIAlertController(title: "Repositories Filter", message: "Select the filter to display the repositories:", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Recency", style: .default) { [weak self] _ in
+            self?.interactor?.filterRepositories(sortedBy: .recency)
+        })
+        
+        alert.addAction(UIAlertAction(title: "Number of Stars", style: .default) { [weak self] _ in
+            self?.interactor?.filterRepositories(sortedBy: .numberOfStars)
+        })
+        
+        alert.addAction(UIAlertAction(title: "Number of Forks", style: .default) { [weak self] _ in
+            self?.interactor?.filterRepositories(sortedBy: .numberOfForks)
+        })
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        present(alert, animated: true)
+    }
+
 }

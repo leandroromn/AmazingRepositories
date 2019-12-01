@@ -9,9 +9,22 @@
 import Foundation
 
 enum Sorting: String {
+    
     case numberOfStars = "stars"
     case numberOfForks = "forks"
     case recency = "updated"
+    
+    var title: String {
+        switch self {
+        case .numberOfStars:
+            return "Starred"
+        case .numberOfForks:
+            return "Forked"
+        case .recency:
+            return "Recent"
+        }
+    }
+    
 }
 
 extension Endpoint {
