@@ -48,7 +48,7 @@ class RepositoryTableHeaderView: UIView {
     private lazy var listView: UIView = {
         let view = UIView()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .clear
         view.layer.borderWidth = 3
         view.layer.borderColor = UIColor.veryLightGray!.cgColor
         view.layer.masksToBounds = false
@@ -89,6 +89,11 @@ class RepositoryTableHeaderView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        listView.layer.borderColor = UIColor.veryLightGray!.cgColor
     }
     
     func changeSortingTitle(text: String) {

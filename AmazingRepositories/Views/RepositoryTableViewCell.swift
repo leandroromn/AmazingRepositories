@@ -16,9 +16,9 @@ class RepositoryTableViewCell: UITableViewCell {
     private lazy var secureView: UIView = {
         let view = UIView()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .cellGray
         view.layer.cornerRadius = 6
-        view.layer.shadowColor = UIColor.gray.cgColor
+        view.layer.shadowColor = UIColor.shadowGray!.cgColor
         view.layer.shadowOffset = .zero
         view.layer.shadowRadius = 6
         view.layer.shadowOpacity = 0.2
@@ -102,6 +102,11 @@ class RepositoryTableViewCell: UITableViewCell {
         if let photoUrl = URL(string: viewModel.ownerPhoto) {
             repositoryPhotoImageView.kf.setImage(with: photoUrl, placeholder: UIImage())
         }
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        secureView.layer.shadowColor = UIColor.shadowGray!.cgColor
     }
     
 }
