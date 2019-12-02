@@ -22,10 +22,6 @@ class ListRepositoriesViewController: UITableViewController {
     var router: (NSObjectProtocol & ListRepositoriesRoutingLogic & ListRepositoriesDataPassing)?
     
     private let customRefreshControl = UIRefreshControl()
-    
-    override var prefersStatusBarHidden: Bool {
-        true
-    }
 
     override func loadView() {
         super.loadView()

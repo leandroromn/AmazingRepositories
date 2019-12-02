@@ -47,8 +47,8 @@ class RepositoryTableHeaderView: UIView {
     
     private lazy var listView: UIView = {
         let view = UIView()
-        
-        view.backgroundColor = .clear
+
+        view.backgroundColor = .veryLightGray
         view.layer.borderWidth = 3
         view.layer.borderColor = UIColor.veryLightGray!.cgColor
         view.layer.masksToBounds = false
@@ -93,6 +93,7 @@ class RepositoryTableHeaderView: UIView {
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
+        
         listView.layer.borderColor = UIColor.veryLightGray!.cgColor
     }
     
