@@ -28,6 +28,7 @@ class RepositoryTableHeaderView: UIView {
         
         label.text = "Starred"
         label.font = .rounded(fontSize: 26, weight: .heavy)
+        label.textColor = .heavyGray
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -38,6 +39,7 @@ class RepositoryTableHeaderView: UIView {
         
         label.text = "Repositories"
         label.font = .rounded(fontSize: 26, weight: .regular)
+        label.textColor = .heavyGray
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -48,7 +50,7 @@ class RepositoryTableHeaderView: UIView {
         
         view.backgroundColor = .white
         view.layer.borderWidth = 3
-        view.layer.borderColor = UIColor.veryLightGray.cgColor
+        view.layer.borderColor = UIColor.veryLightGray!.cgColor
         view.layer.masksToBounds = false
         view.layer.cornerRadius = 19
         view.clipsToBounds = true
@@ -61,7 +63,7 @@ class RepositoryTableHeaderView: UIView {
         let imageView = UIImageView()
         
         imageView.image = UIImage(systemName: "list.bullet")
-        imageView.tintColor = .darkGray
+        imageView.tintColor = .heavyGray
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
         return imageView

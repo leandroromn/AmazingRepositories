@@ -42,7 +42,7 @@ class RepositoryTableViewCell: UITableViewCell {
         let label = UILabel()
         
         label.font = .rounded(fontSize: 13, weight: .semibold)
-        label.textColor = UIColor(red:0.44, green:0.44, blue:0.51, alpha:1.0)
+        label.textColor = .mediumGray
         label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -53,7 +53,7 @@ class RepositoryTableViewCell: UITableViewCell {
         let label = UILabel()
         
         label.font = .rounded(fontSize: 13, weight: .regular)
-        label.textColor = UIColor(red:0.70, green:0.70, blue:0.72, alpha:1.0)
+        label.textColor = .simpleGray
         label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -64,7 +64,7 @@ class RepositoryTableViewCell: UITableViewCell {
         let label = UILabel()
         
         label.font = .rounded(fontSize: 13, weight: .bold)
-        label.textColor = .darkGray
+        label.textColor = .heavyGray
         label.textAlignment = .right
         label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -77,7 +77,7 @@ class RepositoryTableViewCell: UITableViewCell {
         
         label.text = "stars"
         label.font = .rounded(fontSize: 12, weight: .regular)
-        label.textColor = .lightGray
+        label.textColor = .simpleGray
         label.textAlignment = .right
         label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
