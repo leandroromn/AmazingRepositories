@@ -26,13 +26,13 @@ protocol ListRepositoriesDataStore {
 class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositoriesDataStore {
 
     var presenter: ListRepositoriesPresentationLogic?
-    var worker: ListRepositoriesWorker
+    var worker: ListRepositoriesNetworkLogic
     var repositories = [Repository]()
     var pageSize: Int = 30
     var currentPage: Int = 1
     var currentSorting: Sorting = .numberOfStars
     
-    init(worker: ListRepositoriesWorker = ListRepositoriesWorker()) {
+    init(worker: ListRepositoriesNetworkLogic = ListRepositoriesWorker()) {
         self.worker = worker
     }
     

@@ -9,7 +9,11 @@
 import Foundation
 import PromiseKit
 
-class ListRepositoriesWorker {
+protocol ListRepositoriesNetworkLogic {
+    func searchRepositories(sortedBy sorting: Sorting, page: Int) -> Promise<ListRepositories.Response>
+}
+
+class ListRepositoriesWorker: ListRepositoriesNetworkLogic {
 
     let networkProvider = NetworkProvider.shared
     
