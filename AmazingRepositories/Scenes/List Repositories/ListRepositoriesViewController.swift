@@ -100,14 +100,18 @@ extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
     }
     
     func removeLoadingState() {
-        if let vc = presentedViewController, vc is UIAlertController {
-            vc.dismiss(animated: true)
+        DispatchQueue.main.async { [weak self] in
+            if let vc = self?.presentedViewController, vc is UIAlertController {
+                vc.dismiss(animated: true)
+            }
         }
     }
     
     func displaySortingTitle(_ title: String) {
-        let tableHeaderView = tableView.tableHeaderView as? RepositoryTableHeaderView
-        tableHeaderView?.changeSortingTitle(text: title)
+        DispatchQueue.main.async { [weak self] in
+            let tableHeaderView = self?.tableView.tableHeaderView as? RepositoryTableHeaderView
+            tableHeaderView?.changeSortingTitle(text: title)
+        }
     }
     
     func displayError(_ errorMessage: String) {
