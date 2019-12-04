@@ -100,7 +100,7 @@ class RepositoryTableViewCell: UITableViewCell {
         repositoryStarsAmountLabel.text = viewModel.stars
         
         if let photoUrl = URL(string: viewModel.ownerPhoto) {
-            repositoryPhotoImageView.kf.setImage(with: photoUrl, placeholder: UIImage())
+            repositoryPhotoImageView.kf.setImage(with: photoUrl, placeholder: UIImage(systemName: "person.crop.circle.fill"))
         }
     }
     

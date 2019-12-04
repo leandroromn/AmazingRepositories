@@ -87,7 +87,7 @@ class ListRepositoriesViewController: UITableViewController {
         view.backgroundColor = .backgroundGray
     }
     
-    @objc private func refreshRepositories(_ sender: Any) {
+    @objc func refreshRepositories(_ sender: Any) {
         interactor?.requestRepositories(sortedBy: .numberOfStars)
     }
     
