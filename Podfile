@@ -15,7 +15,4 @@ target 'AmazingRepositories' do
     pod 'Nimble-Snapshots', '8.0.0'
   end
 
-  target 'AmazingRepositoriesUITests' do
-  end
-
 end

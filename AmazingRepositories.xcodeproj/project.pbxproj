@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		91DF841778BF4B3F4B50C022 /* Pods_AmazingRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9E8D068575E5FEC7B838D6 /* Pods_AmazingRepositoriesTests.framework */; };
-		9717309C12FE2AF532B0C42A /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646CE878C649BF4B68A4E254 /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework */; };
 		D1734508C20A40C682EA4E41 /* Pods_AmazingRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E061B4592579548B7BA38B /* Pods_AmazingRepositories.framework */; };
 		FD1EEEF22396C65800AE5562 /* ListRepositoriesInteractorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1EEEF12396C65800AE5562 /* ListRepositoriesInteractorUnitTests.swift */; };
 		FD1EEEF52396CAF700AE5562 /* MockListRepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1EEEF42396CAF700AE5562 /* MockListRepositoriesPresenter.swift */; };
@@ -47,18 +46,10 @@
 		FDF5DFE5238CA34600AB4F92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
 		FDF5DFEF238CA34700AB4F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */; };
-		FDF5E005238CA34700AB4F92 /* AmazingRepositoriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5E004238CA34700AB4F92 /* AmazingRepositoriesUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FDF5DFF6238CA34700AB4F92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FDF5DFD7238CA34500AB4F92 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FDF5DFDE238CA34500AB4F92;
-			remoteInfo = AmazingRepositories;
-		};
-		FDF5E001238CA34700AB4F92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FDF5DFD7238CA34500AB4F92 /* Project object */;
 			proxyType = 1;
@@ -118,9 +109,6 @@
 		FDF5DFF0238CA34700AB4F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDF5DFF5238CA34700AB4F92 /* AmazingRepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazingRepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFFB238CA34700AB4F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDF5E000238CA34700AB4F92 /* AmazingRepositoriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazingRepositoriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDF5E004238CA34700AB4F92 /* AmazingRepositoriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingRepositoriesUITests.swift; sourceTree = "<group>"; };
-		FDF5E006238CA34700AB4F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,14 +125,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				91DF841778BF4B3F4B50C022 /* Pods_AmazingRepositoriesTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDF5DFFD238CA34700AB4F92 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9717309C12FE2AF532B0C42A /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +313,6 @@
 			children = (
 				FDF5DFE1238CA34600AB4F92 /* AmazingRepositories */,
 				FDF5DFF8238CA34700AB4F92 /* AmazingRepositoriesTests */,
-				FDF5E003238CA34700AB4F92 /* AmazingRepositoriesUITests */,
 				FDF5DFE0238CA34600AB4F92 /* Products */,
 				48164A95408A767F7B335EB3 /* Pods */,
 				3CE01CD236B0D32D838C9133 /* Frameworks */,
@@ -345,7 +324,6 @@
 			children = (
 				FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */,
 				FDF5DFF5238CA34700AB4F92 /* AmazingRepositoriesTests.xctest */,
-				FDF5E000238CA34700AB4F92 /* AmazingRepositoriesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,15 +353,6 @@
 				FDF5DFFB238CA34700AB4F92 /* Info.plist */,
 			);
 			path = AmazingRepositoriesTests;
-			sourceTree = "<group>";
-		};
-		FDF5E003238CA34700AB4F92 /* AmazingRepositoriesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FDF5E004238CA34700AB4F92 /* AmazingRepositoriesUITests.swift */,
-				FDF5E006238CA34700AB4F92 /* Info.plist */,
-			);
-			path = AmazingRepositoriesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,26 +397,6 @@
 			productReference = FDF5DFF5238CA34700AB4F92 /* AmazingRepositoriesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FDF5DFFF238CA34700AB4F92 /* AmazingRepositoriesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FDF5E00F238CA34700AB4F92 /* Build configuration list for PBXNativeTarget "AmazingRepositoriesUITests" */;
-			buildPhases = (
-				BF3E8988247858037460BF8D /* [CP] Check Pods Manifest.lock */,
-				FDF5DFFC238CA34700AB4F92 /* Sources */,
-				FDF5DFFD238CA34700AB4F92 /* Frameworks */,
-				FDF5DFFE238CA34700AB4F92 /* Resources */,
-				5C8277841E4055F979FA1EA9 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FDF5E002238CA34700AB4F92 /* PBXTargetDependency */,
-			);
-			name = AmazingRepositoriesUITests;
-			productName = AmazingRepositoriesUITests;
-			productReference = FDF5E000238CA34700AB4F92 /* AmazingRepositoriesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -462,10 +411,6 @@
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					FDF5DFF4238CA34700AB4F92 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = FDF5DFDE238CA34500AB4F92;
-					};
-					FDF5DFFF238CA34700AB4F92 = {
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = FDF5DFDE238CA34500AB4F92;
 					};
@@ -486,7 +431,6 @@
 			targets = (
 				FDF5DFDE238CA34500AB4F92 /* AmazingRepositories */,
 				FDF5DFF4238CA34700AB4F92 /* AmazingRepositoriesTests */,
-				FDF5DFFF238CA34700AB4F92 /* AmazingRepositoriesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -511,13 +455,6 @@
 				FD64BD4D239735AF0086CA8E /* ListRepositoriesViewControllerSnapshotTests__should_display_pull_to_refresh_element@3x.png in Resources */,
 				FD64BD49239731610086CA8E /* ListRepositoriesViewControllerSnapshotTests__should_present_loading_state@3x.png in Resources */,
 				FD31594D23970FBC008D1DE7 /* repositories-updated-page-1.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDF5DFFE238CA34700AB4F92 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,23 +500,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5C8277841E4055F979FA1EA9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesUITests/Pods-AmazingRepositories-AmazingRepositoriesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesUITests/Pods-AmazingRepositories-AmazingRepositoriesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesUITests/Pods-AmazingRepositories-AmazingRepositoriesUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9BA503F065FCDBB5D427819E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -595,28 +515,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF3E8988247858037460BF8D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AmazingRepositories-AmazingRepositoriesUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DEB65E772D605180423CBA07 /* [CP] Check Pods Manifest.lock */ = {
@@ -687,14 +585,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDF5DFFC238CA34700AB4F92 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDF5E005238CA34700AB4F92 /* AmazingRepositoriesUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -702,11 +592,6 @@
 			isa = PBXTargetDependency;
 			target = FDF5DFDE238CA34500AB4F92 /* AmazingRepositories */;
 			targetProxy = FDF5DFF6238CA34700AB4F92 /* PBXContainerItemProxy */;
-		};
-		FDF5E002238CA34700AB4F92 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FDF5DFDE238CA34500AB4F92 /* AmazingRepositories */;
-			targetProxy = FDF5E001238CA34700AB4F92 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -918,46 +803,6 @@
 			};
 			name = Release;
 		};
-		FDF5E010238CA34700AB4F92 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 834AB5BD09740475D75E104C /* Pods-AmazingRepositories-AmazingRepositoriesUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AmazingRepositoriesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leandroromano.AmazingRepositoriesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AmazingRepositories;
-			};
-			name = Debug;
-		};
-		FDF5E011238CA34700AB4F92 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 574CC51B16442BCD293C1382 /* Pods-AmazingRepositories-AmazingRepositoriesUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AmazingRepositoriesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leandroromano.AmazingRepositoriesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AmazingRepositories;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -984,15 +829,6 @@
 			buildConfigurations = (
 				FDF5E00D238CA34700AB4F92 /* Debug */,
 				FDF5E00E238CA34700AB4F92 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FDF5E00F238CA34700AB4F92 /* Build configuration list for PBXNativeTarget "AmazingRepositoriesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FDF5E010238CA34700AB4F92 /* Debug */,
-				FDF5E011238CA34700AB4F92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
