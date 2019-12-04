@@ -143,7 +143,7 @@ extension ListRepositoriesViewController {
         }
         
         cell.configure(viewModel: viewModel)
-        cell.accessibilityLabel = "Repository row"
+        cell.accessibilityLabel = .repositoryRow
         
         return cell
     }
@@ -164,14 +164,11 @@ extension ListRepositoriesViewController: RepositoryTableHeaderViewDelegate {
     
     func changeRepositoriesFilter() {
         let alert = UIAlertController(title: .filterTitle, message: .filterDescription, preferredStyle: .actionSheet)
-        alert.accessibilityLabel = "Repositories filter alert"
+        alert.accessibilityLabel = .repositoriesFilterAlert
         
-        
-        let recencyAction = UIAlertAction(title: .recency, style: .default) { [weak self] _ in
+        alert.addAction(UIAlertAction(title: .recency, style: .default) { [weak self] _ in
             self?.interactor?.filterRepositories(sortedBy: .recency)
-        }
-        alert.accessibilityLabel = "Recency filter button"
-        alert.addAction(recencyAction)
+        })
         
         alert.addAction(UIAlertAction(title: .numberOfStars, style: .default) { [weak self] _ in
             self?.interactor?.filterRepositories(sortedBy: .numberOfStars)

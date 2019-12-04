@@ -45,6 +45,7 @@
 		FD9B33F52397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33F42397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift */; };
 		FD9B33F92397F6D40044943F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD9B33FB2397F6D40044943F /* Localizable.strings */; };
 		FD9B33FE2397F99B0044943F /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33FD2397F99B0044943F /* String+Localizable.swift */; };
+		FD9B3400239803440044943F /* String+AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33FF239803440044943F /* String+AccessibilityIdentifiers.swift */; };
 		FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */; };
 		FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
@@ -118,6 +119,7 @@
 		FD9B33FA2397F6D40044943F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FD9B33FC2397F6E10044943F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FD9B33FD2397F99B0044943F /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		FD9B33FF239803440044943F /* String+AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AccessibilityIdentifiers.swift"; sourceTree = "<group>"; };
 		FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableHeaderView.swift; sourceTree = "<group>"; };
 		FDCE34FC1B2428806C26A682 /* Pods-AmazingRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 				FD60EE632390A5E1008701C5 /* Int+SmallNumbers.swift */,
 				FD7BAB5D23941B8200B20C01 /* UIViewController+Alerts.swift */,
 				FD9B33FD2397F99B0044943F /* String+Localizable.swift */,
+				FD9B33FF239803440044943F /* String+AccessibilityIdentifiers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -702,6 +705,7 @@
 				FD7BAB5E23941B8200B20C01 /* UIViewController+Alerts.swift in Sources */,
 				FD31D9E4238CA75100FAE610 /* ListRepositoriesInteractor.swift in Sources */,
 				FD31D9E0238CA75100FAE610 /* ListRepositoriesWorker.swift in Sources */,
+				FD9B3400239803440044943F /* String+AccessibilityIdentifiers.swift in Sources */,
 				FD7BAB5C23941ABC00B20C01 /* LoadingActivityIndicator.swift in Sources */,
 				FD31D9F3238CB92900FAE610 /* RepositoryTableViewCell.swift in Sources */,
 				FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */,

@@ -54,7 +54,7 @@ class RepositoryTableHeaderView: UIView {
         view.layer.masksToBounds = false
         view.layer.cornerRadius = 19
         view.clipsToBounds = true
-        view.accessibilityLabel = "Repository filter button"
+        view.accessibilityLabel = .repositoryFilterButton
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
