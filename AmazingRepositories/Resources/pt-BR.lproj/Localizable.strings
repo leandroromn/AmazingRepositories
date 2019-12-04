@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  AmazingRepositories
+
+  Created by Leandro Romano on 04/12/19.
+  Copyright © 2019 Leandro Romano. All rights reserved.
+*/
+
+"REPOSITORIES" = "Repositórios";
+
+"STARRED" = "Favoritos";
+"FORKED" = "Compartilhados";
+"RECENT" = "Recentes";
+
+"REPOSITORIES_FILTER_TITLE" = "Filtros de Repositórios";
+"REPOSITORIES_FILTER_DESCRIPTION" = "Selecione uma opção para filtrar os repositórios exibidos:";
+
+"RECENCY" = "Recentes";
+"NUMBER_OF_STARS" = "Número de Estrelas";
+"NUMBER_OF_FORKS" = "Número de Compartilhamentos";
+
+"CANCEL" = "Cancelar";
+
+"CREATED_BY" = "Criado por";
+"STARS" = "Estrelas";
+
+"PLEASE_WAIT" = "Carregando...";
+
+"ERROR_TITLE" = "Erro";
+"ERROR_DESCRIPTION" = "Encontramos um problema para exibir os repositórios.";
+"TRY_AGAIN" = "Tentar novamente";

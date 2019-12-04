@@ -43,6 +43,8 @@
 		FD7BAB602394209000B20C01 /* EmptyClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BAB5F2394209000B20C01 /* EmptyClosure.swift */; };
 		FD9B33F22397E5A10044943F /* XCTestCase+KIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33F12397E5A10044943F /* XCTestCase+KIF.swift */; };
 		FD9B33F52397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33F42397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift */; };
+		FD9B33F92397F6D40044943F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD9B33FB2397F6D40044943F /* Localizable.strings */; };
+		FD9B33FE2397F99B0044943F /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33FD2397F99B0044943F /* String+Localizable.swift */; };
 		FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */; };
 		FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
@@ -112,6 +114,10 @@
 		FD7BAB5F2394209000B20C01 /* EmptyClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyClosure.swift; sourceTree = "<group>"; };
 		FD9B33F12397E5A10044943F /* XCTestCase+KIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+KIF.swift"; sourceTree = "<group>"; };
 		FD9B33F42397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesViewControllerFunctionalTests.swift; sourceTree = "<group>"; };
+		FD9B33F82397F6C90044943F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FD9B33FA2397F6D40044943F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD9B33FC2397F6E10044943F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FD9B33FD2397F99B0044943F /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
 		FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableHeaderView.swift; sourceTree = "<group>"; };
 		FDCE34FC1B2428806C26A682 /* Pods-AmazingRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */,
+				FD9B33FB2397F6D40044943F /* Localizable.strings */,
 				FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */,
 				FDF5DFF0238CA34700AB4F92 /* Info.plist */,
 			);
@@ -352,6 +359,7 @@
 				FD60EE6123909C3D008701C5 /* CGFloat+Metrics.swift */,
 				FD60EE632390A5E1008701C5 /* Int+SmallNumbers.swift */,
 				FD7BAB5D23941B8200B20C01 /* UIViewController+Alerts.swift */,
+				FD9B33FD2397F99B0044943F /* String+Localizable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -497,6 +505,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = FDF5DFD6238CA34500AB4F92;
 			productRefGroup = FDF5DFE0238CA34600AB4F92 /* Products */;
@@ -523,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF5DFEF238CA34700AB4F92 /* LaunchScreen.storyboard in Resources */,
+				FD9B33F92397F6D40044943F /* Localizable.strings in Resources */,
 				FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,6 +686,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD9B33FE2397F99B0044943F /* String+Localizable.swift in Sources */,
 				FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */,
 				FD31D9DF238CA75100FAE610 /* ListRepositoriesPresenter.swift in Sources */,
 				FD31D9E7238CA83600FAE610 /* Endpoint.swift in Sources */,
@@ -731,10 +742,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FD9B33FB2397F6D40044943F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD9B33FA2397F6D40044943F /* en */,
+				FD9B33FC2397F6E10044943F /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FDF5DFEE238CA34700AB4F92 /* Base */,
+				FD9B33F82397F6C90044943F /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -786,6 +807,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -846,6 +868,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

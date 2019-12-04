@@ -163,25 +163,25 @@ extension ListRepositoriesViewController: UITableViewDataSourcePrefetching {
 extension ListRepositoriesViewController: RepositoryTableHeaderViewDelegate {
     
     func changeRepositoriesFilter() {
-        let alert = UIAlertController(title: "Repositories Filter", message: "Select the filter to display the repositories:", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: .filterTitle, message: .filterDescription, preferredStyle: .actionSheet)
         alert.accessibilityLabel = "Repositories filter alert"
         
         
-        let recencyAction = UIAlertAction(title: "Recency", style: .default) { [weak self] _ in
+        let recencyAction = UIAlertAction(title: .recency, style: .default) { [weak self] _ in
             self?.interactor?.filterRepositories(sortedBy: .recency)
         }
         alert.accessibilityLabel = "Recency filter button"
         alert.addAction(recencyAction)
         
-        alert.addAction(UIAlertAction(title: "Number of Stars", style: .default) { [weak self] _ in
+        alert.addAction(UIAlertAction(title: .numberOfStars, style: .default) { [weak self] _ in
             self?.interactor?.filterRepositories(sortedBy: .numberOfStars)
         })
         
-        alert.addAction(UIAlertAction(title: "Number of Forks", style: .default) { [weak self] _ in
+        alert.addAction(UIAlertAction(title: .numberOfForks, style: .default) { [weak self] _ in
             self?.interactor?.filterRepositories(sortedBy: .numberOfForks)
         })
         
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alert.addAction(UIAlertAction(title: .cancel, style: .cancel))
         
         present(alert, animated: true)
     }

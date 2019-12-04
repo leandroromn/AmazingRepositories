@@ -26,7 +26,7 @@ class RepositoryTableHeaderView: UIView {
     private lazy var typeLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "Starred"
+        label.text = .starred
         label.font = .rounded(fontSize: 26, weight: .heavy)
         label.textColor = .heavyGray
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -37,7 +37,7 @@ class RepositoryTableHeaderView: UIView {
     private lazy var repositoryLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "Repositories"
+        label.text = .repositories
         label.font = .rounded(fontSize: 26, weight: .regular)
         label.textColor = .heavyGray
         label.translatesAutoresizingMaskIntoConstraints = false

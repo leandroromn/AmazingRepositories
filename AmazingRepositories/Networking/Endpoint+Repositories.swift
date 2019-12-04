@@ -17,11 +17,11 @@ enum Sorting: String {
     var title: String {
         switch self {
         case .numberOfStars:
-            return "Starred"
+            return .starred
         case .numberOfForks:
-            return "Forked"
+            return .forked
         case .recency:
-            return "Recent"
+            return .recent
         }
     }
     

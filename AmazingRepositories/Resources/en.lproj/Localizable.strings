@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  AmazingRepositories
+
+  Created by Leandro Romano on 04/12/19.
+  Copyright © 2019 Leandro Romano. All rights reserved.
+*/
+
+"REPOSITORIES" = "Repositories";
+
+"STARRED" = "Starred";
+"FORKED" = "Forked";
+"RECENT" = "Recent";
+
+"REPOSITORIES_FILTER_TITLE" = "Repositories Filter";
+"REPOSITORIES_FILTER_DESCRIPTION" = "Select the filter to display the repositories:";
+
+"RECENCY" = "Recency";
+"NUMBER_OF_STARS" = "Number of Stars";
+"NUMBER_OF_FORKS" = "Number of Forks";
+
+"CANCEL" = "Cancel";
+
+"CREATED_BY" = "Created by";
+"STARS" = "Stars";
+
+"PLEASE_WAIT" = "Please wait...";
+
+"ERROR_TITLE" = "Error";
+"ERROR_DESCRIPTION" = "There's a problem to display the repositories.";
+"TRY_AGAIN" = "Try again";

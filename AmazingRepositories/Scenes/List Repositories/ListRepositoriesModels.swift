@@ -30,7 +30,7 @@ enum ListRepositories {
         init(repository: Repository) {
             self.name = repository.name
             self.stars = repository.stars.abbrevation
-            self.ownerName = "Created by \(repository.owner.name)"
+            self.ownerName = "\(String.createdBy) \(repository.owner.name)"
             self.ownerPhoto = repository.owner.photo
         }
         

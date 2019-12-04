@@ -75,7 +75,7 @@ class RepositoryTableViewCell: UITableViewCell {
     private lazy var repositoryStarsLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "stars"
+        label.text = .stars
         label.font = .rounded(fontSize: 12, weight: .regular)
         label.textColor = .simpleGray
         label.textAlignment = .right
