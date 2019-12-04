@@ -10,7 +10,7 @@ import UIKit
 
 protocol ListRepositoriesBusinessLogic {
     var numberOfRows: Int { get }
-    func cellForRow(at index: Int) -> ListRepositories.ViewModel
+    func cellForRow(at index: Int) -> ListRepositories.ViewModel?
     
     func requestRepositories(sortedBy sorting: Sorting)
     func filterRepositories(sortedBy sorting: Sorting)
@@ -83,7 +83,8 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
         requestRepositories(sortedBy: currentSorting)
     }
     
-    func cellForRow(at index: Int) -> ListRepositories.ViewModel {
+    func cellForRow(at index: Int) -> ListRepositories.ViewModel? {
+        guard index >= 0 && index < numberOfRows else { return nil }
         let repository = repositories[index]
         return ListRepositories.ViewModel(repository: repository)
     }

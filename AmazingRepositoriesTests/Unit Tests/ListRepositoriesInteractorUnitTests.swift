@@ -46,7 +46,7 @@ class ListRepositoriesInteractorUnitTests: QuickSpec {
                         
                         expect(sut.numberOfRows).to(equal(30))
                         expect(sut.currentPage).to(equal(1))
-                        expect(sut.cellForRow(at: 0).name).to(equal("awesome-ios"))
+                        expect(sut.cellForRow(at: 0)?.name).to(equal("awesome-ios"))
                         expect(mockPresenter.hasCalledReloadTableView).to(beTrue())
                         expect(mockPresenter.hasCalledRemoveLoadingState).to(beTrue())
                     }
@@ -57,7 +57,7 @@ class ListRepositoriesInteractorUnitTests: QuickSpec {
                         
                         expect(sut.numberOfRows).to(equal(30))
                         expect(sut.currentPage).to(equal(1))
-                        expect(sut.cellForRow(at: 0).name).to(equal("awesome-ios"))
+                        expect(sut.cellForRow(at: 0)?.name).to(equal("awesome-ios"))
                         expect(mockPresenter.hasCalledReloadTableView).to(beTrue())
                         expect(mockPresenter.hasCalledRemoveLoadingState).to(beTrue())
                         
@@ -66,7 +66,7 @@ class ListRepositoriesInteractorUnitTests: QuickSpec {
                         
                         expect(sut.numberOfRows).to(equal(60))
                         expect(sut.currentPage).to(equal(2))
-                        expect(sut.cellForRow(at: 30).name).to(equal("folding-cell"))
+                        expect(sut.cellForRow(at: 30)?.name).to(equal("folding-cell"))
                         expect(mockPresenter.hasCalledReloadTableView).to(beTrue())
                         expect(mockPresenter.hasCalledRemoveLoadingState).to(beTrue())
                     }
@@ -77,7 +77,7 @@ class ListRepositoriesInteractorUnitTests: QuickSpec {
                         
                         expect(sut.numberOfRows).to(equal(30))
                         expect(sut.currentPage).to(equal(1))
-                        expect(sut.cellForRow(at: 0).name).to(equal("awesome-ios"))
+                        expect(sut.cellForRow(at: 0)?.name).to(equal("awesome-ios"))
                         expect(mockPresenter.hasCalledReloadTableView).to(beTrue())
                         expect(mockPresenter.hasCalledRemoveLoadingState).to(beTrue())
                     }
@@ -88,7 +88,7 @@ class ListRepositoriesInteractorUnitTests: QuickSpec {
                         
                         expect(sut.numberOfRows).to(equal(30))
                         expect(sut.currentPage).to(equal(1))
-                        expect(sut.cellForRow(at: 0).name).to(equal("CodableAlamofire"))
+                        expect(sut.cellForRow(at: 0)?.name).to(equal("CodableAlamofire"))
                         expect(mockPresenter.hasCalledPresentLoadingState).to(beTrue())
                         expect(mockPresenter.hasCalledReloadTableView).to(beTrue())
                         expect(mockPresenter.hasCalledRemoveLoadingState).to(beTrue())

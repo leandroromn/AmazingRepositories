@@ -4,6 +4,9 @@ PODS:
   - iOSSnapshotTestCase/Core (6.2.0)
   - iOSSnapshotTestCase/SwiftSupport (6.2.0):
     - iOSSnapshotTestCase/Core
+  - KIF (3.7.8):
+    - KIF/Core (= 3.7.8)
+  - KIF/Core (3.7.8)
   - Kingfisher (5.10.1):
     - Kingfisher/Core (= 5.10.1)
   - Kingfisher/Core (5.10.1)
@@ -25,6 +28,7 @@ PODS:
   - Quick (2.2.0)
 
 DEPENDENCIES:
+  - KIF (= 3.7.8)
   - Kingfisher (= 5.10.1)
   - Nimble (= 8.0.4)
   - Nimble-Snapshots (= 8.0.0)
@@ -34,6 +38,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - iOSSnapshotTestCase
+    - KIF
     - Kingfisher
     - Nimble
     - Nimble-Snapshots
@@ -42,12 +47,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
+  KIF: 52e1af1a78cf6fe4ec6777b14776f3dd2eccc32e
   Kingfisher: eb36b7dfcc78d60877051c92c119a2865972961a
   Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   Nimble-Snapshots: 8ec63f41ce6c7229a17be9a64edbc123b181f75b
   PromiseKit: 1fdaeb6c0a94a5114fcb814ff3d772b86886ad4e
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
 
-PODFILE CHECKSUM: a426ca95f98fccbb728f5b058579a7c0bc4541cc
+PODFILE CHECKSUM: c43b6c3045b0712c0b20c81e36c310ee8e50bde6
 
 COCOAPODS: 1.8.4

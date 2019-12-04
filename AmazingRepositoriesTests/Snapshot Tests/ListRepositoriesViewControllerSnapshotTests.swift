@@ -59,7 +59,7 @@ class ListRepositoriesViewControllerSnapshotTests: QuickSpec {
                 }
                 
                 expect(interactor.numberOfRows).to(equal(30))
-                expect(interactor.cellForRow(at: 0).name).to(equal("awesome-ios"))
+                expect(interactor.cellForRow(at: 0)?.name).to(equal("awesome-ios"))
                 expect(viewController) == snapshot()
             }
             
@@ -71,7 +71,7 @@ class ListRepositoriesViewControllerSnapshotTests: QuickSpec {
                 
                 viewController.refreshRepositories(UIRefreshControl())
                 expect(interactor.numberOfRows).to(equal(30))
-                expect(interactor.cellForRow(at: 0).name).to(equal("awesome-ios"))
+                expect(interactor.cellForRow(at: 0)?.name).to(equal("awesome-ios"))
                 expect(viewController) == snapshot()
             }
             

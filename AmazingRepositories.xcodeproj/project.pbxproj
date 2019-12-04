@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		91DF841778BF4B3F4B50C022 /* Pods_AmazingRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9E8D068575E5FEC7B838D6 /* Pods_AmazingRepositoriesTests.framework */; };
-		D1734508C20A40C682EA4E41 /* Pods_AmazingRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E061B4592579548B7BA38B /* Pods_AmazingRepositories.framework */; };
+		7D149B194A53B232916CAD92 /* Pods_AmazingRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040D2F8F6F1818C987EDC4A9 /* Pods_AmazingRepositoriesTests.framework */; };
+		7DBBA14F251D64A211D930F9 /* Pods_AmazingRepositories_AmazingRepositoriesFuncionalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42613686746E157142ECBC9F /* Pods_AmazingRepositories_AmazingRepositoriesFuncionalTests.framework */; };
+		D24068B46E541881289705C2 /* Pods_AmazingRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E6D8DCB8B5796867AA444D /* Pods_AmazingRepositories.framework */; };
 		FD1EEEF22396C65800AE5562 /* ListRepositoriesInteractorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1EEEF12396C65800AE5562 /* ListRepositoriesInteractorUnitTests.swift */; };
 		FD1EEEF52396CAF700AE5562 /* MockListRepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1EEEF42396CAF700AE5562 /* MockListRepositoriesPresenter.swift */; };
 		FD1EEEF72396CB1C00AE5562 /* MockListRepositoriesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1EEEF62396CB1C00AE5562 /* MockListRepositoriesWorker.swift */; };
@@ -40,6 +41,8 @@
 		FD7BAB5C23941ABC00B20C01 /* LoadingActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BAB5B23941ABC00B20C01 /* LoadingActivityIndicator.swift */; };
 		FD7BAB5E23941B8200B20C01 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BAB5D23941B8200B20C01 /* UIViewController+Alerts.swift */; };
 		FD7BAB602394209000B20C01 /* EmptyClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BAB5F2394209000B20C01 /* EmptyClosure.swift */; };
+		FD9B33F22397E5A10044943F /* XCTestCase+KIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33F12397E5A10044943F /* XCTestCase+KIF.swift */; };
+		FD9B33F52397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33F42397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift */; };
 		FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */; };
 		FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
@@ -49,6 +52,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FD084BC62397E4E7000DC451 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDF5DFD7238CA34500AB4F92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF5DFDE238CA34500AB4F92;
+			remoteInfo = AmazingRepositories;
+		};
 		FDF5DFF6238CA34700AB4F92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FDF5DFD7238CA34500AB4F92 /* Project object */;
@@ -59,15 +69,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A1DD97A38C567E406AFEA2F /* Pods-AmazingRepositoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		574CC51B16442BCD293C1382 /* Pods-AmazingRepositories-AmazingRepositoriesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories-AmazingRepositoriesUITests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesUITests/Pods-AmazingRepositories-AmazingRepositoriesUITests.release.xcconfig"; sourceTree = "<group>"; };
-		646CE878C649BF4B68A4E254 /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositories_AmazingRepositoriesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		834AB5BD09740475D75E104C /* Pods-AmazingRepositories-AmazingRepositoriesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories-AmazingRepositoriesUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesUITests/Pods-AmazingRepositories-AmazingRepositoriesUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		896ED83FB9C8A9AF6EB52852 /* Pods-AmazingRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
-		C52E26758933316FB180B4F1 /* Pods-AmazingRepositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories.release.xcconfig"; sourceTree = "<group>"; };
-		C7736CE4403DFF40119EE3CC /* Pods-AmazingRepositories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories.debug.xcconfig"; sourceTree = "<group>"; };
-		C8E061B4592579548B7BA38B /* Pods_AmazingRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD9E8D068575E5FEC7B838D6 /* Pods_AmazingRepositoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		040D2F8F6F1818C987EDC4A9 /* Pods_AmazingRepositoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B860351DC6568687C8EC659 /* Pods-AmazingRepositories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories.debug.xcconfig"; sourceTree = "<group>"; };
+		3C1A23AE0C215BB917A3177D /* Pods-AmazingRepositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories.release.xcconfig"; sourceTree = "<group>"; };
+		42613686746E157142ECBC9F /* Pods_AmazingRepositories_AmazingRepositoriesFuncionalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositories_AmazingRepositoriesFuncionalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		538053B561C06FF57DA1A55B /* Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D9F6BDBF82AD315458212B9 /* Pods-AmazingRepositoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		90C5491DA4A6A6B476598E02 /* Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests.debug.xcconfig"; path = "Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		99E6D8DCB8B5796867AA444D /* Pods_AmazingRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD084BC12397E4E7000DC451 /* AmazingRepositoriesFuncionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazingRepositoriesFuncionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD084BC52397E4E7000DC451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD1EEEF12396C65800AE5562 /* ListRepositoriesInteractorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesInteractorUnitTests.swift; sourceTree = "<group>"; };
 		FD1EEEF42396CAF700AE5562 /* MockListRepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListRepositoriesPresenter.swift; sourceTree = "<group>"; };
 		FD1EEEF62396CB1C00AE5562 /* MockListRepositoriesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListRepositoriesWorker.swift; sourceTree = "<group>"; };
@@ -99,8 +110,11 @@
 		FD7BAB5B23941ABC00B20C01 /* LoadingActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingActivityIndicator.swift; sourceTree = "<group>"; };
 		FD7BAB5D23941B8200B20C01 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		FD7BAB5F2394209000B20C01 /* EmptyClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyClosure.swift; sourceTree = "<group>"; };
+		FD9B33F12397E5A10044943F /* XCTestCase+KIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+KIF.swift"; sourceTree = "<group>"; };
+		FD9B33F42397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesViewControllerFunctionalTests.swift; sourceTree = "<group>"; };
 		FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableHeaderView.swift; sourceTree = "<group>"; };
+		FDCE34FC1B2428806C26A682 /* Pods-AmazingRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,11 +126,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FD084BBE2397E4E7000DC451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DBBA14F251D64A211D930F9 /* Pods_AmazingRepositories_AmazingRepositoriesFuncionalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDF5DFDC238CA34500AB4F92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1734508C20A40C682EA4E41 /* Pods_AmazingRepositories.framework in Frameworks */,
+				D24068B46E541881289705C2 /* Pods_AmazingRepositories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,34 +146,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91DF841778BF4B3F4B50C022 /* Pods_AmazingRepositoriesTests.framework in Frameworks */,
+				7D149B194A53B232916CAD92 /* Pods_AmazingRepositoriesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CE01CD236B0D32D838C9133 /* Frameworks */ = {
+		48164A95408A767F7B335EB3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C8E061B4592579548B7BA38B /* Pods_AmazingRepositories.framework */,
-				646CE878C649BF4B68A4E254 /* Pods_AmazingRepositories_AmazingRepositoriesUITests.framework */,
-				DD9E8D068575E5FEC7B838D6 /* Pods_AmazingRepositoriesTests.framework */,
+				3B860351DC6568687C8EC659 /* Pods-AmazingRepositories.debug.xcconfig */,
+				3C1A23AE0C215BB917A3177D /* Pods-AmazingRepositories.release.xcconfig */,
+				90C5491DA4A6A6B476598E02 /* Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests.debug.xcconfig */,
+				538053B561C06FF57DA1A55B /* Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests.release.xcconfig */,
+				8D9F6BDBF82AD315458212B9 /* Pods-AmazingRepositoriesTests.debug.xcconfig */,
+				FDCE34FC1B2428806C26A682 /* Pods-AmazingRepositoriesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6FAF7D5F350E52CCE157E8E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99E6D8DCB8B5796867AA444D /* Pods_AmazingRepositories.framework */,
+				42613686746E157142ECBC9F /* Pods_AmazingRepositories_AmazingRepositoriesFuncionalTests.framework */,
+				040D2F8F6F1818C987EDC4A9 /* Pods_AmazingRepositoriesTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		48164A95408A767F7B335EB3 /* Pods */ = {
+		FD084BC22397E4E7000DC451 /* AmazingRepositoriesFuncionalTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7736CE4403DFF40119EE3CC /* Pods-AmazingRepositories.debug.xcconfig */,
-				C52E26758933316FB180B4F1 /* Pods-AmazingRepositories.release.xcconfig */,
-				834AB5BD09740475D75E104C /* Pods-AmazingRepositories-AmazingRepositoriesUITests.debug.xcconfig */,
-				574CC51B16442BCD293C1382 /* Pods-AmazingRepositories-AmazingRepositoriesUITests.release.xcconfig */,
-				0A1DD97A38C567E406AFEA2F /* Pods-AmazingRepositoriesTests.debug.xcconfig */,
-				896ED83FB9C8A9AF6EB52852 /* Pods-AmazingRepositoriesTests.release.xcconfig */,
+				FD9B33F02397E5800044943F /* Definitions */,
+				FD9B33F32397E77B0044943F /* Interface Tests */,
+				FD084BC52397E4E7000DC451 /* Info.plist */,
 			);
-			path = Pods;
+			path = AmazingRepositoriesFuncionalTests;
 			sourceTree = "<group>";
 		};
 		FD1EEEF02396C63B00AE5562 /* Unit Tests */ = {
@@ -296,6 +328,22 @@
 			path = Definitions;
 			sourceTree = "<group>";
 		};
+		FD9B33F02397E5800044943F /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				FD9B33F12397E5A10044943F /* XCTestCase+KIF.swift */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		FD9B33F32397E77B0044943F /* Interface Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FD9B33F42397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift */,
+			);
+			path = "Interface Tests";
+			sourceTree = "<group>";
+		};
 		FDAB351C238DFD9E00FACF31 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,9 +361,10 @@
 			children = (
 				FDF5DFE1238CA34600AB4F92 /* AmazingRepositories */,
 				FDF5DFF8238CA34700AB4F92 /* AmazingRepositoriesTests */,
+				FD084BC22397E4E7000DC451 /* AmazingRepositoriesFuncionalTests */,
 				FDF5DFE0238CA34600AB4F92 /* Products */,
 				48164A95408A767F7B335EB3 /* Pods */,
-				3CE01CD236B0D32D838C9133 /* Frameworks */,
+				6FAF7D5F350E52CCE157E8E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -324,6 +373,7 @@
 			children = (
 				FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */,
 				FDF5DFF5238CA34700AB4F92 /* AmazingRepositoriesTests.xctest */,
+				FD084BC12397E4E7000DC451 /* AmazingRepositoriesFuncionalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -358,15 +408,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FD084BC02397E4E7000DC451 /* AmazingRepositoriesFuncionalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD084BCA2397E4E7000DC451 /* Build configuration list for PBXNativeTarget "AmazingRepositoriesFuncionalTests" */;
+			buildPhases = (
+				344A49F5B4E5FEC2A4A1EE99 /* [CP] Check Pods Manifest.lock */,
+				FD084BBD2397E4E7000DC451 /* Sources */,
+				FD084BBE2397E4E7000DC451 /* Frameworks */,
+				FD084BBF2397E4E7000DC451 /* Resources */,
+				37EC5716A5A10F030FD79FBF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD084BC72397E4E7000DC451 /* PBXTargetDependency */,
+			);
+			name = AmazingRepositoriesFuncionalTests;
+			productName = AmazingRepositoriesFuncionalTests;
+			productReference = FD084BC12397E4E7000DC451 /* AmazingRepositoriesFuncionalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FDF5DFDE238CA34500AB4F92 /* AmazingRepositories */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF5E009238CA34700AB4F92 /* Build configuration list for PBXNativeTarget "AmazingRepositories" */;
 			buildPhases = (
-				39DA030860C49C543ED43E80 /* [CP] Check Pods Manifest.lock */,
+				984F73CE14DBC7C7743CEE2E /* [CP] Check Pods Manifest.lock */,
 				FDF5DFDB238CA34500AB4F92 /* Sources */,
 				FDF5DFDC238CA34500AB4F92 /* Frameworks */,
 				FDF5DFDD238CA34500AB4F92 /* Resources */,
-				9BA503F065FCDBB5D427819E /* [CP] Embed Pods Frameworks */,
+				E4D575BC29CC28394C0DBAF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,11 +451,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF5E00C238CA34700AB4F92 /* Build configuration list for PBXNativeTarget "AmazingRepositoriesTests" */;
 			buildPhases = (
-				DEB65E772D605180423CBA07 /* [CP] Check Pods Manifest.lock */,
+				56A206FA9B16409A734AB5F9 /* [CP] Check Pods Manifest.lock */,
 				FDF5DFF1238CA34700AB4F92 /* Sources */,
 				FDF5DFF2238CA34700AB4F92 /* Frameworks */,
 				FDF5DFF3238CA34700AB4F92 /* Resources */,
-				3B19CC8AEFD4FA5275B325B8 /* [CP] Embed Pods Frameworks */,
+				6444E1FA6E870A98B6FFFE78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,6 +477,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Leandro Romano";
 				TargetAttributes = {
+					FD084BC02397E4E7000DC451 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = FDF5DFDE238CA34500AB4F92;
+					};
 					FDF5DFDE238CA34500AB4F92 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -431,11 +505,19 @@
 			targets = (
 				FDF5DFDE238CA34500AB4F92 /* AmazingRepositories */,
 				FDF5DFF4238CA34700AB4F92 /* AmazingRepositoriesTests */,
+				FD084BC02397E4E7000DC451 /* AmazingRepositoriesFuncionalTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FD084BBF2397E4E7000DC451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDF5DFDD238CA34500AB4F92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -461,7 +543,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		39DA030860C49C543ED43E80 /* [CP] Check Pods Manifest.lock */ = {
+		344A49F5B4E5FEC2A4A1EE99 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -476,48 +558,31 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AmazingRepositories-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3B19CC8AEFD4FA5275B325B8 /* [CP] Embed Pods Frameworks */ = {
+		37EC5716A5A10F030FD79FBF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests/Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9BA503F065FCDBB5D427819E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEB65E772D605180423CBA07 /* [CP] Check Pods Manifest.lock */ = {
+		56A206FA9B16409A734AB5F9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -539,9 +604,74 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6444E1FA6E870A98B6FFFE78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		984F73CE14DBC7C7743CEE2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazingRepositories-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D575BC29CC28394C0DBAF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingRepositories/Pods-AmazingRepositories-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FD084BBD2397E4E7000DC451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9B33F22397E5A10044943F /* XCTestCase+KIF.swift in Sources */,
+				FD9B33F52397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDF5DFDB238CA34500AB4F92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -588,6 +718,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FD084BC72397E4E7000DC451 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDF5DFDE238CA34500AB4F92 /* AmazingRepositories */;
+			targetProxy = FD084BC62397E4E7000DC451 /* PBXContainerItemProxy */;
+		};
 		FDF5DFF7238CA34700AB4F92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FDF5DFDE238CA34500AB4F92 /* AmazingRepositories */;
@@ -607,6 +742,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FD084BC82397E4E7000DC451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90C5491DA4A6A6B476598E02 /* Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmazingRepositoriesFuncionalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leandroromano.AmazingRepositoriesFuncionalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazingRepositories.app/AmazingRepositories";
+			};
+			name = Debug;
+		};
+		FD084BC92397E4E7000DC451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538053B561C06FF57DA1A55B /* Pods-AmazingRepositories-AmazingRepositoriesFuncionalTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmazingRepositoriesFuncionalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leandroromano.AmazingRepositoriesFuncionalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazingRepositories.app/AmazingRepositories";
+			};
+			name = Release;
+		};
 		FDF5E007238CA34700AB4F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -723,7 +898,7 @@
 		};
 		FDF5E00A238CA34700AB4F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7736CE4403DFF40119EE3CC /* Pods-AmazingRepositories.debug.xcconfig */;
+			baseConfigurationReference = 3B860351DC6568687C8EC659 /* Pods-AmazingRepositories.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -742,7 +917,7 @@
 		};
 		FDF5E00B238CA34700AB4F92 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C52E26758933316FB180B4F1 /* Pods-AmazingRepositories.release.xcconfig */;
+			baseConfigurationReference = 3C1A23AE0C215BB917A3177D /* Pods-AmazingRepositories.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -761,7 +936,7 @@
 		};
 		FDF5E00D238CA34700AB4F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A1DD97A38C567E406AFEA2F /* Pods-AmazingRepositoriesTests.debug.xcconfig */;
+			baseConfigurationReference = 8D9F6BDBF82AD315458212B9 /* Pods-AmazingRepositoriesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -783,7 +958,7 @@
 		};
 		FDF5E00E238CA34700AB4F92 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 896ED83FB9C8A9AF6EB52852 /* Pods-AmazingRepositoriesTests.release.xcconfig */;
+			baseConfigurationReference = FDCE34FC1B2428806C26A682 /* Pods-AmazingRepositoriesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -806,6 +981,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FD084BCA2397E4E7000DC451 /* Build configuration list for PBXNativeTarget "AmazingRepositoriesFuncionalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD084BC82397E4E7000DC451 /* Debug */,
+				FD084BC92397E4E7000DC451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FDF5DFDA238CA34500AB4F92 /* Build configuration list for PBXProject "AmazingRepositories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
