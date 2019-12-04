@@ -8,43 +8,44 @@
 
 import XCTest
 import KIF
+@testable import AmazingRepositories
 
 class ListRepositoriesViewControllerFunctionalTests: KIFTestCase {
 
     func testDisplayHeaderView_StarredRepositories_FirstOpen() {
-        tester().waitForView(withAccessibilityLabel: "Starred")
-        tester().waitForView(withAccessibilityLabel: "Repositories")
-        tester().waitForView(withAccessibilityLabel: "Repository filter button")
+        tester().waitForView(withAccessibilityLabel: .starred)
+        tester().waitForView(withAccessibilityLabel: .repositories)
+        tester().waitForView(withAccessibilityLabel: .repositoryFilterButton)
     }
     
     func testTapFilterButton_ToFilterRepositories_ByFork() {
-        tester().waitForView(withAccessibilityLabel: "Repository filter button")
-        tester().tapView(withAccessibilityLabel: "Repository filter button")
+        tester().waitForView(withAccessibilityLabel: .repositoryFilterButton)
+        tester().tapView(withAccessibilityLabel: .repositoryFilterButton)
         
-        tester().waitForView(withAccessibilityLabel: "Repositories Filter")
-        tester().tapView(withAccessibilityLabel: "Number of Forks")
+        tester().waitForView(withAccessibilityLabel: .filterTitle)
+        tester().tapView(withAccessibilityLabel: .numberOfForks)
         
-        tester().waitForView(withAccessibilityLabel: "Please wait...")
+        tester().waitForView(withAccessibilityLabel: .pleaseWait)
         
-        tester().waitForView(withAccessibilityLabel: "Forked")
-        tester().waitForView(withAccessibilityLabel: "Repositories")
+        tester().waitForView(withAccessibilityLabel: .forked)
+        tester().waitForView(withAccessibilityLabel: .repositories)
         
-        tester().waitForView(withAccessibilityLabel: "Repository row")
+        tester().waitForView(withAccessibilityLabel: .repositoryRow)
     }
     
     func testTapFilterButton_ToFilterRepositories_ByDate() {
-        tester().waitForView(withAccessibilityLabel: "Repository filter button")
-        tester().tapView(withAccessibilityLabel: "Repository filter button")
+        tester().waitForView(withAccessibilityLabel: .repositoryFilterButton)
+        tester().tapView(withAccessibilityLabel: .repositoryFilterButton)
         
-        tester().waitForView(withAccessibilityLabel: "Repositories Filter")
-        tester().tapView(withAccessibilityLabel: "Recency")
+        tester().waitForView(withAccessibilityLabel: .filterTitle)
+        tester().tapView(withAccessibilityLabel: .recency)
         
-        tester().waitForView(withAccessibilityLabel: "Please wait...")
+        tester().waitForView(withAccessibilityLabel: .pleaseWait)
         
-        tester().waitForView(withAccessibilityLabel: "Recent")
-        tester().waitForView(withAccessibilityLabel: "Repositories")
+        tester().waitForView(withAccessibilityLabel: .recent)
+        tester().waitForView(withAccessibilityLabel: .repositories)
         
-        tester().waitForView(withAccessibilityLabel: "Repository row")
+        tester().waitForView(withAccessibilityLabel: .repositoryRow)
     }
 
 }
