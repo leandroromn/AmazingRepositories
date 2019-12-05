@@ -2,6 +2,27 @@
 # Created by https://www.gitignore.io/api/swift,xcode,macos,cocoapods,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=swift,xcode,macos,cocoapods,visualstudiocode
 
+### fastlane ###
+# fastlane - A streamlined workflow tool for Cocoa deployment
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+# fastlane specific
+fastlane/report.xml
+
+# deliver temporary files
+fastlane/Preview.html
+
+# snapshot generated screenshots
+fastlane/screenshots/**/*.png
+fastlane/screenshots/screenshots.html
+
+# scan temporary files
+fastlane/test_output
+
 ### CocoaPods ###
 ## CocoaPods GitIgnore Template
 
