@@ -1,8 +1,8 @@
 //
-//  ListRepositoriesViewControllerSnapshotTests.swift
+//  LoadingAlertViewSnapshotTests.swift
 //  AmazingRepositoriesTests
 //
-//  Created by Leandro Romano on 03/12/19.
+//  Created by Leandro Romano on 06/12/19.
 //  Copyright © 2019 Leandro Romano. All rights reserved.
 //
 
@@ -11,16 +11,16 @@ import Nimble
 import Nimble_Snapshots
 @testable import AmazingRepositories
 
-class ListRepositoriesViewControllerSnapshotTests: QuickSpec {
-    
+class LoadingAlertViewSnapshotTests: QuickSpec {
+
     override func spec() {
         
-        describe("ListRepositoriesViewControllerSnapshotTests") {
+        describe("LoadingAlertViewSnapshotTests") {
             
-            var dummyViewController: DummyRepositoryTableView!
+            var dummyViewController: DummyLoadingAlertView!
             
             beforeEach {
-                dummyViewController = DummyRepositoryTableView()
+                dummyViewController = DummyLoadingAlertView()
                 dummyViewController.view.translatesAutoresizingMaskIntoConstraints = false
                 
                 let window = UIWindow(frame: UIScreen.main.bounds)
@@ -34,12 +34,12 @@ class ListRepositoriesViewControllerSnapshotTests: QuickSpec {
                 dummyViewController = nil
             }
             
-            it("should present light repository cell") {
+            it("should present loading alert view") {
                 expect(dummyViewController.view) == snapshot()
             }
             
         }
         
     }
-    
+
 }

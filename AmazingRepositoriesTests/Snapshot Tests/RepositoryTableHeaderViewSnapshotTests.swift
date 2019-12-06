@@ -1,8 +1,8 @@
 //
-//  ListRepositoriesViewControllerSnapshotTests.swift
+//  RepositoryTableHeaderViewSnapshotTests.swift
 //  AmazingRepositoriesTests
 //
-//  Created by Leandro Romano on 03/12/19.
+//  Created by Leandro Romano on 05/12/19.
 //  Copyright © 2019 Leandro Romano. All rights reserved.
 //
 
@@ -11,16 +11,16 @@ import Nimble
 import Nimble_Snapshots
 @testable import AmazingRepositories
 
-class ListRepositoriesViewControllerSnapshotTests: QuickSpec {
+class RepositoryTableHeaderViewSnapshotTests: QuickSpec {
     
     override func spec() {
         
-        describe("ListRepositoriesViewControllerSnapshotTests") {
+        describe("RepositoryTableHeaderViewSnapshotTests") {
             
-            var dummyViewController: DummyRepositoryTableView!
+            var dummyViewController: DummyHeaderView!
             
             beforeEach {
-                dummyViewController = DummyRepositoryTableView()
+                dummyViewController = DummyHeaderView()
                 dummyViewController.view.translatesAutoresizingMaskIntoConstraints = false
                 
                 let window = UIWindow(frame: UIScreen.main.bounds)
@@ -34,7 +34,7 @@ class ListRepositoriesViewControllerSnapshotTests: QuickSpec {
                 dummyViewController = nil
             }
             
-            it("should present light repository cell") {
+            it("should present light repository header view") {
                 expect(dummyViewController.view) == snapshot()
             }
             
