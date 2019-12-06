@@ -22,6 +22,8 @@ fastlane/screenshots/screenshots.html
 
 # scan temporary files
 fastlane/test_output
+fastlane/html
+html
 
 ### CocoaPods ###
 ## CocoaPods GitIgnore Template
