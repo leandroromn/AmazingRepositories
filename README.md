@@ -4,6 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/Swift-5.1-orange.svg" />
+    <img src="https://img.shields.io/badge/Xcode-11.2.1-orange.svg" />
     <a href="https://cocoapods.org">
         <img src="https://img.shields.io/badge/cocoapods-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
     </a>
@@ -12,3 +13,5 @@
         <img src="https://img.shields.io/badge/twitter-@leandroromn-blue.svg?style=flat" alt="Twitter: @leandroromn" />
     </a>
 </p>
+
+Welcome to **AmazingRepositories**, a simple repository to list recency, starred and forked repositories on GitHub API's.
