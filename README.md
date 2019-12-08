@@ -24,11 +24,13 @@ AmazingRepository supports light mode and dark mode natively with iOS 13.
     <img src="repository-images/dark-mode.png" width="300" max-width="40%" alt="App with dark mode" />
 </p>
 
-## Repository Filters
+## Repository Filters and Internationalization
 Choose between recency, number of forks or number of stars filters to display repositories.
+Also, you can use AmazingRepositories in English 🇺🇸 or Portuguese 🇧🇷.
 
 <p align="center">
     <img src="https://media.giphy.com/media/XccxxE6tKXVAGRizjm/giphy.gif" width="300" max-width="40%" alt="Repository Filters" />
+    <img src="repository-images/pt-br.png" width="300" max-width="40%" alt="Repository Filters" />
 </p>
 
 ## Architecture and third-party libraries
