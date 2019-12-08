@@ -25,7 +25,7 @@ AmazingRepository supports light mode and dark mode natively with iOS 13.
 </p>
 
 ## Repository Filters and Internationalization
-Choose between recency, number of forks or number of stars filters to display repositories.
+Choose between recency, number of forks or number of stars filters to display repositories.<br/>
 Also, you can use AmazingRepositories in English 🇺🇸 or Portuguese 🇧🇷.
 
 <p align="center">
