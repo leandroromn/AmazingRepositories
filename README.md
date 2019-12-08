@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="amazing-repositories-logo.png" width="600" max-width="90%" alt="AmazingRepositories" />
+    <img src="repository-images/amazing-repositories-logo.png" width="600" max-width="90%" alt="AmazingRepositories" />
 </p>
 
 <p align="center">
@@ -14,4 +14,12 @@
     </a>
 </p>
 
-Welcome to **AmazingRepositories**, a simple repository to list recency, starred and forked repositories on GitHub API's.
+Welcome to **AmazingRepositories**, a simple iOS application to list recency, starred and forked repositories using GitHub API.
+
+## Light and Dark Mode
+AmazingRepository supports light mode and dark mode natively with iOS 13.
+
+<p align="center">
+    <img src="repository-images/light-mode.png" width="300" max-width="40%" alt="AmazingRepositories" />
+    <img src="repository-images/dark-mode.png" width="300" max-width="40%" alt="AmazingRepositories" />
+</p>
