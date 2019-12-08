@@ -20,6 +20,13 @@ Welcome to **AmazingRepositories**, a simple iOS application to list recency, st
 AmazingRepository supports light mode and dark mode natively with iOS 13.
 
 <p align="center">
-    <img src="repository-images/light-mode.png" width="300" max-width="40%" alt="AmazingRepositories" />
-    <img src="repository-images/dark-mode.png" width="300" max-width="40%" alt="AmazingRepositories" />
+    <img src="repository-images/light-mode.png" width="300" max-width="40%" alt="App with light mode" />
+    <img src="repository-images/dark-mode.png" width="300" max-width="40%" alt="App with dark mode" />
+</p>
+
+## Repository Filters
+Choose between recency, number of forks or number of stars filters to display repositories.
+
+<p align="center">
+    <img src="https://media.giphy.com/media/XccxxE6tKXVAGRizjm/giphy.gif" width="300" max-width="40%" alt="Repository Filters" />
 </p>
