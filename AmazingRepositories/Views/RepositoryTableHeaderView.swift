@@ -122,17 +122,17 @@ extension RepositoryTableHeaderView: CustomViewDelegate {
     }
     
     func setupConstraints() {
-        contentView.topAnchor.constraint(equalTo: topAnchor, constant: 24).isActive = true
-        contentView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24).isActive = true
-        contentView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24).isActive = true
+        contentView.topAnchor.constraint(equalTo: topAnchor, constant: .top).isActive = true
+        contentView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: .leading).isActive = true
+        contentView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: .trailing).isActive = true
         
         listView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         listView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        listView.widthAnchor.constraint(equalToConstant: 38).isActive = true
-        listView.heightAnchor.constraint(equalToConstant: 38).isActive = true
+        listView.widthAnchor.constraint(equalToConstant: .filterIconWidth).isActive = true
+        listView.heightAnchor.constraint(equalToConstant: .filterIconHeight).isActive = true
         
-        listImageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        listImageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        listImageView.widthAnchor.constraint(equalToConstant: .filterImageWidth).isActive = true
+        listImageView.heightAnchor.constraint(equalToConstant: .filterImageHeight).isActive = true
         listImageView.centerXAnchor.constraint(equalTo: listView.centerXAnchor).isActive = true
         listImageView.centerYAnchor.constraint(equalTo: listView.centerYAnchor).isActive = true
         

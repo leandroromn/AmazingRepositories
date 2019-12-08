@@ -124,18 +124,18 @@ extension RepositoryTableViewCell: CustomViewDelegate {
     }
     
     func setupConstraints() {
-        secureView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 6).isActive = true
+        secureView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: .cellTop).isActive = true
         secureView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: .leading).isActive = true
         secureView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: .trailing).isActive = true
-        secureView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -6).isActive = true
+        secureView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: .cellBottom).isActive = true
         
-        repositoryPhotoImageView.topAnchor.constraint(equalTo: secureView.topAnchor, constant: 16).isActive = true
-        repositoryPhotoImageView.leadingAnchor.constraint(equalTo: secureView.leadingAnchor, constant: 16).isActive = true
-        repositoryPhotoImageView.widthAnchor.constraint(equalToConstant: 40).isActive = true
-        repositoryPhotoImageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        repositoryPhotoImageView.topAnchor.constraint(equalTo: secureView.topAnchor, constant: .repositoryImageTop).isActive = true
+        repositoryPhotoImageView.leadingAnchor.constraint(equalTo: secureView.leadingAnchor, constant: .repositoryImageLeading).isActive = true
+        repositoryPhotoImageView.widthAnchor.constraint(equalToConstant: .repositoryImageWidth).isActive = true
+        repositoryPhotoImageView.heightAnchor.constraint(equalToConstant: .repositoryImageHeight).isActive = true
         
         repositoryStarsAmountLabel.topAnchor.constraint(equalTo: repositoryPhotoImageView.topAnchor).isActive = true
-        repositoryStarsAmountLabel.trailingAnchor.constraint(equalTo: secureView.trailingAnchor, constant: -16).isActive = true
+        repositoryStarsAmountLabel.trailingAnchor.constraint(equalTo: secureView.trailingAnchor, constant: .repositoryBottomCell).isActive = true
 
         repositoryStarsLabel.topAnchor.constraint(equalTo: repositoryStarsAmountLabel.bottomAnchor).isActive = true
         repositoryStarsLabel.leadingAnchor.constraint(equalTo: repositoryStarsAmountLabel.leadingAnchor).isActive = true
@@ -143,13 +143,13 @@ extension RepositoryTableViewCell: CustomViewDelegate {
         repositoryStarsLabel.bottomAnchor.constraint(equalTo: repositoryOwnerLabel.bottomAnchor).isActive = true
         
         repositoryNameLabel.topAnchor.constraint(equalTo: repositoryPhotoImageView.topAnchor, constant: 2).isActive = true
-        repositoryNameLabel.leadingAnchor.constraint(equalTo: repositoryPhotoImageView.trailingAnchor, constant: 16).isActive = true
+        repositoryNameLabel.leadingAnchor.constraint(equalTo: repositoryPhotoImageView.trailingAnchor, constant: .repositoryTrailingCell).isActive = true
         repositoryNameLabel.trailingAnchor.constraint(equalTo: repositoryStarsAmountLabel.leadingAnchor).isActive = true
         
         repositoryOwnerLabel.topAnchor.constraint(equalTo: repositoryNameLabel.bottomAnchor, constant: 2).isActive = true
         repositoryOwnerLabel.leadingAnchor.constraint(equalTo: repositoryNameLabel.leadingAnchor).isActive = true
         repositoryOwnerLabel.trailingAnchor.constraint(equalTo: repositoryNameLabel.trailingAnchor).isActive = true
-        repositoryOwnerLabel.bottomAnchor.constraint(equalTo: secureView.bottomAnchor, constant: -16).isActive = true
+        repositoryOwnerLabel.bottomAnchor.constraint(equalTo: secureView.bottomAnchor, constant: .repositoryBottomCell).isActive = true
     }
     
     func setupExtraConfigurations() {
