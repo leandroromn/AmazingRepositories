@@ -64,5 +64,5 @@ $ slather coverage --html --show --scheme AmazingRepositories --workspace Amazin
 [Click here](https://github.com/SlatherOrg/slather#installation) to read more and install **Slather** in your machine.
 
 #### Known issues:
-- **Slather**: [Fail test code coverage not found coverage directory. #418](https://github.com/SlatherOrg/slather/issues/418)
+- **Slather**: [Fail test code coverage not found coverage directory. #418](https://github.com/SlatherOrg/slather/issues/418)<br/>
 There's a problem with Fastlane and Slather together. When Slather is executed, the tool cannot find the test coverage directory and returns an error. If this happens to you, run the Slather's command without Fastlane.
