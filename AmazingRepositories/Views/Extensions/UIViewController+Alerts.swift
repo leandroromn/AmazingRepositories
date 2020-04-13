@@ -1,15 +1,6 @@
-//
-//  UIViewController+Alerts.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 01/12/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import UIKit
 
 extension UIViewController {
-    
     func displayLoadingAlert() {
         DispatchQueue.main.async { [weak self] in
             let alert = UIAlertController(title: nil, message: .pleaseWait, preferredStyle: .alert)
@@ -28,5 +19,4 @@ extension UIViewController {
             self?.present(alert, animated: true)
         }
     }
-    
 }

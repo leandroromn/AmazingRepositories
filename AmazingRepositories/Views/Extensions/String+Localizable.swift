@@ -1,15 +1,6 @@
-//
-//  String+Localizable.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 04/12/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import Foundation
 
 extension String {
-    
     static let repositories = NSLocalizedString("REPOSITORIES", comment: "")
     
     static let starred = NSLocalizedString("STARRED", comment: "")
@@ -33,5 +24,4 @@ extension String {
     static let errorTitle = NSLocalizedString("ERROR_TITLE", comment: "")
     static let errorDescription = NSLocalizedString("ERROR_DESCRIPTION", comment: "")
     static let tryAgain = NSLocalizedString("TRY_AGAIN", comment: "")
-    
 }

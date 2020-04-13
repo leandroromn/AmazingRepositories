@@ -1,11 +1,3 @@
-//
-//  ListRepositoriesViewController.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 25/11/19.
-//  Copyright (c) 2019 Leandro Romano. All rights reserved.
-//
-
 import UIKit
 
 protocol ListRepositoriesDisplayLogic: class {
@@ -17,7 +9,6 @@ protocol ListRepositoriesDisplayLogic: class {
 }
 
 class ListRepositoriesViewController: UITableViewController {
-
     var interactor: ListRepositoriesBusinessLogic?
     var router: (NSObjectProtocol & ListRepositoriesRoutingLogic & ListRepositoriesDataPassing)?
     
@@ -90,11 +81,9 @@ class ListRepositoriesViewController: UITableViewController {
     @objc func refreshRepositories(_ sender: Any) {
         interactor?.requestRepositories(sortedBy: .numberOfStars)
     }
-    
 }
 
 extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
-    
     func displayLoadingState() {
         displayLoadingAlert()
     }
@@ -125,11 +114,9 @@ extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
             self?.refreshControl?.endRefreshing()
         }
     }
-    
 }
 
 extension ListRepositoriesViewController {
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return interactor?.numberOfRows ?? 0
     }
@@ -147,21 +134,17 @@ extension ListRepositoriesViewController {
         
         return cell
     }
-    
 }
 
 extension ListRepositoriesViewController: UITableViewDataSourcePrefetching {
-    
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         for indexPath in indexPaths {
             interactor?.requestNextPage(index: indexPath.row)
         }
     }
-        
 }
 
 extension ListRepositoriesViewController: RepositoryTableHeaderViewDelegate {
-    
     func changeRepositoriesFilter() {
         let alert = UIAlertController(title: .filterTitle, message: .filterDescription, preferredStyle: .actionSheet)
         alert.accessibilityLabel = .repositoriesFilterAlert
@@ -182,5 +165,4 @@ extension ListRepositoriesViewController: RepositoryTableHeaderViewDelegate {
         
         present(alert, animated: true)
     }
-
 }

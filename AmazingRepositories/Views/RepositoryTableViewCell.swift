@@ -1,21 +1,11 @@
-//
-//  RepositoryTableViewCell.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 25/11/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import UIKit
 import Kingfisher
 
 class RepositoryTableViewCell: UITableViewCell {
-    
     let primaryColor: UIColor = .black
     
     private lazy var secureView: UIView = {
         let view = UIView()
-        
         view.backgroundColor = .cellGray
         view.layer.cornerRadius = 6
         view.layer.shadowColor = UIColor.shadowGray!.cgColor
@@ -23,65 +13,54 @@ class RepositoryTableViewCell: UITableViewCell {
         view.layer.shadowRadius = 6
         view.layer.shadowOpacity = 0.2
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
     private lazy var repositoryPhotoImageView: UIImageView = {
         let imageView = UIImageView()
-        
         imageView.layer.masksToBounds = false
         imageView.layer.cornerRadius = 20
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        
         return imageView
     }()
     
     private lazy var repositoryNameLabel: UILabel = {
         let label = UILabel()
-        
         label.font = .rounded(fontSize: 13, weight: .semibold)
         label.textColor = .mediumGray
         label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     
     private lazy var repositoryOwnerLabel: UILabel = {
         let label = UILabel()
-        
         label.font = .rounded(fontSize: 13, weight: .regular)
         label.textColor = .simpleGray
         label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     
     private lazy var repositoryStarsAmountLabel: UILabel = {
         let label = UILabel()
-        
         label.font = .rounded(fontSize: 13, weight: .bold)
         label.textColor = .heavyGray
         label.textAlignment = .right
         label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     
     private lazy var repositoryStarsLabel: UILabel = {
         let label = UILabel()
-        
         label.text = .stars
         label.font = .rounded(fontSize: 12, weight: .regular)
         label.textColor = .simpleGray
         label.textAlignment = .right
         label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     
@@ -108,11 +87,9 @@ class RepositoryTableViewCell: UITableViewCell {
         super.traitCollectionDidChange(previousTraitCollection)
         secureView.layer.shadowColor = UIColor.shadowGray!.cgColor
     }
-    
 }
 
 extension RepositoryTableViewCell: CustomViewDelegate {
-    
     func setupViews() {
         contentView.addSubview(secureView)
         
@@ -156,5 +133,4 @@ extension RepositoryTableViewCell: CustomViewDelegate {
         selectionStyle = .none
         backgroundColor = .clear
     }
-    
 }

@@ -1,16 +1,7 @@
-//
-//  MockListRepositoriesPresenter.swift
-//  AmazingRepositoriesTests
-//
-//  Created by Leandro Romano on 03/12/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import Foundation
 @testable import AmazingRepositories
 
 class MockListRepositoriesPresenter: ListRepositoriesPresentationLogic {
-    
     var hasCalledPresentLoadingState = false
     var hasCalledRemoveLoadingState = false
     var hasCalledPresentSortingTitle = false
@@ -36,5 +27,4 @@ class MockListRepositoriesPresenter: ListRepositoriesPresentationLogic {
     func reloadTableView() {
         hasCalledReloadTableView = true
     }
-    
 }

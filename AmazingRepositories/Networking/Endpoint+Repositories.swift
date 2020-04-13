@@ -1,15 +1,6 @@
-//
-//  Endpoint+Repositories.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 25/11/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import Foundation
 
 enum Sorting: String {
-    
     case numberOfStars = "stars"
     case numberOfForks = "forks"
     case recency = "updated"
@@ -24,11 +15,9 @@ enum Sorting: String {
             return .recent
         }
     }
-    
 }
 
 extension Endpoint {
-    
     static func search(sortedBy sorting: Sorting, page: Int) -> Endpoint {
         Endpoint(
             path: "/search/repositories",
@@ -40,5 +29,4 @@ extension Endpoint {
             ]
         )
     }
-    
 }

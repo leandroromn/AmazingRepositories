@@ -1,17 +1,8 @@
-//
-//  ListRepositoriesViewControllerFunctionalTests.swift
-//  AmazingRepositoriesFuncionalTests
-//
-//  Created by Leandro Romano on 04/12/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import XCTest
 import KIF
 @testable import AmazingRepositories
 
 class ListRepositoriesViewControllerFunctionalTests: KIFTestCase {
-
     func testDisplayHeaderView_StarredRepositories_FirstOpen() {
         tester().waitForView(withAccessibilityLabel: .starred)
         tester().waitForView(withAccessibilityLabel: .repositories)
@@ -47,5 +38,4 @@ class ListRepositoriesViewControllerFunctionalTests: KIFTestCase {
         
         tester().waitForView(withAccessibilityLabel: .repositoryRow)
     }
-
 }

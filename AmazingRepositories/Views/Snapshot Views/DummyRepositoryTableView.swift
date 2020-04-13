@@ -1,15 +1,6 @@
-//
-//  DummyRepositoryTableView.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 05/12/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import UIKit
 
 class DummyRepositoryTableView: UITableViewController {
-    
     var dummyRepositories = [
         Repository(name: "AmazingRepositories", stars: 999, owner: Owner(name: "Romano", photo: "a-valid-photo")),
         Repository(name: "AmazingRepositories", stars: 999, owner: Owner(name: "Romano", photo: "a-valid-photo")),
@@ -44,5 +35,4 @@ class DummyRepositoryTableView: UITableViewController {
         
         return UITableViewCell()
     }
-    
 }

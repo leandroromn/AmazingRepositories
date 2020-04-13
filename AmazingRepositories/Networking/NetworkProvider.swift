@@ -1,16 +1,7 @@
-//
-//  NetworkProvider.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 25/11/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import Foundation
 import PromiseKit
 
 struct NetworkProvider {
-    
     private init() { }
     
     static let shared = NetworkProvider()
@@ -50,5 +41,4 @@ struct NetworkProvider {
             return .unknownError
         }
     }
-    
 }

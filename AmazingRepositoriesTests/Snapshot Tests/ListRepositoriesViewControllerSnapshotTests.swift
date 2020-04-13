@@ -1,22 +1,11 @@
-//
-//  ListRepositoriesViewControllerSnapshotTests.swift
-//  AmazingRepositoriesTests
-//
-//  Created by Leandro Romano on 03/12/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import Quick
 import Nimble
 import Nimble_Snapshots
 @testable import AmazingRepositories
 
 class ListRepositoriesViewControllerSnapshotTests: QuickSpec {
-    
     override func spec() {
-        
         describe("ListRepositoriesViewControllerSnapshotTests") {
-            
             var dummyViewController: DummyRepositoryTableView!
             
             beforeEach {
@@ -36,10 +25,7 @@ class ListRepositoriesViewControllerSnapshotTests: QuickSpec {
             
             it("should present light repository cell") {
                 expect(dummyViewController.view) == snapshot()
-            }
-            
+            }   
         }
-        
     }
-    
 }

@@ -1,17 +1,8 @@
-//
-//  MockListRepositoriesWorker.swift
-//  AmazingRepositoriesTests
-//
-//  Created by Leandro Romano on 03/12/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import Foundation
 import PromiseKit
 @testable import AmazingRepositories
 
 class MockListRepositoriesWorker: ListRepositoriesNetworkLogic {
-    
     var returnType: ReturnTypes = .success(type: .numberOfStars, page: 1)
     
     func searchRepositories(sortedBy sorting: Sorting, page: Int) -> Promise<ListRepositories.Response> {
@@ -31,5 +22,4 @@ class MockListRepositoriesWorker: ListRepositoriesNetworkLogic {
             return Promise { seal in seal.reject(NetworkError.badUrl) }
         }
     }
-    
 }

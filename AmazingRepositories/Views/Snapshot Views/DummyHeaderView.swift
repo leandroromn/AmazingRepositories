@@ -1,20 +1,9 @@
-//
-//  DummyHeaderView.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 05/12/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import UIKit
 
 class DummyHeaderView: UIViewController {
-
     private lazy var headerView: RepositoryTableHeaderView = {
         let view = RepositoryTableHeaderView()
-        
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
@@ -34,5 +23,4 @@ class DummyHeaderView: UIViewController {
             headerView.heightAnchor.constraint(equalToConstant: 120)
         ])
     }
-    
 }

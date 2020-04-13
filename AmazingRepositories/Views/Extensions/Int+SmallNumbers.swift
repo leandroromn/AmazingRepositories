@@ -1,15 +1,6 @@
-//
-//  Int+SmallNumbers.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 28/11/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import Foundation
 
 extension Int {
-
     var abbrevation: String {
         let numFormatter = NumberFormatter()
 
@@ -40,5 +31,4 @@ extension Int {
 
         return numFormatter.string(from: NSNumber (value:value))!
     }
-
 }

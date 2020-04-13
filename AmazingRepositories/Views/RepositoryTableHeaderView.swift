@@ -1,11 +1,3 @@
-//
-//  RepositoryTableHeaderView.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 26/11/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import UIKit
 
 protocol RepositoryTableHeaderViewDelegate: class {
@@ -13,41 +5,33 @@ protocol RepositoryTableHeaderViewDelegate: class {
 }
 
 class RepositoryTableHeaderView: UIView {
-
     private lazy var contentView: UIView = {
         let view = UIView()
-        
         view.alpha = 0
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
     private lazy var typeLabel: UILabel = {
         let label = UILabel()
-        
         label.text = .starred
         label.font = .rounded(fontSize: 26, weight: .heavy)
         label.textColor = .heavyGray
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     
     private lazy var repositoryLabel: UILabel = {
         let label = UILabel()
-        
         label.text = .repositories
         label.font = .rounded(fontSize: 26, weight: .regular)
         label.textColor = .heavyGray
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     
     private lazy var listView: UIView = {
         let view = UIView()
-
         view.backgroundColor = .veryLightGray
         view.layer.borderWidth = 3
         view.layer.borderColor = UIColor.veryLightGray!.cgColor
@@ -56,26 +40,21 @@ class RepositoryTableHeaderView: UIView {
         view.clipsToBounds = true
         view.accessibilityLabel = .repositoryFilterButton
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
     private lazy var listImageView: UIImageView = {
         let imageView = UIImageView()
-        
         imageView.image = UIImage(systemName: "list.bullet")
         imageView.tintColor = .heavyGray
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        
         return imageView
     }()
     
     private lazy var separatorView: UIView = {
         let view = UIView()
-        
         view.backgroundColor = .veryLightGray
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
@@ -105,11 +84,9 @@ class RepositoryTableHeaderView: UIView {
     @objc private func changeFilter() {
         delegate?.changeRepositoriesFilter()
     }
-    
 }
 
 extension RepositoryTableHeaderView: CustomViewDelegate {
-    
     func setupViews() {
         addSubview(contentView)
         
@@ -163,5 +140,4 @@ extension RepositoryTableHeaderView: CustomViewDelegate {
         
         listView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(changeFilter)))
     }
-    
 }

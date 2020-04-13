@@ -1,15 +1,6 @@
-//
-//  Endpoint.swift
-//  AmazingRepositories
-//
-//  Created by Leandro Romano on 25/11/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import Foundation
 
 struct Endpoint {
-    
     let path: String
     let queryItems: [URLQueryItem]
     
@@ -21,5 +12,4 @@ struct Endpoint {
         components.queryItems = queryItems
         return components.url
     }
-    
 }

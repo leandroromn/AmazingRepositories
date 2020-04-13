@@ -1,11 +1,3 @@
-//
-//  ListRepositoriesInteractorUnitTests.swift
-//  AmazingRepositoriesTests
-//
-//  Created by Leandro Romano on 03/12/19.
-//  Copyright © 2019 Leandro Romano. All rights reserved.
-//
-
 import XCTest
 import Quick
 import Nimble
@@ -13,7 +5,6 @@ import PromiseKit
 @testable import AmazingRepositories
 
 class ListRepositoriesInteractorUnitTests: QuickSpec {
-    
     override func spec() {
         super.spec()
         
@@ -165,5 +156,4 @@ class ListRepositoriesInteractorUnitTests: QuickSpec {
         }
         
     }
-
 }
