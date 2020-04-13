@@ -54,7 +54,6 @@
 		FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */; };
 		FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
-		FDF5DFE5238CA34600AB4F92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
 		FDF5DFEF238CA34700AB4F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -135,7 +134,6 @@
 		FDCE34FC1B2428806C26A682 /* Pods-AmazingRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDF5DFEE238CA34700AB4F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDF5DFF0238CA34700AB4F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -272,7 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */,
-				FDF5DFE4238CA34600AB4F92 /* SceneDelegate.swift */,
 			);
 			path = Bootstrap;
 			sourceTree = "<group>";
@@ -751,7 +748,6 @@
 				FD31D9F3238CB92900FAE610 /* RepositoryTableViewCell.swift in Sources */,
 				FD83305D2399F50C001A675E /* DummyRepositoryTableView.swift in Sources */,
 				FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */,
-				FDF5DFE5238CA34600AB4F92 /* SceneDelegate.swift in Sources */,
 				FD31D9EB238CA95C00FAE610 /* NetworkError.swift in Sources */,
 				FD31D9E9238CA8F100FAE610 /* NetworkProvider.swift in Sources */,
 				FD60EE60239074CD008701C5 /* UIFont+Theme.swift in Sources */,
