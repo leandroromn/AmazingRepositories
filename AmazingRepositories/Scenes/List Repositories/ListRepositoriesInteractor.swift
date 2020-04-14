@@ -8,11 +8,14 @@ protocol ListRepositoriesBusinessLogic {
     func filterRepositories(sortedBy sorting: Sorting)
     func requestNextPage(index: Int)
     func refreshRepositories()
+    func didSelectRow(at index: Int)
 }
 
 protocol ListRepositoriesDataStore {
     var currentPage: Int { get }
     var currentSorting: Sorting { get }
+    var author: String? { get }
+    var repository: String? { get }
 }
 
 class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositoriesDataStore {
@@ -22,6 +25,8 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
     var pageSize: Int = 30
     var currentPage: Int = 1
     var currentSorting: Sorting = .numberOfStars
+    var author: String?
+    var repository: String?
     
     init(worker: ListRepositoriesNetworkLogic = ListRepositoriesWorker()) {
         self.worker = worker
@@ -82,12 +87,24 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
     }
     
     func cellForRow(at index: Int) -> ListRepositories.ViewModel? {
-        guard index >= 0 && index < numberOfRows else { return nil }
-        let repository = repositories[index]
+        guard let repository = getRepositoryFromList(at: index) else { return nil }
         return ListRepositories.ViewModel(repository: repository)
     }
     
     private func resetCurrentPage() {
         currentPage = 1
+    }
+
+    func didSelectRow(at index: Int) {
+        if let repository = getRepositoryFromList(at: index) {
+            self.author = repository.owner.name
+            self.repository = repository.name
+            presenter?.presentPullRequests()
+        }
+    }
+
+    private func getRepositoryFromList(at index: Int) -> Repository? {
+        guard index >= 0 && index < numberOfRows else { return nil }
+        return repositories[index]
     }
 }

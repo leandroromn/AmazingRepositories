@@ -6,6 +6,7 @@ protocol ListRepositoriesPresentationLogic {
     func presentSortingTitle(currentSorting: Sorting)
     func presentError(_ error: Error)
     func reloadTableView()
+    func presentPullRequests()
 }
 
 class ListRepositoriesPresenter: ListRepositoriesPresentationLogic {
@@ -29,5 +30,9 @@ class ListRepositoriesPresenter: ListRepositoriesPresentationLogic {
     
     func reloadTableView() {
         viewController?.reloadTableView()
+    }
+
+    func presentPullRequests() {
+        viewController?.displayPullRequests()
     }
 }

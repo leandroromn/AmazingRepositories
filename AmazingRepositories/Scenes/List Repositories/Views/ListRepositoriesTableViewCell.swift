@@ -186,7 +186,6 @@ extension ListRepositoriesTableViewCell: CustomViewDelegate {
     }
     
     func setupExtraConfigurations() {
-        selectionStyle = .none
         backgroundColor = .clear
     }
 }

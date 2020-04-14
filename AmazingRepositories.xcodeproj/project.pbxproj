@@ -60,6 +60,10 @@
 		FDEF237D2445D5E800FAE642 /* ListPullRequestsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23772445D5E800FAE642 /* ListPullRequestsModels.swift */; };
 		FDEF237E2445D5E800FAE642 /* ListPullRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23782445D5E800FAE642 /* ListPullRequestsViewController.swift */; };
 		FDEF237F2445D5E800FAE642 /* ListPullRequestsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23792445D5E800FAE642 /* ListPullRequestsInteractor.swift */; };
+		FDEF23812445DF1F00FAE642 /* Endpoint+PullRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23802445DF1F00FAE642 /* Endpoint+PullRequests.swift */; };
+		FDEF23842445E2C100FAE642 /* ListPullRequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23832445E2C100FAE642 /* ListPullRequestsView.swift */; };
+		FDEF23862445EA5E00FAE642 /* ListPullRequestsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23852445EA5E00FAE642 /* ListPullRequestsHeaderView.swift */; };
+		FDEF23882445ED6C00FAE642 /* ListPullRequestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23872445ED6C00FAE642 /* ListPullRequestsTableViewCell.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
 		FDF5DFEF238CA34700AB4F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */; };
@@ -146,6 +150,10 @@
 		FDEF23772445D5E800FAE642 /* ListPullRequestsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsModels.swift; sourceTree = "<group>"; };
 		FDEF23782445D5E800FAE642 /* ListPullRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsViewController.swift; sourceTree = "<group>"; };
 		FDEF23792445D5E800FAE642 /* ListPullRequestsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsInteractor.swift; sourceTree = "<group>"; };
+		FDEF23802445DF1F00FAE642 /* Endpoint+PullRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+PullRequests.swift"; sourceTree = "<group>"; };
+		FDEF23832445E2C100FAE642 /* ListPullRequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsView.swift; sourceTree = "<group>"; };
+		FDEF23852445EA5E00FAE642 /* ListPullRequestsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsHeaderView.swift; sourceTree = "<group>"; };
+		FDEF23872445ED6C00FAE642 /* ListPullRequestsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsTableViewCell.swift; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -327,6 +335,7 @@
 			children = (
 				FD31D9E6238CA83600FAE610 /* Endpoint.swift */,
 				FD31D9EC238CAA1700FAE610 /* Endpoint+Repositories.swift */,
+				FDEF23802445DF1F00FAE642 /* Endpoint+PullRequests.swift */,
 				FD31D9EA238CA95C00FAE610 /* NetworkError.swift */,
 				FD31D9E8238CA8F100FAE610 /* NetworkProvider.swift */,
 			);
@@ -429,6 +438,7 @@
 		FDEF23732445D5BA00FAE642 /* List Pull Requests */ = {
 			isa = PBXGroup;
 			children = (
+				FDEF23822445E2BB00FAE642 /* Views */,
 				FDEF23762445D5E800FAE642 /* ListPullRequestsRouter.swift */,
 				FDEF23772445D5E800FAE642 /* ListPullRequestsModels.swift */,
 				FDEF23752445D5E800FAE642 /* ListPullRequestsWorker.swift */,
@@ -437,6 +447,16 @@
 				FDEF23782445D5E800FAE642 /* ListPullRequestsViewController.swift */,
 			);
 			path = "List Pull Requests";
+			sourceTree = "<group>";
+		};
+		FDEF23822445E2BB00FAE642 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDEF23832445E2C100FAE642 /* ListPullRequestsView.swift */,
+				FDEF23852445EA5E00FAE642 /* ListPullRequestsHeaderView.swift */,
+				FDEF23872445ED6C00FAE642 /* ListPullRequestsTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FDF5DFD6238CA34500AB4F92 = {
@@ -762,12 +782,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEF23862445EA5E00FAE642 /* ListPullRequestsHeaderView.swift in Sources */,
 				FDEF237224454C2300FAE642 /* Sequence+Sorted.swift in Sources */,
 				FD9B33FE2397F99B0044943F /* String+Localizable.swift in Sources */,
 				FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */,
 				FDEF237E2445D5E800FAE642 /* ListPullRequestsViewController.swift in Sources */,
 				FD8330612399F9C8001A675E /* DummyHeaderView.swift in Sources */,
 				FD31D9DF238CA75100FAE610 /* ListRepositoriesPresenter.swift in Sources */,
+				FDEF23882445ED6C00FAE642 /* ListPullRequestsTableViewCell.swift in Sources */,
 				FDEF236E24453B8600FAE642 /* CGFloat+Metrics.swift in Sources */,
 				FDEF237F2445D5E800FAE642 /* ListPullRequestsInteractor.swift in Sources */,
 				FD31D9E7238CA83600FAE610 /* Endpoint.swift in Sources */,
@@ -777,7 +799,9 @@
 				FDEF237D2445D5E800FAE642 /* ListPullRequestsModels.swift in Sources */,
 				FD31D9E2238CA75100FAE610 /* ListRepositoriesModels.swift in Sources */,
 				FD7BAB602394209000B20C01 /* EmptyClosure.swift in Sources */,
+				FDEF23812445DF1F00FAE642 /* Endpoint+PullRequests.swift in Sources */,
 				FDAB3520238E157300FACF31 /* ListRepositoriesTableHeaderView.swift in Sources */,
+				FDEF23842445E2C100FAE642 /* ListPullRequestsView.swift in Sources */,
 				FD60EE642390A5E1008701C5 /* Int+SmallNumbers.swift in Sources */,
 				FD31D9E1238CA75100FAE610 /* ListRepositoriesRouter.swift in Sources */,
 				FD31D9F1238CB8EA00FAE610 /* CustomViewDelegate.swift in Sources */,

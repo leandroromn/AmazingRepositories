@@ -1,8 +1,6 @@
 import UIKit
 
-@objc protocol ListPullRequestsRoutingLogic {
-    
-}
+@objc protocol ListPullRequestsRoutingLogic { }
 
 protocol ListPullRequestsDataPassing {
     var dataStore: ListPullRequestsDataStore? { get }

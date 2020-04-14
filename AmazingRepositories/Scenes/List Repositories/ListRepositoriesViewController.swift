@@ -6,6 +6,7 @@ protocol ListRepositoriesDisplayLogic: class {
     func displaySortingTitle(_ title: String)
     func displayError(_ errorMessage: String)
     func reloadTableView()
+    func displayPullRequests()
 }
 
 class ListRepositoriesViewController: UITableViewController {
@@ -48,11 +49,10 @@ class ListRepositoriesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupTableView()
         setupRefreshControl()
         setupView()
-        
+
         interactor?.filterRepositories(sortedBy: .numberOfStars)
     }
     
@@ -115,6 +115,10 @@ extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
             self?.refreshControl?.endRefreshing()
         }
     }
+
+    func displayPullRequests() {
+        router?.routeToPullRequests()
+    }
 }
 
 extension ListRepositoriesViewController {
@@ -134,6 +138,11 @@ extension ListRepositoriesViewController {
         cell.accessibilityLabel = .repositoryRow
         
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        interactor?.didSelectRow(at: indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
