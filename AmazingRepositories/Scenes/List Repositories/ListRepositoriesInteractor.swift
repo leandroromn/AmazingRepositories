@@ -45,14 +45,21 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
     func filterRepositories(sortedBy sorting: Sorting) {
         resetCurrentPage()
         repositories.removeAll(keepingCapacity: true)
-        
+
         presenter?.presentLoadingState()
         requestRepositories(sortedBy: sorting)
     }
     
     private func handleRequestSuccess(_ response: ListRepositories.Response) {
         guard let repositories = response.repositories else { return }
-        self.repositories.append(contentsOf: repositories.sorted(by: >))
+
+        if currentSorting == .numberOfForks {
+            self.repositories.append(contentsOf: repositories.sorted(by: \.forks))
+        } else if currentSorting == .numberOfStars {
+            self.repositories.append(contentsOf: repositories.sorted(by: \.stars))
+        } else {
+            self.repositories.append(contentsOf: repositories)
+        }
         
         presenter?.presentSortingTitle(currentSorting: currentSorting)
         presenter?.reloadTableView()

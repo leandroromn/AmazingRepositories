@@ -53,6 +53,7 @@
 		FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */; };
 		FDAB3520238E157300FACF31 /* ListRepositoriesTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* ListRepositoriesTableHeaderView.swift */; };
 		FDEF236E24453B8600FAE642 /* CGFloat+Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF236D24453B8600FAE642 /* CGFloat+Metrics.swift */; };
+		FDEF237224454C2300FAE642 /* Sequence+Sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF237124454C2300FAE642 /* Sequence+Sorted.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
 		FDF5DFEF238CA34700AB4F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */; };
@@ -132,6 +133,7 @@
 		FDAB351F238E157300FACF31 /* ListRepositoriesTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesTableHeaderView.swift; sourceTree = "<group>"; };
 		FDCE34FC1B2428806C26A682 /* Pods-AmazingRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		FDEF236D24453B8600FAE642 /* CGFloat+Metrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Metrics.swift"; sourceTree = "<group>"; };
+		FDEF237124454C2300FAE642 /* Sequence+Sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Sorted.swift"; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -398,6 +400,7 @@
 				FD7BAB5D23941B8200B20C01 /* UIViewController+Alerts.swift */,
 				FD9B33FD2397F99B0044943F /* String+Localizable.swift */,
 				FD9B33FF239803440044943F /* String+AccessibilityIdentifiers.swift */,
+				FDEF237124454C2300FAE642 /* Sequence+Sorted.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -733,6 +736,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEF237224454C2300FAE642 /* Sequence+Sorted.swift in Sources */,
 				FD9B33FE2397F99B0044943F /* String+Localizable.swift in Sources */,
 				FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */,
 				FD8330612399F9C8001A675E /* DummyHeaderView.swift in Sources */,
