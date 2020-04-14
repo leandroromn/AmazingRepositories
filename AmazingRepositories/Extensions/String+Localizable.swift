@@ -29,4 +29,5 @@ extension String {
     static let noPullRequests = NSLocalizedString("NO_PULLREQUESTS", comment: "")
     static let forRepository = NSLocalizedString("FOR_REPOSITORY", comment: "")
     static let createdAt = NSLocalizedString("CREATED_AT", comment: "")
+    static let errorState = NSLocalizedString("ERROR_STATE", comment: "")
 }

@@ -26,6 +26,9 @@ class ListPullRequestsInteractor: ListPullRequestsBusinessLogic, ListPullRequest
             .searchPullRequests(author: author, repository: repository)
             .done(handleRequestSuccess)
             .catch(handleRequestFailure)
+            .finally { [weak self] in
+                self?.presenter?.removeLoadingState()
+            }
     }
 
     private func handleRequestSuccess(_ response: [ListPullRequests.PullRequest]) {
@@ -33,6 +36,6 @@ class ListPullRequestsInteractor: ListPullRequestsBusinessLogic, ListPullRequest
     }
 
     private func handleRequestFailure(_ error: Error) {
-        print(error.localizedDescription)
+        presenter?.presentRequestError()
     }
 }

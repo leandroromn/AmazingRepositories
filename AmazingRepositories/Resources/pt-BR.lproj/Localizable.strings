@@ -26,3 +26,4 @@
 "NO_PULLREQUESTS" = "Nenhum Pull Request";
 "FOR_REPOSITORY" = "para %@";
 "CREATED_AT" = "Criado em %@";
+"ERROR_STATE" = "Ocorreu um erro";

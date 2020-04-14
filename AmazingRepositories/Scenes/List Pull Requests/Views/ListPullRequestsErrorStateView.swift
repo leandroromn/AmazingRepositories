@@ -1,10 +1,10 @@
 import UIKit
 
-class ListPullRequestsEmptyStateView: UIView, CustomViewDelegate {
+class ListPullRequestsErrorStateView: UIView, CustomViewDelegate {
     private lazy var iconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.tintColor = .heavyGray
-        imageView.image = UIImage(systemName: "cube.box")
+        imageView.image = UIImage(systemName: "xmark.octagon")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -13,7 +13,7 @@ class ListPullRequestsEmptyStateView: UIView, CustomViewDelegate {
         let label = UILabel()
         label.font = .rounded(fontSize: 20, weight: .bold)
         label.textColor = .heavyGray
-        label.text = .noPullRequests
+        label.text = .errorState
         label.textAlignment = .center
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false

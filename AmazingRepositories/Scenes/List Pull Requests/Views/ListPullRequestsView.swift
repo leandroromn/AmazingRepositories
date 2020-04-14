@@ -4,7 +4,6 @@ class ListPullRequestsView: UIView, CustomViewDelegate {
     private var viewModels = [ListPullRequests.ViewModel]() {
         didSet {
             DispatchQueue.main.async { [weak self] in
-                self?.loadingIndicator.stopAnimating()
                 self?.tableView.reloadData()
             }
         }
@@ -37,6 +36,14 @@ class ListPullRequestsView: UIView, CustomViewDelegate {
         return view
     }()
 
+    private lazy var errorStateView: ListPullRequestsErrorStateView = {
+        let view = ListPullRequestsErrorStateView()
+        view.backgroundColor = .clear
+        view.alpha = 0
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
     private lazy var loadingIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView()
         indicator.color = .heavyGray
@@ -59,6 +66,7 @@ class ListPullRequestsView: UIView, CustomViewDelegate {
         addSubview(tableView)
         addSubview(loadingIndicator)
         addSubview(emptyStateView)
+        addSubview(errorStateView)
     }
 
     func setupConstraints() {
@@ -80,6 +88,11 @@ class ListPullRequestsView: UIView, CustomViewDelegate {
         emptyStateView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         emptyStateView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         emptyStateView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+
+        errorStateView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        errorStateView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        errorStateView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        errorStateView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
 
     func setupExtraConfigurations() {
@@ -91,17 +104,26 @@ class ListPullRequestsView: UIView, CustomViewDelegate {
         if viewModels.isEmpty {
             configureEmptyState()
         } else {
+            emptyStateView.removeFromSuperview()
+            errorStateView.removeFromSuperview()
             self.viewModels = viewModels
         }
     }
 
     private func configureEmptyState() {
-        loadingIndicator.stopAnimating()
         emptyStateView.alpha = 1
+    }
+
+    func configureErrorState() {
+        errorStateView.alpha = 1
     }
 
     func updateRepositoryName(name: String) {
         headerView.repositoryName.text = name
+    }
+
+    func removeLoadingState() {
+        loadingIndicator.stopAnimating()
     }
 }
 

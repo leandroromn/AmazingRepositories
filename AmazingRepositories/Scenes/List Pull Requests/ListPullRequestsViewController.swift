@@ -4,6 +4,7 @@ protocol ListPullRequestsDisplayLogic: class {
     func displayRequestError()
     func displayRepositoryName(name: String)
     func displayPullRequests(_ viewModels: [ListPullRequests.ViewModel])
+    func removeLoadingState()
 }
 
 class ListPullRequestsViewController: UIViewController {
@@ -47,7 +48,7 @@ class ListPullRequestsViewController: UIViewController {
 
 extension ListPullRequestsViewController: ListPullRequestsDisplayLogic {
     func displayRequestError() {
-
+        contentView.configureErrorState()
     }
 
     func displayRepositoryName(name: String) {
@@ -56,5 +57,9 @@ extension ListPullRequestsViewController: ListPullRequestsDisplayLogic {
 
     func displayPullRequests(_ viewModels: [ListPullRequests.ViewModel]) {
         contentView.displayPullRequests(viewModels)
+    }
+
+    func removeLoadingState() {
+        contentView.removeLoadingState()
     }
 }
