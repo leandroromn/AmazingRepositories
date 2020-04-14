@@ -67,9 +67,10 @@ class ListRepositoriesViewController: UITableViewController {
         tableView.backgroundColor = .clear
         tableView.layer.backgroundColor = UIColor.clear.cgColor
         tableView.refreshControl = customRefreshControl
-        tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: RepositoryTableHeaderView.identifier)
+        tableView.register(ListRepositoriesTableViewCell.self,
+                           forCellReuseIdentifier: ListRepositoriesTableViewCell.identifier)
         
-        let tableHeaderView = RepositoryTableHeaderView()
+        let tableHeaderView = ListRepositoriesTableHeaderView()
         tableHeaderView.delegate = self
         tableView.tableHeaderView = tableHeaderView
     }
@@ -98,7 +99,7 @@ extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
     
     func displaySortingTitle(_ title: String) {
         DispatchQueue.main.async { [weak self] in
-            let tableHeaderView = self?.tableView.tableHeaderView as? RepositoryTableHeaderView
+            let tableHeaderView = self?.tableView.tableHeaderView as? ListRepositoriesTableHeaderView
             tableHeaderView?.changeSortingTitle(text: title)
         }
     }
@@ -123,7 +124,7 @@ extension ListRepositoriesViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
-            let cell = tableView.dequeueReusableCell(withIdentifier: RepositoryTableHeaderView.identifier) as? RepositoryTableViewCell,
+            let cell = tableView.dequeueReusableCell(withIdentifier: ListRepositoriesTableViewCell.identifier) as? ListRepositoriesTableViewCell,
             let viewModel = interactor?.cellForRow(at: indexPath.row)
         else {
             return UITableViewCell()
@@ -144,7 +145,7 @@ extension ListRepositoriesViewController: UITableViewDataSourcePrefetching {
     }
 }
 
-extension ListRepositoriesViewController: RepositoryTableHeaderViewDelegate {
+extension ListRepositoriesViewController: ListRepositoriesTableHeaderViewDelegate {
     func changeRepositoriesFilter() {
         let alert = UIAlertController(title: .filterTitle, message: .filterDescription, preferredStyle: .actionSheet)
         alert.accessibilityLabel = .repositoriesFilterAlert

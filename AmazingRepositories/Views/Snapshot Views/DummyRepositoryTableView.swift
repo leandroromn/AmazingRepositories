@@ -16,7 +16,8 @@ class DummyRepositoryTableView: UITableViewController {
         tableView.separatorColor = .clear
         tableView.backgroundColor = .clear
         tableView.layer.backgroundColor = UIColor.clear.cgColor
-        tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: RepositoryTableHeaderView.identifier)
+        tableView.register(ListRepositoriesTableViewCell.self,
+                           forCellReuseIdentifier: ListRepositoriesTableViewCell.identifier)
         
         view.backgroundColor = .backgroundGray
     }
@@ -26,7 +27,7 @@ class DummyRepositoryTableView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: RepositoryTableHeaderView.identifier) as? RepositoryTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: ListRepositoriesTableViewCell.identifier) as? ListRepositoriesTableViewCell {
             let viewModel = ListRepositories.ViewModel(repository: dummyRepositories[indexPath.row])
             cell.configure(viewModel: viewModel)
             cell.accessibilityLabel = .repositoryRow

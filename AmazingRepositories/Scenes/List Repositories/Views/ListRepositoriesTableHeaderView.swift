@@ -1,10 +1,10 @@
 import UIKit
 
-protocol RepositoryTableHeaderViewDelegate: class {
+protocol ListRepositoriesTableHeaderViewDelegate: class {
     func changeRepositoriesFilter()
 }
 
-class RepositoryTableHeaderView: UIView {
+class ListRepositoriesTableHeaderView: UIView {
     private lazy var contentView: UIView = {
         let view = UIView()
         view.alpha = 0
@@ -58,9 +58,7 @@ class RepositoryTableHeaderView: UIView {
         return view
     }()
     
-    static let identifier = "RepositoryCell"
-    
-    weak var delegate: RepositoryTableHeaderViewDelegate?
+    weak var delegate: ListRepositoriesTableHeaderViewDelegate?
     
     init() {
         super.init(frame: .zero)
@@ -86,7 +84,7 @@ class RepositoryTableHeaderView: UIView {
     }
 }
 
-extension RepositoryTableHeaderView: CustomViewDelegate {
+extension ListRepositoriesTableHeaderView: CustomViewDelegate {
     func setupViews() {
         addSubview(contentView)
         

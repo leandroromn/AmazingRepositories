@@ -30,7 +30,7 @@
 		FD31D9EB238CA95C00FAE610 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9EA238CA95C00FAE610 /* NetworkError.swift */; };
 		FD31D9ED238CAA1700FAE610 /* Endpoint+Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9EC238CAA1700FAE610 /* Endpoint+Repositories.swift */; };
 		FD31D9F1238CB8EA00FAE610 /* CustomViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9F0238CB8EA00FAE610 /* CustomViewDelegate.swift */; };
-		FD31D9F3238CB92900FAE610 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9F2238CB92900FAE610 /* RepositoryTableViewCell.swift */; };
+		FD31D9F3238CB92900FAE610 /* ListRepositoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31D9F2238CB92900FAE610 /* ListRepositoriesTableViewCell.swift */; };
 		FD60EE60239074CD008701C5 /* UIFont+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */; };
 		FD60EE642390A5E1008701C5 /* Int+SmallNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD60EE632390A5E1008701C5 /* Int+SmallNumbers.swift */; };
 		FD7A6C8D2396DB4300661637 /* ReturnTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7A6C8C2396DB4300661637 /* ReturnTypes.swift */; };
@@ -51,7 +51,7 @@
 		FD9B33FE2397F99B0044943F /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33FD2397F99B0044943F /* String+Localizable.swift */; };
 		FD9B3400239803440044943F /* String+AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33FF239803440044943F /* String+AccessibilityIdentifiers.swift */; };
 		FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */; };
-		FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */; };
+		FDAB3520238E157300FACF31 /* ListRepositoriesTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* ListRepositoriesTableHeaderView.swift */; };
 		FDEF236E24453B8600FAE642 /* CGFloat+Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF236D24453B8600FAE642 /* CGFloat+Metrics.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
@@ -106,7 +106,7 @@
 		FD31D9EA238CA95C00FAE610 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		FD31D9EC238CAA1700FAE610 /* Endpoint+Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Repositories.swift"; sourceTree = "<group>"; };
 		FD31D9F0238CB8EA00FAE610 /* CustomViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewDelegate.swift; sourceTree = "<group>"; };
-		FD31D9F2238CB92900FAE610 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		FD31D9F2238CB92900FAE610 /* ListRepositoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesTableViewCell.swift; sourceTree = "<group>"; };
 		FD60EE5F239074CD008701C5 /* UIFont+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Theme.swift"; sourceTree = "<group>"; };
 		FD60EE632390A5E1008701C5 /* Int+SmallNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+SmallNumbers.swift"; sourceTree = "<group>"; };
 		FD7A6C8C2396DB4300661637 /* ReturnTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnTypes.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		FD9B33FD2397F99B0044943F /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
 		FD9B33FF239803440044943F /* String+AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AccessibilityIdentifiers.swift"; sourceTree = "<group>"; };
 		FDAB351D238DFDB100FACF31 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
-		FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableHeaderView.swift; sourceTree = "<group>"; };
+		FDAB351F238E157300FACF31 /* ListRepositoriesTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesTableHeaderView.swift; sourceTree = "<group>"; };
 		FDCE34FC1B2428806C26A682 /* Pods-AmazingRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		FDEF236D24453B8600FAE642 /* CGFloat+Metrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Metrics.swift"; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,6 +296,7 @@
 		FD31D9D8238CA73800FAE610 /* List Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				FDEF2370244547A000FAE642 /* Views */,
 				FD31D9DB238CA75100FAE610 /* ListRepositoriesRouter.swift */,
 				FD31D9DC238CA75100FAE610 /* ListRepositoriesModels.swift */,
 				FD31D9DA238CA75100FAE610 /* ListRepositoriesWorker.swift */,
@@ -323,8 +324,6 @@
 				FD83305B2399F4D9001A675E /* Snapshot Views */,
 				FDAB351C238DFD9E00FACF31 /* Extensions */,
 				FD31D9EF238CB8D600FAE610 /* Definitions */,
-				FD31D9F2238CB92900FAE610 /* RepositoryTableViewCell.swift */,
-				FDAB351F238E157300FACF31 /* RepositoryTableHeaderView.swift */,
 				FD7BAB5B23941ABC00B20C01 /* LoadingActivityIndicator.swift */,
 			);
 			path = Views;
@@ -401,6 +400,15 @@
 				FD9B33FF239803440044943F /* String+AccessibilityIdentifiers.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FDEF2370244547A000FAE642 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD31D9F2238CB92900FAE610 /* ListRepositoriesTableViewCell.swift */,
+				FDAB351F238E157300FACF31 /* ListRepositoriesTableHeaderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FDF5DFD6238CA34500AB4F92 = {
@@ -735,7 +743,7 @@
 				FD31D9E3238CA75100FAE610 /* ListRepositoriesViewController.swift in Sources */,
 				FD31D9E2238CA75100FAE610 /* ListRepositoriesModels.swift in Sources */,
 				FD7BAB602394209000B20C01 /* EmptyClosure.swift in Sources */,
-				FDAB3520238E157300FACF31 /* RepositoryTableHeaderView.swift in Sources */,
+				FDAB3520238E157300FACF31 /* ListRepositoriesTableHeaderView.swift in Sources */,
 				FD60EE642390A5E1008701C5 /* Int+SmallNumbers.swift in Sources */,
 				FD31D9E1238CA75100FAE610 /* ListRepositoriesRouter.swift in Sources */,
 				FD31D9F1238CB8EA00FAE610 /* CustomViewDelegate.swift in Sources */,
@@ -745,7 +753,7 @@
 				FD8330682399FC2D001A675E /* DummyLoadingAlertView.swift in Sources */,
 				FD9B3400239803440044943F /* String+AccessibilityIdentifiers.swift in Sources */,
 				FD7BAB5C23941ABC00B20C01 /* LoadingActivityIndicator.swift in Sources */,
-				FD31D9F3238CB92900FAE610 /* RepositoryTableViewCell.swift in Sources */,
+				FD31D9F3238CB92900FAE610 /* ListRepositoriesTableViewCell.swift in Sources */,
 				FD83305D2399F50C001A675E /* DummyRepositoryTableView.swift in Sources */,
 				FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */,
 				FD31D9EB238CA95C00FAE610 /* NetworkError.swift in Sources */,

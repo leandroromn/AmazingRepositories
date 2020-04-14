@@ -1,8 +1,9 @@
 import UIKit
 import Kingfisher
 
-class RepositoryTableViewCell: UITableViewCell {
+class ListRepositoriesTableViewCell: UITableViewCell {
     let primaryColor: UIColor = .black
+    static let identifier = "RepositoryCell"
     
     private lazy var secureView: UIView = {
         let view = UIView()
@@ -102,7 +103,7 @@ class RepositoryTableViewCell: UITableViewCell {
         
         if let photoUrl = URL(string: viewModel.ownerPhoto) {
             photoImageView.kf.setImage(with: photoUrl,
-                                                 placeholder: UIImage(systemName: "person.crop.circle.fill"))
+                                       placeholder: UIImage(systemName: "person.crop.circle.fill"))
         }
     }
     
@@ -112,7 +113,7 @@ class RepositoryTableViewCell: UITableViewCell {
     }
 }
 
-extension RepositoryTableViewCell: CustomViewDelegate {
+extension ListRepositoriesTableViewCell: CustomViewDelegate {
     func setupViews() {
         contentView.addSubview(secureView)
         

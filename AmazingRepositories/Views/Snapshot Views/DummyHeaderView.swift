@@ -1,8 +1,8 @@
 import UIKit
 
 class DummyHeaderView: UIViewController {
-    private lazy var headerView: RepositoryTableHeaderView = {
-        let view = RepositoryTableHeaderView()
+    private lazy var headerView: ListRepositoriesTableHeaderView = {
+        let view = ListRepositoriesTableHeaderView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
