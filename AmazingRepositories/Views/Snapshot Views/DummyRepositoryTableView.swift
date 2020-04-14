@@ -2,9 +2,9 @@ import UIKit
 
 class DummyRepositoryTableView: UITableViewController {
     var dummyRepositories = [
-        Repository(name: "AmazingRepositories", stars: 999, forks: 10, owner: Owner(name: "Romano", photo: "a-valid-photo")),
-        Repository(name: "AmazingRepositories", stars: 999, forks: 10, owner: Owner(name: "Romano", photo: "a-valid-photo")),
-        Repository(name: "AmazingRepositories", stars: 999, forks: 10, owner: Owner(name: "Romano", photo: "a-valid-photo")),
+        Repository(name: "AmazingRepositories", description: "AmazingRepositories Description", stars: 999, forks: 10, owner: Owner(name: "Romano", photo: "a-valid-photo")),
+        Repository(name: "AmazingRepositories", description: "AmazingRepositories Description", stars: 999, forks: 10, owner: Owner(name: "Romano", photo: "a-valid-photo")),
+        Repository(name: "AmazingRepositories", description: "AmazingRepositories Description", stars: 999, forks: 10, owner: Owner(name: "Romano", photo: "a-valid-photo")),
     ]
     
     override func viewDidLoad() {

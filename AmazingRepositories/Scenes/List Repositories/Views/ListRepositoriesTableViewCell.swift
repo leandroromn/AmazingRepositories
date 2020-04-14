@@ -28,17 +28,26 @@ class ListRepositoriesTableViewCell: UITableViewCell {
     
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
-        label.font = .rounded(fontSize: 13, weight: .semibold)
-        label.textColor = .mediumGray
+        label.font = .rounded(fontSize: 18, weight: .semibold)
+        label.textColor = .heavyGray
         label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
+    private lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.font = .rounded(fontSize: 16, weight: .medium)
+        label.textColor = .mediumGray
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private lazy var ownerLabel: UILabel = {
         let label = UILabel()
-        label.font = .rounded(fontSize: 13, weight: .regular)
-        label.textColor = .simpleGray
+        label.font = .rounded(fontSize: 16, weight: .regular)
+        label.textColor = .mediumGray
         label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -52,7 +61,7 @@ class ListRepositoriesTableViewCell: UITableViewCell {
     
     private lazy var starsAmountLabel: UILabel = {
         let label = UILabel()
-        label.font = .rounded(fontSize: 12, weight: .bold)
+        label.font = .rounded(fontSize: 13, weight: .bold)
         label.textColor = .heavyGray
         label.textAlignment = .right
         label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
@@ -97,6 +106,7 @@ class ListRepositoriesTableViewCell: UITableViewCell {
     
     func configure(viewModel: ListRepositories.ViewModel) {
         nameLabel.text = viewModel.name
+        descriptionLabel.text = viewModel.description
         ownerLabel.text = viewModel.ownerName
         starsAmountLabel.text = viewModel.stars
         forksAmountLabel.text = viewModel.forks
@@ -119,6 +129,7 @@ extension ListRepositoriesTableViewCell: CustomViewDelegate {
         
         secureView.addSubview(photoImageView)
         secureView.addSubview(nameLabel)
+        secureView.addSubview(descriptionLabel)
         secureView.addSubview(ownerLabel)
         secureView.addSubview(informationView)
 
@@ -142,12 +153,16 @@ extension ListRepositoriesTableViewCell: CustomViewDelegate {
         nameLabel.topAnchor.constraint(equalTo: photoImageView.topAnchor, constant: 2).isActive = true
         nameLabel.leadingAnchor.constraint(equalTo: secureView.leadingAnchor, constant: 16).isActive = true
         nameLabel.trailingAnchor.constraint(equalTo: photoImageView.leadingAnchor, constant: -16).isActive = true
-        
-        ownerLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 2).isActive = true
-        ownerLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor).isActive = true
-        ownerLabel.trailingAnchor.constraint(equalTo: nameLabel.trailingAnchor).isActive = true
 
-        informationView.topAnchor.constraint(equalTo: photoImageView.bottomAnchor, constant: 10).isActive = true
+        descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 6).isActive = true
+        descriptionLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor).isActive = true
+        descriptionLabel.trailingAnchor.constraint(equalTo: nameLabel.trailingAnchor).isActive = true
+        
+        ownerLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 6).isActive = true
+        ownerLabel.leadingAnchor.constraint(equalTo: descriptionLabel.leadingAnchor).isActive = true
+        ownerLabel.trailingAnchor.constraint(equalTo: descriptionLabel.trailingAnchor).isActive = true
+
+        informationView.topAnchor.constraint(equalTo: ownerLabel.bottomAnchor, constant: 10).isActive = true
         informationView.leadingAnchor.constraint(equalTo: secureView.leadingAnchor, constant: 16).isActive = true
         informationView.trailingAnchor.constraint(equalTo: secureView.trailingAnchor, constant: -16).isActive = true
         informationView.bottomAnchor.constraint(equalTo: secureView.bottomAnchor, constant: -16).isActive = true
