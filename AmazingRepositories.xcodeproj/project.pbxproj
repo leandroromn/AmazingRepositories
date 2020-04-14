@@ -320,15 +320,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		FD31D9EE238CB89B00FAE610 /* Views */ = {
+		FD31D9EE238CB89B00FAE610 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				FD83305B2399F4D9001A675E /* Snapshot Views */,
-				FDAB351C238DFD9E00FACF31 /* Extensions */,
 				FD31D9EF238CB8D600FAE610 /* Definitions */,
 				FD7BAB5B23941ABC00B20C01 /* LoadingActivityIndicator.swift */,
 			);
-			path = Views;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		FD31D9EF238CB8D600FAE610 /* Definitions */ = {
@@ -440,10 +439,11 @@
 			isa = PBXGroup;
 			children = (
 				FD31D9D5238CA50A00FAE610 /* Bootstrap */,
+				FD31D9D7238CA72D00FAE610 /* Scenes */,
 				FD31D9D6238CA52400FAE610 /* Resources */,
 				FD31D9E5238CA80E00FAE610 /* Networking */,
-				FD31D9D7238CA72D00FAE610 /* Scenes */,
-				FD31D9EE238CB89B00FAE610 /* Views */,
+				FDAB351C238DFD9E00FACF31 /* Extensions */,
+				FD31D9EE238CB89B00FAE610 /* Utils */,
 			);
 			path = AmazingRepositories;
 			sourceTree = "<group>";
