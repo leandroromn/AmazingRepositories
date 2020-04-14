@@ -54,6 +54,12 @@
 		FDAB3520238E157300FACF31 /* ListRepositoriesTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAB351F238E157300FACF31 /* ListRepositoriesTableHeaderView.swift */; };
 		FDEF236E24453B8600FAE642 /* CGFloat+Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF236D24453B8600FAE642 /* CGFloat+Metrics.swift */; };
 		FDEF237224454C2300FAE642 /* Sequence+Sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF237124454C2300FAE642 /* Sequence+Sorted.swift */; };
+		FDEF237A2445D5E800FAE642 /* ListPullRequestsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23742445D5E800FAE642 /* ListPullRequestsPresenter.swift */; };
+		FDEF237B2445D5E800FAE642 /* ListPullRequestsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23752445D5E800FAE642 /* ListPullRequestsWorker.swift */; };
+		FDEF237C2445D5E800FAE642 /* ListPullRequestsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23762445D5E800FAE642 /* ListPullRequestsRouter.swift */; };
+		FDEF237D2445D5E800FAE642 /* ListPullRequestsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23772445D5E800FAE642 /* ListPullRequestsModels.swift */; };
+		FDEF237E2445D5E800FAE642 /* ListPullRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23782445D5E800FAE642 /* ListPullRequestsViewController.swift */; };
+		FDEF237F2445D5E800FAE642 /* ListPullRequestsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23792445D5E800FAE642 /* ListPullRequestsInteractor.swift */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
 		FDF5DFEF238CA34700AB4F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */; };
@@ -134,6 +140,12 @@
 		FDCE34FC1B2428806C26A682 /* Pods-AmazingRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingRepositoriesTests/Pods-AmazingRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		FDEF236D24453B8600FAE642 /* CGFloat+Metrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Metrics.swift"; sourceTree = "<group>"; };
 		FDEF237124454C2300FAE642 /* Sequence+Sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Sorted.swift"; sourceTree = "<group>"; };
+		FDEF23742445D5E800FAE642 /* ListPullRequestsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsPresenter.swift; sourceTree = "<group>"; };
+		FDEF23752445D5E800FAE642 /* ListPullRequestsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsWorker.swift; sourceTree = "<group>"; };
+		FDEF23762445D5E800FAE642 /* ListPullRequestsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsRouter.swift; sourceTree = "<group>"; };
+		FDEF23772445D5E800FAE642 /* ListPullRequestsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsModels.swift; sourceTree = "<group>"; };
+		FDEF23782445D5E800FAE642 /* ListPullRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsViewController.swift; sourceTree = "<group>"; };
+		FDEF23792445D5E800FAE642 /* ListPullRequestsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsInteractor.swift; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -291,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				FD31D9D8238CA73800FAE610 /* List Repositories */,
+				FDEF23732445D5BA00FAE642 /* List Pull Requests */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -411,6 +424,19 @@
 				FDAB351F238E157300FACF31 /* ListRepositoriesTableHeaderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FDEF23732445D5BA00FAE642 /* List Pull Requests */ = {
+			isa = PBXGroup;
+			children = (
+				FDEF23762445D5E800FAE642 /* ListPullRequestsRouter.swift */,
+				FDEF23772445D5E800FAE642 /* ListPullRequestsModels.swift */,
+				FDEF23752445D5E800FAE642 /* ListPullRequestsWorker.swift */,
+				FDEF23792445D5E800FAE642 /* ListPullRequestsInteractor.swift */,
+				FDEF23742445D5E800FAE642 /* ListPullRequestsPresenter.swift */,
+				FDEF23782445D5E800FAE642 /* ListPullRequestsViewController.swift */,
+			);
+			path = "List Pull Requests";
 			sourceTree = "<group>";
 		};
 		FDF5DFD6238CA34500AB4F92 = {
@@ -739,12 +765,16 @@
 				FDEF237224454C2300FAE642 /* Sequence+Sorted.swift in Sources */,
 				FD9B33FE2397F99B0044943F /* String+Localizable.swift in Sources */,
 				FDAB351E238DFDB100FACF31 /* UIColor+Theme.swift in Sources */,
+				FDEF237E2445D5E800FAE642 /* ListPullRequestsViewController.swift in Sources */,
 				FD8330612399F9C8001A675E /* DummyHeaderView.swift in Sources */,
 				FD31D9DF238CA75100FAE610 /* ListRepositoriesPresenter.swift in Sources */,
 				FDEF236E24453B8600FAE642 /* CGFloat+Metrics.swift in Sources */,
+				FDEF237F2445D5E800FAE642 /* ListPullRequestsInteractor.swift in Sources */,
 				FD31D9E7238CA83600FAE610 /* Endpoint.swift in Sources */,
+				FDEF237B2445D5E800FAE642 /* ListPullRequestsWorker.swift in Sources */,
 				FD31D9ED238CAA1700FAE610 /* Endpoint+Repositories.swift in Sources */,
 				FD31D9E3238CA75100FAE610 /* ListRepositoriesViewController.swift in Sources */,
+				FDEF237D2445D5E800FAE642 /* ListPullRequestsModels.swift in Sources */,
 				FD31D9E2238CA75100FAE610 /* ListRepositoriesModels.swift in Sources */,
 				FD7BAB602394209000B20C01 /* EmptyClosure.swift in Sources */,
 				FDAB3520238E157300FACF31 /* ListRepositoriesTableHeaderView.swift in Sources */,
@@ -752,9 +782,11 @@
 				FD31D9E1238CA75100FAE610 /* ListRepositoriesRouter.swift in Sources */,
 				FD31D9F1238CB8EA00FAE610 /* CustomViewDelegate.swift in Sources */,
 				FD7BAB5E23941B8200B20C01 /* UIViewController+Alerts.swift in Sources */,
+				FDEF237C2445D5E800FAE642 /* ListPullRequestsRouter.swift in Sources */,
 				FD31D9E4238CA75100FAE610 /* ListRepositoriesInteractor.swift in Sources */,
 				FD31D9E0238CA75100FAE610 /* ListRepositoriesWorker.swift in Sources */,
 				FD8330682399FC2D001A675E /* DummyLoadingAlertView.swift in Sources */,
+				FDEF237A2445D5E800FAE642 /* ListPullRequestsPresenter.swift in Sources */,
 				FD9B3400239803440044943F /* String+AccessibilityIdentifiers.swift in Sources */,
 				FD7BAB5C23941ABC00B20C01 /* LoadingActivityIndicator.swift in Sources */,
 				FD31D9F3238CB92900FAE610 /* ListRepositoriesTableViewCell.swift in Sources */,
