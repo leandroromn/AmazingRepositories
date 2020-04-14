@@ -19,7 +19,7 @@ enum ListRepositories {
         
         init(repository: Repository) {
             self.name = repository.name
-            self.description = repository.description
+            self.description = repository.description ?? .noDescription
             self.stars = repository.stars.abbrevation
             self.forks = repository.forks.abbrevation
             self.ownerName = "\(String.createdBy) \(repository.owner.name)"
@@ -30,7 +30,7 @@ enum ListRepositories {
 
 struct Repository: Codable, Comparable {
     let name: String
-    let description: String
+    let description: String?
     let stars: Int
     let forks: Int
     let owner: Owner

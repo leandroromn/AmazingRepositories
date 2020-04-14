@@ -3,7 +3,7 @@ import UIKit
 protocol ListPullRequestsDisplayLogic: class {
     func displayRequestError()
     func displayRepositoryName(name: String)
-    func reloadTableView()
+    func displayPullRequests(_ viewModels: [ListPullRequests.ViewModel])
 }
 
 class ListPullRequestsViewController: UIViewController {
@@ -37,7 +37,6 @@ class ListPullRequestsViewController: UIViewController {
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
-        contentView.interactor = interactor
     }
 
     override func viewDidLoad() {
@@ -55,7 +54,7 @@ extension ListPullRequestsViewController: ListPullRequestsDisplayLogic {
         contentView.updateRepositoryName(name: name)
     }
 
-    func reloadTableView() {
-        contentView.reloadTableView()
+    func displayPullRequests(_ viewModels: [ListPullRequests.ViewModel]) {
+        contentView.displayPullRequests(viewModels)
     }
 }

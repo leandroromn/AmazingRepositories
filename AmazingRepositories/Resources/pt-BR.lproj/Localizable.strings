@@ -21,3 +21,8 @@
 "ERROR_TITLE" = "Erro";
 "ERROR_DESCRIPTION" = "Encontramos um problema para exibir os repositórios.";
 "TRY_AGAIN" = "Tentar novamente";
+
+"NO_DESCRIPTION" = "Nenhuma descrição disponível.";
+"NO_PULLREQUESTS" = "Nenhum Pull Request";
+"FOR_REPOSITORY" = "para %@";
+"CREATED_AT" = "Criado em %@";

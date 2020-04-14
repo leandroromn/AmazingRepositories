@@ -24,4 +24,9 @@ extension String {
     static let errorTitle = NSLocalizedString("ERROR_TITLE", comment: "")
     static let errorDescription = NSLocalizedString("ERROR_DESCRIPTION", comment: "")
     static let tryAgain = NSLocalizedString("TRY_AGAIN", comment: "")
+
+    static let noDescription = NSLocalizedString("NO_DESCRIPTION", comment: "")
+    static let noPullRequests = NSLocalizedString("NO_PULLREQUESTS", comment: "")
+    static let forRepository = NSLocalizedString("FOR_REPOSITORY", comment: "")
+    static let createdAt = NSLocalizedString("CREATED_AT", comment: "")
 }

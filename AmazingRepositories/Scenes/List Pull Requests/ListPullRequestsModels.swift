@@ -3,7 +3,7 @@ import Foundation
 enum ListPullRequests {
     struct PullRequest: Codable {
         let title: String
-        let body: String
+        let body: String?
         let user: Owner
         let createdAt: String
 
@@ -24,10 +24,22 @@ enum ListPullRequests {
 
         init(pullRequest: PullRequest) {
             title = pullRequest.title
-            body = pullRequest.body
+            body = pullRequest.body ?? .noDescription
             userName = pullRequest.user.name
             userPhoto = pullRequest.user.photo
-            createdAt = pullRequest.createdAt
+            createdAt = String(format: .createdAt,
+                               ViewModel.convertDate(pullRequest.createdAt) ?? "")
+        }
+
+        static func convertDate(_ date: String) -> String? {
+            let dateFormatterGet = DateFormatter()
+            dateFormatterGet.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy"
+
+            guard let convertedDate = dateFormatterGet.date(from: date) else { return nil }
+            return dateFormatter.string(from: convertedDate)
         }
     }
 }
