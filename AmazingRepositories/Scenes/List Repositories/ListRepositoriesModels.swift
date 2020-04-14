@@ -12,12 +12,14 @@ enum ListRepositories {
     struct ViewModel {
         let name: String
         let stars: String
+        let forks: String
         let ownerName: String
         let ownerPhoto: String
         
         init(repository: Repository) {
             self.name = repository.name
             self.stars = repository.stars.abbrevation
+            self.forks = repository.forks.abbrevation
             self.ownerName = "\(String.createdBy) \(repository.owner.name)"
             self.ownerPhoto = repository.owner.photo
         }
@@ -27,11 +29,13 @@ enum ListRepositories {
 struct Repository: Codable, Comparable {
     let name: String
     let stars: Int
+    let forks: Int
     let owner: Owner
     
     enum CodingKeys: String, CodingKey {
         case name
         case stars = "stargazers_count"
+        case forks = "forks_count"
         case owner
     }
     

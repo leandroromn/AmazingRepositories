@@ -13,11 +13,6 @@ extension CGFloat {
     static let cellTop = CGFloat(6)
     static let cellBottom = CGFloat(-6)
     
-    static let repositoryImageTop = CGFloat(16)
-    static let repositoryImageLeading = CGFloat(16)
-    static let repositoryImageWidth = CGFloat(40)
-    static let repositoryImageHeight = CGFloat(40)
-    
     static let repositoryTrailingCell = CGFloat(16)
     static let repositoryBottomCell = CGFloat(-16)
 }

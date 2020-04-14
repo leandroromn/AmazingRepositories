@@ -16,7 +16,7 @@ class RepositoryTableViewCell: UITableViewCell {
         return view
     }()
     
-    private lazy var repositoryPhotoImageView: UIImageView = {
+    private lazy var photoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.layer.masksToBounds = false
         imageView.layer.cornerRadius = 20
@@ -25,7 +25,7 @@ class RepositoryTableViewCell: UITableViewCell {
         return imageView
     }()
     
-    private lazy var repositoryNameLabel: UILabel = {
+    private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.font = .rounded(fontSize: 13, weight: .semibold)
         label.textColor = .mediumGray
@@ -34,7 +34,7 @@ class RepositoryTableViewCell: UITableViewCell {
         return label
     }()
     
-    private lazy var repositoryOwnerLabel: UILabel = {
+    private lazy var ownerLabel: UILabel = {
         let label = UILabel()
         label.font = .rounded(fontSize: 13, weight: .regular)
         label.textColor = .simpleGray
@@ -42,8 +42,24 @@ class RepositoryTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+
+    private lazy var informationView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
-    private lazy var repositoryStarsAmountLabel: UILabel = {
+    private lazy var starsAmountLabel: UILabel = {
+        let label = UILabel()
+        label.font = .rounded(fontSize: 12, weight: .bold)
+        label.textColor = .heavyGray
+        label.textAlignment = .right
+        label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
+    private lazy var forksAmountLabel: UILabel = {
         let label = UILabel()
         label.font = .rounded(fontSize: 13, weight: .bold)
         label.textColor = .heavyGray
@@ -53,15 +69,20 @@ class RepositoryTableViewCell: UITableViewCell {
         return label
     }()
     
-    private lazy var repositoryStarsLabel: UILabel = {
-        let label = UILabel()
-        label.text = .stars
-        label.font = .rounded(fontSize: 12, weight: .regular)
-        label.textColor = .simpleGray
-        label.textAlignment = .right
-        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    private lazy var starsImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "star")
+        imageView.tintColor = .heavyGray
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+
+    private lazy var forksImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "fork")
+        imageView.tintColor = .heavyGray
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -74,12 +95,14 @@ class RepositoryTableViewCell: UITableViewCell {
     }
     
     func configure(viewModel: ListRepositories.ViewModel) {
-        repositoryNameLabel.text = viewModel.name
-        repositoryOwnerLabel.text = viewModel.ownerName
-        repositoryStarsAmountLabel.text = viewModel.stars
+        nameLabel.text = viewModel.name
+        ownerLabel.text = viewModel.ownerName
+        starsAmountLabel.text = viewModel.stars
+        forksAmountLabel.text = viewModel.forks
         
         if let photoUrl = URL(string: viewModel.ownerPhoto) {
-            repositoryPhotoImageView.kf.setImage(with: photoUrl, placeholder: UIImage(systemName: "person.crop.circle.fill"))
+            photoImageView.kf.setImage(with: photoUrl,
+                                                 placeholder: UIImage(systemName: "person.crop.circle.fill"))
         }
     }
     
@@ -93,40 +116,57 @@ extension RepositoryTableViewCell: CustomViewDelegate {
     func setupViews() {
         contentView.addSubview(secureView)
         
-        secureView.addSubview(repositoryPhotoImageView)
-        secureView.addSubview(repositoryNameLabel)
-        secureView.addSubview(repositoryOwnerLabel)
-        secureView.addSubview(repositoryStarsAmountLabel)
-        secureView.addSubview(repositoryStarsLabel)
+        secureView.addSubview(photoImageView)
+        secureView.addSubview(nameLabel)
+        secureView.addSubview(ownerLabel)
+        secureView.addSubview(informationView)
+
+        informationView.addSubview(starsImageView)
+        informationView.addSubview(starsAmountLabel)
+        informationView.addSubview(forksImageView)
+        informationView.addSubview(forksAmountLabel)
     }
     
     func setupConstraints() {
-        secureView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: .cellTop).isActive = true
-        secureView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: .leading).isActive = true
-        secureView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: .trailing).isActive = true
-        secureView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: .cellBottom).isActive = true
+        secureView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 6).isActive = true
+        secureView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24).isActive = true
+        secureView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24).isActive = true
+        secureView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -6).isActive = true
         
-        repositoryPhotoImageView.topAnchor.constraint(equalTo: secureView.topAnchor, constant: .repositoryImageTop).isActive = true
-        repositoryPhotoImageView.leadingAnchor.constraint(equalTo: secureView.leadingAnchor, constant: .repositoryImageLeading).isActive = true
-        repositoryPhotoImageView.widthAnchor.constraint(equalToConstant: .repositoryImageWidth).isActive = true
-        repositoryPhotoImageView.heightAnchor.constraint(equalToConstant: .repositoryImageHeight).isActive = true
+        photoImageView.topAnchor.constraint(equalTo: secureView.topAnchor, constant: 16).isActive = true
+        photoImageView.trailingAnchor.constraint(equalTo: secureView.trailingAnchor, constant: -16).isActive = true
+        photoImageView.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        photoImageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
-        repositoryStarsAmountLabel.topAnchor.constraint(equalTo: repositoryPhotoImageView.topAnchor).isActive = true
-        repositoryStarsAmountLabel.trailingAnchor.constraint(equalTo: secureView.trailingAnchor, constant: .repositoryBottomCell).isActive = true
+        nameLabel.topAnchor.constraint(equalTo: photoImageView.topAnchor, constant: 2).isActive = true
+        nameLabel.leadingAnchor.constraint(equalTo: secureView.leadingAnchor, constant: 16).isActive = true
+        nameLabel.trailingAnchor.constraint(equalTo: photoImageView.leadingAnchor, constant: -16).isActive = true
+        
+        ownerLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 2).isActive = true
+        ownerLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor).isActive = true
+        ownerLabel.trailingAnchor.constraint(equalTo: nameLabel.trailingAnchor).isActive = true
 
-        repositoryStarsLabel.topAnchor.constraint(equalTo: repositoryStarsAmountLabel.bottomAnchor).isActive = true
-        repositoryStarsLabel.leadingAnchor.constraint(equalTo: repositoryStarsAmountLabel.leadingAnchor).isActive = true
-        repositoryStarsLabel.trailingAnchor.constraint(equalTo: repositoryStarsAmountLabel.trailingAnchor).isActive = true
-        repositoryStarsLabel.bottomAnchor.constraint(equalTo: repositoryOwnerLabel.bottomAnchor).isActive = true
-        
-        repositoryNameLabel.topAnchor.constraint(equalTo: repositoryPhotoImageView.topAnchor, constant: 2).isActive = true
-        repositoryNameLabel.leadingAnchor.constraint(equalTo: repositoryPhotoImageView.trailingAnchor, constant: .repositoryTrailingCell).isActive = true
-        repositoryNameLabel.trailingAnchor.constraint(equalTo: repositoryStarsAmountLabel.leadingAnchor).isActive = true
-        
-        repositoryOwnerLabel.topAnchor.constraint(equalTo: repositoryNameLabel.bottomAnchor, constant: 2).isActive = true
-        repositoryOwnerLabel.leadingAnchor.constraint(equalTo: repositoryNameLabel.leadingAnchor).isActive = true
-        repositoryOwnerLabel.trailingAnchor.constraint(equalTo: repositoryNameLabel.trailingAnchor).isActive = true
-        repositoryOwnerLabel.bottomAnchor.constraint(equalTo: secureView.bottomAnchor, constant: .repositoryBottomCell).isActive = true
+        informationView.topAnchor.constraint(equalTo: photoImageView.bottomAnchor, constant: 10).isActive = true
+        informationView.leadingAnchor.constraint(equalTo: secureView.leadingAnchor, constant: 16).isActive = true
+        informationView.trailingAnchor.constraint(equalTo: secureView.trailingAnchor, constant: -16).isActive = true
+        informationView.bottomAnchor.constraint(equalTo: secureView.bottomAnchor, constant: -16).isActive = true
+
+        starsImageView.topAnchor.constraint(equalTo: informationView.topAnchor).isActive = true
+        starsImageView.leadingAnchor.constraint(equalTo: informationView.leadingAnchor).isActive = true
+        starsImageView.widthAnchor.constraint(equalToConstant: 16).isActive = true
+        starsImageView.heightAnchor.constraint(equalToConstant: 16).isActive = true
+        starsImageView.bottomAnchor.constraint(equalTo: informationView.bottomAnchor).isActive = true
+
+        starsAmountLabel.leadingAnchor.constraint(equalTo: starsImageView.trailingAnchor, constant: 4).isActive = true
+        starsAmountLabel.centerYAnchor.constraint(equalTo: starsImageView.centerYAnchor, constant: 1).isActive = true
+
+        forksImageView.topAnchor.constraint(equalTo: informationView.topAnchor).isActive = true
+        forksImageView.leadingAnchor.constraint(equalTo: starsAmountLabel.trailingAnchor, constant: 16).isActive = true
+        forksImageView.widthAnchor.constraint(equalToConstant: 16).isActive = true
+        forksImageView.heightAnchor.constraint(equalToConstant: 16).isActive = true
+
+        forksAmountLabel.leadingAnchor.constraint(equalTo: forksImageView.trailingAnchor, constant: 4).isActive = true
+        forksAmountLabel.centerYAnchor.constraint(equalTo: forksImageView.centerYAnchor).isActive = true
     }
     
     func setupExtraConfigurations() {
