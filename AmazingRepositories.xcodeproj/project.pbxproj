@@ -224,7 +224,7 @@
 		FDEF23B12446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXXL@3x.png"; sourceTree = "<group>"; };
 		FDEF23B22446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_M@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_M@3x.png"; sourceTree = "<group>"; };
 		FDEF23B32446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XL@3x.png"; sourceTree = "<group>"; };
-		FDF5DFDF238CA34600AB4F92 /* Amazing Repos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amazing Repos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDF5DFEE238CA34700AB4F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -579,7 +579,7 @@
 		FDF5DFE0238CA34600AB4F92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDF5DFDF238CA34600AB4F92 /* Amazing Repos.app */,
+				FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */,
 				FDF5DFF5238CA34700AB4F92 /* AmazingRepositoriesTests.xctest */,
 				FD084BC12397E4E7000DC451 /* AmazingRepositoriesFuncionalTests.xctest */,
 			);
@@ -653,7 +653,7 @@
 			);
 			name = AmazingRepositories;
 			productName = AmazingRepositories;
-			productReference = FDF5DFDF238CA34600AB4F92 /* Amazing Repos.app */;
+			productReference = FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FDF5DFF4238CA34700AB4F92 /* AmazingRepositoriesTests */ = {
@@ -1184,7 +1184,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandroromano.AmazingRepositories;
-				PRODUCT_NAME = "Amazing Repos";
+				PRODUCT_NAME = AmazingRepositories;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1203,7 +1203,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandroromano.AmazingRepositories;
-				PRODUCT_NAME = "Amazing Repos";
+				PRODUCT_NAME = AmazingRepositories;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FDF5DFDE238CA34500AB4F92"
-               BuildableName = "AmazingRepositories.app"
+               BuildableName = "Amazing Repos.app"
                BlueprintName = "AmazingRepositories"
                ReferencedContainer = "container:AmazingRepositories.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDF5DFDE238CA34500AB4F92"
-            BuildableName = "AmazingRepositories.app"
+            BuildableName = "Amazing Repos.app"
             BlueprintName = "AmazingRepositories"
             ReferencedContainer = "container:AmazingRepositories.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDF5DFDE238CA34500AB4F92"
-            BuildableName = "AmazingRepositories.app"
+            BuildableName = "Amazing Repos.app"
             BlueprintName = "AmazingRepositories"
             ReferencedContainer = "container:AmazingRepositories.xcodeproj">
          </BuildableReference>
@@ -93,7 +93,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDF5DFDE238CA34500AB4F92"
-            BuildableName = "AmazingRepositories.app"
+            BuildableName = "Amazing Repos.app"
             BlueprintName = "AmazingRepositories"
             ReferencedContainer = "container:AmazingRepositories.xcodeproj">
          </BuildableReference>

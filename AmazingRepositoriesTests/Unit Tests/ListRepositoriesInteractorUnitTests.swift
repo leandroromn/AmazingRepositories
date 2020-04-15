@@ -2,6 +2,7 @@ import XCTest
 import Quick
 import Nimble
 import PromiseKit
+
 @testable import AmazingRepositories
 
 class ListRepositoriesInteractorUnitTests: QuickSpec {
@@ -9,7 +10,6 @@ class ListRepositoriesInteractorUnitTests: QuickSpec {
         super.spec()
         
         describe("ListRepositoriesInteractorTests") {
-            
             var sut: ListRepositoriesInteractor!
             var mockWorker: MockListRepositoriesWorker!
             var mockPresenter: MockListRepositoriesPresenter!
@@ -96,9 +96,17 @@ class ListRepositoriesInteractorUnitTests: QuickSpec {
                         
                         expect(sut.numberOfRows).to(equal(30))
                         expect(sut.currentPage).to(equal(1))
-                        
                     }
-                    
+
+                    it("navigate to pull requests scene when cell is tapped") {
+                        mockWorker.returnType = .success(type: .numberOfStars, page: 1)
+
+                        sut.requestRepositories(sortedBy: .numberOfStars)
+                        sut.didSelectRow(at: 0)
+
+                        expect(sut.numberOfRows).to(equal(30))
+                        expect(mockPresenter.hasCalledPresentPullRequests).to(beTrue())
+                    }
                 }
                 
                 context("a failure request to GitHub's API") {
