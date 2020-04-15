@@ -51,7 +51,7 @@ This project was built using **Clean Swift** architecture, a **native and generi
 
 ## Accessibility
 **AmazingRepositories** gained resources to improve the experience for users who need accessibility. Enable the **VoiceOver** feature to get more information about repositories and pull requests. Natively supported for English and Portuguese.
-<br/>
+<br/><br/>
 ***How do I activate VoiceOver?***
 <br/>
 - Open the Settings app;
