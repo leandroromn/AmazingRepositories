@@ -105,6 +105,8 @@
 		FDFC9EA5244717240037F7FF /* ListPullRequestsInteractorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC9EA4244717240037F7FF /* ListPullRequestsInteractorUnitTests.swift */; };
 		FDFC9EA9244717A30037F7FF /* MockListPullRequestsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC9EA8244717A30037F7FF /* MockListPullRequestsPresenter.swift */; };
 		FDFC9EAB244718360037F7FF /* MockListPullRequestsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC9EAA244718360037F7FF /* MockListPullRequestsWorker.swift */; };
+		FDFC9EAD24471DE20037F7FF /* ListPullRequestsTableViewCellSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC9EAC24471DE20037F7FF /* ListPullRequestsTableViewCellSnapshotTests.swift */; };
+		FDFC9EAF244720D30037F7FF /* DummyPullRequestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC9EAE244720D30037F7FF /* DummyPullRequestTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +239,8 @@
 		FDFC9EA4244717240037F7FF /* ListPullRequestsInteractorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsInteractorUnitTests.swift; sourceTree = "<group>"; };
 		FDFC9EA8244717A30037F7FF /* MockListPullRequestsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListPullRequestsPresenter.swift; sourceTree = "<group>"; };
 		FDFC9EAA244718360037F7FF /* MockListPullRequestsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListPullRequestsWorker.swift; sourceTree = "<group>"; };
+		FDFC9EAC24471DE20037F7FF /* ListPullRequestsTableViewCellSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsTableViewCellSnapshotTests.swift; sourceTree = "<group>"; };
+		FDFC9EAE244720D30037F7FF /* DummyPullRequestTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPullRequestTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +346,7 @@
 				FD31594F23971F17008D1DE7 /* ListRepositoriesViewControllerSnapshotTests.swift */,
 				FD8330622399FB77001A675E /* RepositoryTableHeaderViewSnapshotTests.swift */,
 				FD8330692399FCB1001A675E /* LoadingAlertViewSnapshotTests.swift */,
+				FDFC9EAC24471DE20037F7FF /* ListPullRequestsTableViewCellSnapshotTests.swift */,
 			);
 			path = "Snapshot Tests";
 			sourceTree = "<group>";
@@ -441,6 +446,7 @@
 			isa = PBXGroup;
 			children = (
 				FD83305C2399F50C001A675E /* DummyRepositoryTableView.swift */,
+				FDFC9EAE244720D30037F7FF /* DummyPullRequestTableView.swift */,
 				FD8330602399F9C8001A675E /* DummyHeaderView.swift */,
 				FD8330672399FC2D001A675E /* DummyLoadingAlertView.swift */,
 			);
@@ -976,6 +982,7 @@
 				FD31D9E0238CA75100FAE610 /* ListRepositoriesWorker.swift in Sources */,
 				FD8330682399FC2D001A675E /* DummyLoadingAlertView.swift in Sources */,
 				FDEF237A2445D5E800FAE642 /* ListPullRequestsPresenter.swift in Sources */,
+				FDFC9EAF244720D30037F7FF /* DummyPullRequestTableView.swift in Sources */,
 				FD9B3400239803440044943F /* String+AccessibilityIdentifiers.swift in Sources */,
 				FD7BAB5C23941ABC00B20C01 /* LoadingActivityIndicator.swift in Sources */,
 				FD31D9F3238CB92900FAE610 /* ListRepositoriesTableViewCell.swift in Sources */,
@@ -1000,6 +1007,7 @@
 				FD315949239701E5008D1DE7 /* JSONReaderHelper.swift in Sources */,
 				FD31595223972010008D1DE7 /* MockListRepositoriesInteractor.swift in Sources */,
 				FDFC9EAB244718360037F7FF /* MockListPullRequestsWorker.swift in Sources */,
+				FDFC9EAD24471DE20037F7FF /* ListPullRequestsTableViewCellSnapshotTests.swift in Sources */,
 				FD8330632399FB77001A675E /* RepositoryTableHeaderViewSnapshotTests.swift in Sources */,
 				FDFC9EA9244717A30037F7FF /* MockListPullRequestsPresenter.swift in Sources */,
 				FD1EEEF22396C65800AE5562 /* ListRepositoriesInteractorUnitTests.swift in Sources */,
