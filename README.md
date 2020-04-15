@@ -29,8 +29,15 @@ Choose between recency, number of forks or number of stars filters to display re
 Also, you can use AmazingRepositories in English 🇺🇸 or Portuguese 🇧🇷.
 
 <p align="center">
-    <img src="https://media.giphy.com/media/XccxxE6tKXVAGRizjm/giphy.gif" width="300" max-width="40%" alt="Repository Filters" />
+    <img src="https://media.giphy.com/media/iGSUd6MfHoDsQQEvRY/giphy.gif" width="300" max-width="40%" alt="Repository Filters" />
     <img src="repository-images/pt-br.png" width="300" max-width="40%" alt="Repository Filters" />
+</p>
+
+## Pull Requests
+Select a repository to see the latest pull requests with a short description and author information.
+<p align="center">
+    <img src="https://media.giphy.com/media/JTJP6hcz5Afj7Av9bm/giphy.gif" width="300" max-width="40%" alt="Repository Filters" />
+    <img src="repository-images/pull-requests.png" width="300" max-width="40%" alt="Repository Filters" />
 </p>
 
 ## Architecture and third-party libraries
@@ -42,6 +49,15 @@ This project was built using **Clean Swift** architecture, a **native and generi
 - **Nimble-Snapshots**: A Nimble matchers for iOSSnapshotTestCase.
 - **KIF**: A functional testing framework for interface tests.
 
+## Accessibility
+**AmazingRepositories** gained resources to improve the experience for users who need accessibility. Enable the **VoiceOver** feature to get more information about repositories and pull requests. Natively supported for English and Portuguese.
+<br/>
+***How do I activate VoiceOver?***
+<br/>
+- Open the Settings app;
+- Tap *Accessibility* option;
+- Enable *VoiceOver* switch.
+
 ## Installation
 To build and run this project, follow the commands below:
 ```
@@ -49,6 +65,14 @@ $ git clone https://github.com/leandroromn/AmazingRepositories.git
 $ cd AmazingRepositories
 $ pod install
 ```
+
+### Development Environment
+These were the versions of systems and tools used to develop the latest version of **AmazingRepositories**:
+- **Xcode** 11.4
+- **Swift** 5.2
+- **CocoaPods** 1.9.1
+- **iOS** 13.4.1
+- **macOS** 10.15.4
 
 ## Unit, Snapshot and Functional Tests
 This project has unit, snapshot and functional (interface) tests. You can run all tests with `CMD + U` in **Xcode** or use **Slather** to get the test coverage reports.
