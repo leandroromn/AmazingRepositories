@@ -30,7 +30,12 @@ class DummyRepositoryTableView: UITableViewController {
         if let cell = tableView.dequeueReusableCell(withIdentifier: ListRepositoriesTableViewCell.identifier) as? ListRepositoriesTableViewCell {
             let viewModel = ListRepositories.ViewModel(repository: dummyRepositories[indexPath.row])
             cell.configure(viewModel: viewModel)
-            cell.accessibilityLabel = .repositoryRow
+            cell.accessibilityLabel = String(format: .repositoryDescription,
+                                             viewModel.name,
+                                             viewModel.description,
+                                             viewModel.ownerName,
+                                             viewModel.stars,
+                                             viewModel.forks)
             return cell
         }
         

@@ -101,6 +101,7 @@ extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
         DispatchQueue.main.async { [weak self] in
             let tableHeaderView = self?.tableView.tableHeaderView as? ListRepositoriesTableHeaderView
             tableHeaderView?.changeSortingTitle(text: title)
+            tableHeaderView?.contentView.accessibilityLabel = String(format: .repositoriesTitle, title)
         }
     }
     
@@ -135,7 +136,13 @@ extension ListRepositoriesViewController {
         }
         
         cell.configure(viewModel: viewModel)
-        cell.accessibilityLabel = .repositoryRow
+        cell.accessibilityLabel = String(format: .repositoryDescription,
+                                         viewModel.name,
+                                         viewModel.description,
+                                         viewModel.ownerName,
+                                         viewModel.stars,
+                                         viewModel.forks)
+        cell.accessibilityHint = .doubleTapToOpenPullRequests
         
         return cell
     }

@@ -20,6 +20,7 @@ class ListPullRequestsTableViewCell: UITableViewCell, CustomViewDelegate {
         label.font = .rounded(fontSize: 16, weight: .semibold)
         label.textColor = .heavyGray
         label.numberOfLines = 0
+        label.accessibilityHint = .pullRequestTitle
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

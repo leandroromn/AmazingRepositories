@@ -1,29 +1,28 @@
 "REPOSITORIES" = "Repositórios";
-
 "STARRED" = "Favoritos";
 "FORKED" = "Compartilhados";
 "RECENT" = "Recentes";
-
 "REPOSITORIES_FILTER_TITLE" = "Filtros de Repositórios";
 "REPOSITORIES_FILTER_DESCRIPTION" = "Selecione uma opção para filtrar os repositórios exibidos:";
-
 "RECENCY" = "Recentes";
 "NUMBER_OF_STARS" = "Número de Estrelas";
 "NUMBER_OF_FORKS" = "Número de Compartilhamentos";
-
 "CANCEL" = "Cancelar";
-
 "CREATED_BY" = "Criado por";
 "STARS" = "Estrelas";
-
 "PLEASE_WAIT" = "Carregando...";
-
 "ERROR_TITLE" = "Erro";
 "ERROR_DESCRIPTION" = "Encontramos um problema para exibir os repositórios.";
 "TRY_AGAIN" = "Tentar novamente";
-
 "NO_DESCRIPTION" = "Nenhuma descrição disponível.";
 "NO_PULLREQUESTS" = "Nenhum Pull Request";
 "FOR_REPOSITORY" = "para %@";
 "CREATED_AT" = "Criado em %@";
 "ERROR_STATE" = "Ocorreu um erro";
+
+"DOUBLE_TAP_TO_OPEN_PULL_REQUESTS" = "Toque duas vezes para abrir os pull requests";
+"PULL_REQUEST_DESCRIPTION" = "Item de Pull request. Título: %@. Criado por %@. %@";
+"PULL_REQUEST_TITLE" = "Pull requests %@";
+
+"REPOSITORIES_TITLE" = "Repositórios %@";
+"REPOSITORIES_DESCRIPTION" = "Repositório. Título: %@. Descrição: %@. %@. %@ estrelas e %@ forks.";

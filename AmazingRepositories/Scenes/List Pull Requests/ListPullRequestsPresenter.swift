@@ -15,7 +15,7 @@ class ListPullRequestsPresenter: ListPullRequestsPresentationLogic {
     }
 
     func presentPullRequests(_ response: [ListPullRequests.PullRequest]) {
-        let viewModels = response.map { return ListPullRequests.ViewModel(pullRequest: $0) }
+        let viewModels = response.map { ListPullRequests.ViewModel(pullRequest: $0) }
         viewController?.displayPullRequests(viewModels)
     }
 

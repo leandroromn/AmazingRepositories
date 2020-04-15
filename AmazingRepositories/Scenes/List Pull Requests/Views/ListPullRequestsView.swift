@@ -11,6 +11,7 @@ class ListPullRequestsView: UIView, CustomViewDelegate {
 
     private lazy var headerView: ListPullRequestsHeaderView = {
         let view = ListPullRequestsHeaderView()
+        view.isAccessibilityElement = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -120,6 +121,7 @@ class ListPullRequestsView: UIView, CustomViewDelegate {
 
     func updateRepositoryName(name: String) {
         headerView.repositoryName.text = name
+        headerView.accessibilityLabel = String(format: .pullRequestTitle, name)
     }
 
     func removeLoadingState() {
@@ -138,7 +140,7 @@ extension ListPullRequestsView: UITableViewDelegate, UITableViewDataSource {
         if let cell = cell as? ListPullRequestsTableViewCell {
             let viewModel = viewModels[indexPath.row]
             cell.configure(viewModel)
-            //cell.accessibilityLabel = .repositoryRow
+            cell.accessibilityLabel = String(format: .pullRequestDescription, viewModel.title, viewModel.userName, viewModel.createdAt)
             return cell
         }
 

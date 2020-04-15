@@ -5,8 +5,9 @@ protocol ListRepositoriesTableHeaderViewDelegate: class {
 }
 
 class ListRepositoriesTableHeaderView: UIView {
-    private lazy var contentView: UIView = {
+    lazy var contentView: UIView = {
         let view = UIView()
+        view.isAccessibilityElement = true
         view.alpha = 0
         view.translatesAutoresizingMaskIntoConstraints = false
         return view

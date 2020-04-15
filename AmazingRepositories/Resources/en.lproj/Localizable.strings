@@ -1,30 +1,28 @@
 "REPOSITORIES" = "Repositories";
-
 "STARRED" = "Starred";
 "FORKED" = "Forked";
 "RECENT" = "Recent";
-
 "REPOSITORIES_FILTER_TITLE" = "Repositories Filter";
 "REPOSITORIES_FILTER_DESCRIPTION" = "Select the filter to display the repositories:";
-
 "RECENCY" = "Recency";
 "NUMBER_OF_STARS" = "Number of Stars";
 "NUMBER_OF_FORKS" = "Number of Forks";
-
 "CANCEL" = "Cancel";
-
 "CREATED_BY" = "Created by";
 "STARS" = "Stars";
-
 "PLEASE_WAIT" = "Please wait...";
-
 "ERROR_TITLE" = "Error";
 "ERROR_DESCRIPTION" = "There's a problem to display the repositories.";
 "TRY_AGAIN" = "Try again";
-
 "NO_DESCRIPTION" = "No description available.";
 "NO_PULLREQUESTS" = "No Pull Requests";
 "FOR_REPOSITORY" = "for %@";
 "CREATED_AT" = "Created at %@";
-
 "ERROR_STATE" = "An error has occurred";
+
+"DOUBLE_TAP_TO_OPEN_PULL_REQUESTS" = "Double tap to open pull requests";
+"PULL_REQUEST_DESCRIPTION" = "Pull request Item. Title: %@. Created by %@. %@";
+"PULL_REQUEST_TITLE" = "Pull requests %@";
+
+"REPOSITORIES_TITLE" = "%@ Repositories";
+"REPOSITORIES_DESCRIPTION" = "Repository. Title: %@. Description: %@. %@. %@ stars and %@ forks.";
