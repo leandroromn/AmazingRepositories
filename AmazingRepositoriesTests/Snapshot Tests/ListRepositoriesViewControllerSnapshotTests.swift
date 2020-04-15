@@ -24,7 +24,7 @@ class ListRepositoriesViewControllerSnapshotTests: QuickSpec {
             }
             
             it("should present light repository cell") {
-                expect(dummyViewController.view) == snapshot()
+                expect(dummyViewController.view).to(haveValidDynamicTypeSnapshot())
             }   
         }
     }

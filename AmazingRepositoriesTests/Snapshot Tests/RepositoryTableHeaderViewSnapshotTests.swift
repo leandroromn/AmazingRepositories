@@ -24,7 +24,7 @@ class RepositoryTableHeaderViewSnapshotTests: QuickSpec {
             }
             
             it("should present light repository header view") {
-                expect(dummyViewController.view) == snapshot()
+                expect(dummyViewController.view).to(haveValidDynamicTypeSnapshot())
             }
         }
     }

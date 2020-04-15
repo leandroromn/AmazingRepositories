@@ -20,8 +20,6 @@ class ListRepositoriesViewControllerFunctionalTests: KIFTestCase {
         
         tester().waitForView(withAccessibilityLabel: .forked)
         tester().waitForView(withAccessibilityLabel: .repositories)
-        
-        tester().waitForView(withAccessibilityLabel: .repositoryRow)
     }
     
     func testTapFilterButton_ToFilterRepositories_ByDate() {
@@ -35,7 +33,5 @@ class ListRepositoriesViewControllerFunctionalTests: KIFTestCase {
         
         tester().waitForView(withAccessibilityLabel: .recent)
         tester().waitForView(withAccessibilityLabel: .repositories)
-        
-        tester().waitForView(withAccessibilityLabel: .repositoryRow)
     }
 }

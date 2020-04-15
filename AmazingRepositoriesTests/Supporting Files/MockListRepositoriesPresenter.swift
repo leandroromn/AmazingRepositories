@@ -7,6 +7,7 @@ class MockListRepositoriesPresenter: ListRepositoriesPresentationLogic {
     var hasCalledPresentSortingTitle = false
     var hasCalledPresentError = false
     var hasCalledReloadTableView = false
+    var hasCalledPresentPullRequests = false
     
     func presentLoadingState() {
         hasCalledPresentLoadingState = true
@@ -26,5 +27,9 @@ class MockListRepositoriesPresenter: ListRepositoriesPresentationLogic {
     
     func reloadTableView() {
         hasCalledReloadTableView = true
+    }
+
+    func presentPullRequests() {
+        hasCalledPresentPullRequests = true
     }
 }

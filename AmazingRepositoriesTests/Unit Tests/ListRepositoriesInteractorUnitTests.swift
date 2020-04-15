@@ -79,7 +79,7 @@ class ListRepositoriesInteractorUnitTests: QuickSpec {
                         
                         expect(sut.numberOfRows).to(equal(30))
                         expect(sut.currentPage).to(equal(1))
-                        expect(sut.cellForRow(at: 0)?.name).to(equal("CodableAlamofire"))
+                        expect(sut.cellForRow(at: 0)?.name).to(equal("marvel-homework"))
                         expect(mockPresenter.hasCalledPresentLoadingState).to(beTrue())
                         expect(mockPresenter.hasCalledReloadTableView).to(beTrue())
                         expect(mockPresenter.hasCalledRemoveLoadingState).to(beTrue())

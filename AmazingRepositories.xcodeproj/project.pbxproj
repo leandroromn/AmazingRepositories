@@ -38,13 +38,10 @@
 		FD7BAB5E23941B8200B20C01 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BAB5D23941B8200B20C01 /* UIViewController+Alerts.swift */; };
 		FD7BAB602394209000B20C01 /* EmptyClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BAB5F2394209000B20C01 /* EmptyClosure.swift */; };
 		FD83305D2399F50C001A675E /* DummyRepositoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83305C2399F50C001A675E /* DummyRepositoryTableView.swift */; };
-		FD83305F2399F89D001A675E /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD83305E2399F89D001A675E /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell@3x.png */; };
 		FD8330612399F9C8001A675E /* DummyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8330602399F9C8001A675E /* DummyHeaderView.swift */; };
 		FD8330632399FB77001A675E /* RepositoryTableHeaderViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8330622399FB77001A675E /* RepositoryTableHeaderViewSnapshotTests.swift */; };
-		FD8330662399FBCB001A675E /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD8330652399FBCB001A675E /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view@3x.png */; };
 		FD8330682399FC2D001A675E /* DummyLoadingAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8330672399FC2D001A675E /* DummyLoadingAlertView.swift */; };
 		FD83306A2399FCB1001A675E /* LoadingAlertViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8330692399FCB1001A675E /* LoadingAlertViewSnapshotTests.swift */; };
-		FD83306D2399FD2F001A675E /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD83306C2399FD2F001A675E /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view@3x.png */; };
 		FD9B33F22397E5A10044943F /* XCTestCase+KIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33F12397E5A10044943F /* XCTestCase+KIF.swift */; };
 		FD9B33F52397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B33F42397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift */; };
 		FD9B33F92397F6D40044943F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD9B33FB2397F6D40044943F /* Localizable.strings */; };
@@ -66,6 +63,42 @@
 		FDEF23882445ED6C00FAE642 /* ListPullRequestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF23872445ED6C00FAE642 /* ListPullRequestsTableViewCell.swift */; };
 		FDEF238A24463EEB00FAE642 /* ListPullRequestsEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF238924463EEB00FAE642 /* ListPullRequestsEmptyStateView.swift */; };
 		FDEF238C24467C5800FAE642 /* ListPullRequestsErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF238B24467C5800FAE642 /* ListPullRequestsErrorStateView.swift */; };
+		FDEF23B42446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF238E2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXL@3x.png */; };
+		FDEF23B52446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_S@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF238F2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_S@3x.png */; };
+		FDEF23B62446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23902446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityL@3x.png */; };
+		FDEF23B72446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_M@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23912446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_M@3x.png */; };
+		FDEF23B82446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XS@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23922446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XS@3x.png */; };
+		FDEF23B92446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23932446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXXL@3x.png */; };
+		FDEF23BA2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23942446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XL@3x.png */; };
+		FDEF23BB2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23952446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXL@3x.png */; };
+		FDEF23BC2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23962446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXL@3x.png */; };
+		FDEF23BD2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23972446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXXL@3x.png */; };
+		FDEF23BE2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_L@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23982446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_L@3x.png */; };
+		FDEF23BF2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityM@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23992446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityM@3x.png */; };
+		FDEF23C02446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF239B2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XL@3x.png */; };
+		FDEF23C12446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_L@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF239C2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_L@3x.png */; };
+		FDEF23C22446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF239D2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityL@3x.png */; };
+		FDEF23C32446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF239E2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXL@3x.png */; };
+		FDEF23C42446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_M@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF239F2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_M@3x.png */; };
+		FDEF23C52446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23A02446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXL@3x.png */; };
+		FDEF23C62446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityM@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23A12446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityM@3x.png */; };
+		FDEF23C72446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23A22446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXXL@3x.png */; };
+		FDEF23C82446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XS@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23A32446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XS@3x.png */; };
+		FDEF23C92446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_S@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23A42446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_S@3x.png */; };
+		FDEF23CA2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23A52446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXL@3x.png */; };
+		FDEF23CB2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23A62446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXXL@3x.png */; };
+		FDEF23CC2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XS@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23A82446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XS@3x.png */; };
+		FDEF23CD2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityM@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23A92446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityM@3x.png */; };
+		FDEF23CE2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_L@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23AA2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_L@3x.png */; };
+		FDEF23CF2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23AB2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXL@3x.png */; };
+		FDEF23D02446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23AC2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXL@3x.png */; };
+		FDEF23D12446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_S@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23AD2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_S@3x.png */; };
+		FDEF23D22446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23AE2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXXL@3x.png */; };
+		FDEF23D32446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23AF2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXL@3x.png */; };
+		FDEF23D42446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23B02446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityL@3x.png */; };
+		FDEF23D52446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXXL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23B12446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXXL@3x.png */; };
+		FDEF23D62446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_M@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23B22446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_M@3x.png */; };
+		FDEF23D72446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEF23B32446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XL@3x.png */; };
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
 		FDF5DFEF238CA34700AB4F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */; };
@@ -127,13 +160,10 @@
 		FD7BAB5D23941B8200B20C01 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		FD7BAB5F2394209000B20C01 /* EmptyClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyClosure.swift; sourceTree = "<group>"; };
 		FD83305C2399F50C001A675E /* DummyRepositoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyRepositoryTableView.swift; sourceTree = "<group>"; };
-		FD83305E2399F89D001A675E /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell@3x.png"; sourceTree = "<group>"; };
 		FD8330602399F9C8001A675E /* DummyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHeaderView.swift; sourceTree = "<group>"; };
 		FD8330622399FB77001A675E /* RepositoryTableHeaderViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableHeaderViewSnapshotTests.swift; sourceTree = "<group>"; };
-		FD8330652399FBCB001A675E /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view@3x.png"; sourceTree = "<group>"; };
 		FD8330672399FC2D001A675E /* DummyLoadingAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyLoadingAlertView.swift; sourceTree = "<group>"; };
 		FD8330692399FCB1001A675E /* LoadingAlertViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAlertViewSnapshotTests.swift; sourceTree = "<group>"; };
-		FD83306C2399FD2F001A675E /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view@3x.png"; sourceTree = "<group>"; };
 		FD9B33F12397E5A10044943F /* XCTestCase+KIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+KIF.swift"; sourceTree = "<group>"; };
 		FD9B33F42397E7EE0044943F /* ListRepositoriesViewControllerFunctionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesViewControllerFunctionalTests.swift; sourceTree = "<group>"; };
 		FD9B33F82397F6C90044943F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -158,6 +188,42 @@
 		FDEF23872445ED6C00FAE642 /* ListPullRequestsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsTableViewCell.swift; sourceTree = "<group>"; };
 		FDEF238924463EEB00FAE642 /* ListPullRequestsEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsEmptyStateView.swift; sourceTree = "<group>"; };
 		FDEF238B24467C5800FAE642 /* ListPullRequestsErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsErrorStateView.swift; sourceTree = "<group>"; };
+		FDEF238E2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXL@3x.png"; sourceTree = "<group>"; };
+		FDEF238F2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_S@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_S@3x.png"; sourceTree = "<group>"; };
+		FDEF23902446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityL@3x.png"; sourceTree = "<group>"; };
+		FDEF23912446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_M@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_M@3x.png"; sourceTree = "<group>"; };
+		FDEF23922446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XS@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XS@3x.png"; sourceTree = "<group>"; };
+		FDEF23932446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23942446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XL@3x.png"; sourceTree = "<group>"; };
+		FDEF23952446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23962446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23972446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23982446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_L@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_L@3x.png"; sourceTree = "<group>"; };
+		FDEF23992446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityM@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityM@3x.png"; sourceTree = "<group>"; };
+		FDEF239B2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XL@3x.png"; sourceTree = "<group>"; };
+		FDEF239C2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_L@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_L@3x.png"; sourceTree = "<group>"; };
+		FDEF239D2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityL@3x.png"; sourceTree = "<group>"; };
+		FDEF239E2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXL@3x.png"; sourceTree = "<group>"; };
+		FDEF239F2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_M@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_M@3x.png"; sourceTree = "<group>"; };
+		FDEF23A02446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23A12446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityM@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityM@3x.png"; sourceTree = "<group>"; };
+		FDEF23A22446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23A32446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XS@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XS@3x.png"; sourceTree = "<group>"; };
+		FDEF23A42446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_S@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_S@3x.png"; sourceTree = "<group>"; };
+		FDEF23A52446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23A62446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23A82446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XS@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XS@3x.png"; sourceTree = "<group>"; };
+		FDEF23A92446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityM@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityM@3x.png"; sourceTree = "<group>"; };
+		FDEF23AA2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_L@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_L@3x.png"; sourceTree = "<group>"; };
+		FDEF23AB2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23AC2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23AD2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_S@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_S@3x.png"; sourceTree = "<group>"; };
+		FDEF23AE2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23AF2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23B02446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityL@3x.png"; sourceTree = "<group>"; };
+		FDEF23B12446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXXL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXXL@3x.png"; sourceTree = "<group>"; };
+		FDEF23B22446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_M@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_M@3x.png"; sourceTree = "<group>"; };
+		FDEF23B32446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XL@3x.png"; sourceTree = "<group>"; };
 		FDF5DFDF238CA34600AB4F92 /* AmazingRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -277,19 +343,11 @@
 		FD31595323972242008D1DE7 /* ReferenceImages */ = {
 			isa = PBXGroup;
 			children = (
-				FD83306B2399FD2F001A675E /* LoadingAlertViewSnapshotTests */,
-				FD8330642399FBCB001A675E /* RepositoryTableHeaderViewSnapshotTests */,
-				FD31595423972242008D1DE7 /* ListRepositoriesViewControllerSnapshotTests */,
+				FDEF23A72446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests */,
+				FDEF238D2446CCB700FAE642 /* LoadingAlertViewSnapshotTests */,
+				FDEF239A2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests */,
 			);
 			path = ReferenceImages;
-			sourceTree = "<group>";
-		};
-		FD31595423972242008D1DE7 /* ListRepositoriesViewControllerSnapshotTests */ = {
-			isa = PBXGroup;
-			children = (
-				FD83305E2399F89D001A675E /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell@3x.png */,
-			);
-			path = ListRepositoriesViewControllerSnapshotTests;
 			sourceTree = "<group>";
 		};
 		FD31D9D5238CA50A00FAE610 /* Bootstrap */ = {
@@ -383,22 +441,6 @@
 			path = "Snapshot Views";
 			sourceTree = "<group>";
 		};
-		FD8330642399FBCB001A675E /* RepositoryTableHeaderViewSnapshotTests */ = {
-			isa = PBXGroup;
-			children = (
-				FD8330652399FBCB001A675E /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view@3x.png */,
-			);
-			path = RepositoryTableHeaderViewSnapshotTests;
-			sourceTree = "<group>";
-		};
-		FD83306B2399FD2F001A675E /* LoadingAlertViewSnapshotTests */ = {
-			isa = PBXGroup;
-			children = (
-				FD83306C2399FD2F001A675E /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view@3x.png */,
-			);
-			path = LoadingAlertViewSnapshotTests;
-			sourceTree = "<group>";
-		};
 		FD9B33F02397E5800044943F /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +505,63 @@
 				FDEF238B24467C5800FAE642 /* ListPullRequestsErrorStateView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FDEF238D2446CCB700FAE642 /* LoadingAlertViewSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDEF238E2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXL@3x.png */,
+				FDEF238F2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_S@3x.png */,
+				FDEF23902446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityL@3x.png */,
+				FDEF23912446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_M@3x.png */,
+				FDEF23922446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XS@3x.png */,
+				FDEF23932446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXXL@3x.png */,
+				FDEF23942446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XL@3x.png */,
+				FDEF23952446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXL@3x.png */,
+				FDEF23962446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXL@3x.png */,
+				FDEF23972446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXXL@3x.png */,
+				FDEF23982446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_L@3x.png */,
+				FDEF23992446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityM@3x.png */,
+			);
+			path = LoadingAlertViewSnapshotTests;
+			sourceTree = "<group>";
+		};
+		FDEF239A2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDEF239B2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XL@3x.png */,
+				FDEF239C2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_L@3x.png */,
+				FDEF239D2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityL@3x.png */,
+				FDEF239E2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXL@3x.png */,
+				FDEF239F2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_M@3x.png */,
+				FDEF23A02446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXL@3x.png */,
+				FDEF23A12446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityM@3x.png */,
+				FDEF23A22446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXXL@3x.png */,
+				FDEF23A32446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XS@3x.png */,
+				FDEF23A42446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_S@3x.png */,
+				FDEF23A52446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXL@3x.png */,
+				FDEF23A62446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXXL@3x.png */,
+			);
+			path = RepositoryTableHeaderViewSnapshotTests;
+			sourceTree = "<group>";
+		};
+		FDEF23A72446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDEF23A82446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XS@3x.png */,
+				FDEF23A92446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityM@3x.png */,
+				FDEF23AA2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_L@3x.png */,
+				FDEF23AB2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXL@3x.png */,
+				FDEF23AC2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXL@3x.png */,
+				FDEF23AD2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_S@3x.png */,
+				FDEF23AE2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXXL@3x.png */,
+				FDEF23AF2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXL@3x.png */,
+				FDEF23B02446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityL@3x.png */,
+				FDEF23B12446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXXL@3x.png */,
+				FDEF23B22446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_M@3x.png */,
+				FDEF23B32446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XL@3x.png */,
+			);
+			path = ListRepositoriesViewControllerSnapshotTests;
 			sourceTree = "<group>";
 		};
 		FDF5DFD6238CA34500AB4F92 = {
@@ -643,12 +742,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD83306D2399FD2F001A675E /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view@3x.png in Resources */,
+				FDEF23D32446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXL@3x.png in Resources */,
+				FDEF23C12446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_L@3x.png in Resources */,
 				FD315946239700F6008D1DE7 /* repositories-stars-page-1.json in Resources */,
+				FDEF23B82446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XS@3x.png in Resources */,
+				FDEF23D72446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XL@3x.png in Resources */,
+				FDEF23CE2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_L@3x.png in Resources */,
+				FDEF23C02446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XL@3x.png in Resources */,
+				FDEF23D62446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_M@3x.png in Resources */,
+				FDEF23B92446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXXL@3x.png in Resources */,
+				FDEF23C72446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXXL@3x.png in Resources */,
+				FDEF23B52446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_S@3x.png in Resources */,
+				FDEF23B62446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityL@3x.png in Resources */,
+				FDEF23D52446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXXL@3x.png in Resources */,
+				FDEF23BF2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityM@3x.png in Resources */,
+				FDEF23C92446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_S@3x.png in Resources */,
 				FD31594B23970665008D1DE7 /* repositories-stars-page-2.json in Resources */,
-				FD83305F2399F89D001A675E /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell@3x.png in Resources */,
-				FD8330662399FBCB001A675E /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view@3x.png in Resources */,
+				FDEF23D42446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityL@3x.png in Resources */,
+				FDEF23CC2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XS@3x.png in Resources */,
+				FDEF23C32446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXL@3x.png in Resources */,
+				FDEF23C62446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityM@3x.png in Resources */,
+				FDEF23BB2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XXL@3x.png in Resources */,
+				FDEF23BE2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_L@3x.png in Resources */,
+				FDEF23BA2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_XL@3x.png in Resources */,
+				FDEF23D02446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXL@3x.png in Resources */,
+				FDEF23BD2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXXL@3x.png in Resources */,
+				FDEF23CF2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_XXL@3x.png in Resources */,
+				FDEF23CD2446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityM@3x.png in Resources */,
+				FDEF23D22446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_AccessibilityXXXL@3x.png in Resources */,
+				FDEF23CB2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XXXL@3x.png in Resources */,
+				FDEF23C42446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_M@3x.png in Resources */,
+				FDEF23C82446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_XS@3x.png in Resources */,
+				FDEF23D12446CCB700FAE642 /* ListRepositoriesViewControllerSnapshotTests__should_present_light_repository_cell_S@3x.png in Resources */,
+				FDEF23BC2446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXXL@3x.png in Resources */,
+				FDEF23B72446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_M@3x.png in Resources */,
+				FDEF23C22446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityL@3x.png in Resources */,
 				FD31594D23970FBC008D1DE7 /* repositories-updated-page-1.json in Resources */,
+				FDEF23C52446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXXL@3x.png in Resources */,
+				FDEF23CA2446CCB700FAE642 /* RepositoryTableHeaderViewSnapshotTests__should_present_light_repository_header_view_AccessibilityXL@3x.png in Resources */,
+				FDEF23B42446CCB700FAE642 /* LoadingAlertViewSnapshotTests__should_present_loading_alert_view_AccessibilityXL@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1045,7 +1177,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GQY96Q9368;
 				INFOPLIST_FILE = AmazingRepositories/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1064,7 +1196,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GQY96Q9368;
 				INFOPLIST_FILE = AmazingRepositories/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

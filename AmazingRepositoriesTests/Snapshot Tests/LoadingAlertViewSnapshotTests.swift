@@ -24,7 +24,7 @@ class LoadingAlertViewSnapshotTests: QuickSpec {
             }
             
             it("should present loading alert view") {
-                expect(dummyViewController.view) == snapshot()
+                expect(dummyViewController.view).to(haveValidDynamicTypeSnapshot())
             }
         }
     }
