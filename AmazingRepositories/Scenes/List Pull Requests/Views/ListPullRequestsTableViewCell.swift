@@ -123,4 +123,9 @@ class ListPullRequestsTableViewCell: UITableViewCell, CustomViewDelegate {
         backgroundColor = .clear
         selectionStyle = .none
     }
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        containerView.layer.shadowColor = UIColor.shadowGray!.cgColor
+    }
 }
