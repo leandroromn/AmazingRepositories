@@ -102,6 +102,9 @@
 		FDF5DFE3238CA34600AB4F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5DFE2238CA34600AB4F92 /* AppDelegate.swift */; };
 		FDF5DFEC238CA34700AB4F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFEB238CA34700AB4F92 /* Assets.xcassets */; };
 		FDF5DFEF238CA34700AB4F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF5DFED238CA34700AB4F92 /* LaunchScreen.storyboard */; };
+		FDFC9EA5244717240037F7FF /* ListPullRequestsInteractorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC9EA4244717240037F7FF /* ListPullRequestsInteractorUnitTests.swift */; };
+		FDFC9EA9244717A30037F7FF /* MockListPullRequestsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC9EA8244717A30037F7FF /* MockListPullRequestsPresenter.swift */; };
+		FDFC9EAB244718360037F7FF /* MockListPullRequestsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC9EAA244718360037F7FF /* MockListPullRequestsWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +234,9 @@
 		FDF5DFF0238CA34700AB4F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDF5DFF5238CA34700AB4F92 /* AmazingRepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazingRepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF5DFFB238CA34700AB4F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDFC9EA4244717240037F7FF /* ListPullRequestsInteractorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPullRequestsInteractorUnitTests.swift; sourceTree = "<group>"; };
+		FDFC9EA8244717A30037F7FF /* MockListPullRequestsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListPullRequestsPresenter.swift; sourceTree = "<group>"; };
+		FDFC9EAA244718360037F7FF /* MockListPullRequestsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListPullRequestsWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				FD1EEEF12396C65800AE5562 /* ListRepositoriesInteractorUnitTests.swift */,
+				FDFC9EA4244717240037F7FF /* ListPullRequestsInteractorUnitTests.swift */,
 			);
 			path = "Unit Tests";
 			sourceTree = "<group>";
@@ -305,9 +312,8 @@
 		FD1EEEF32396CAE700AE5562 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD1EEEF42396CAF700AE5562 /* MockListRepositoriesPresenter.swift */,
-				FD1EEEF62396CB1C00AE5562 /* MockListRepositoriesWorker.swift */,
-				FD31595123972010008D1DE7 /* MockListRepositoriesInteractor.swift */,
+				FDFC9EA7244717810037F7FF /* Mock List Pull Requests */,
+				FDFC9EA62447176E0037F7FF /* Mock List Repositories */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -612,6 +618,25 @@
 				FDF5DFFB238CA34700AB4F92 /* Info.plist */,
 			);
 			path = AmazingRepositoriesTests;
+			sourceTree = "<group>";
+		};
+		FDFC9EA62447176E0037F7FF /* Mock List Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FD1EEEF42396CAF700AE5562 /* MockListRepositoriesPresenter.swift */,
+				FD1EEEF62396CB1C00AE5562 /* MockListRepositoriesWorker.swift */,
+				FD31595123972010008D1DE7 /* MockListRepositoriesInteractor.swift */,
+			);
+			path = "Mock List Repositories";
+			sourceTree = "<group>";
+		};
+		FDFC9EA7244717810037F7FF /* Mock List Pull Requests */ = {
+			isa = PBXGroup;
+			children = (
+				FDFC9EA8244717A30037F7FF /* MockListPullRequestsPresenter.swift */,
+				FDFC9EAA244718360037F7FF /* MockListPullRequestsWorker.swift */,
+			);
+			path = "Mock List Pull Requests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -971,9 +996,12 @@
 				FD1EEEF72396CB1C00AE5562 /* MockListRepositoriesWorker.swift in Sources */,
 				FD83306A2399FCB1001A675E /* LoadingAlertViewSnapshotTests.swift in Sources */,
 				FD7A6C8D2396DB4300661637 /* ReturnTypes.swift in Sources */,
+				FDFC9EA5244717240037F7FF /* ListPullRequestsInteractorUnitTests.swift in Sources */,
 				FD315949239701E5008D1DE7 /* JSONReaderHelper.swift in Sources */,
 				FD31595223972010008D1DE7 /* MockListRepositoriesInteractor.swift in Sources */,
+				FDFC9EAB244718360037F7FF /* MockListPullRequestsWorker.swift in Sources */,
 				FD8330632399FB77001A675E /* RepositoryTableHeaderViewSnapshotTests.swift in Sources */,
+				FDFC9EA9244717A30037F7FF /* MockListPullRequestsPresenter.swift in Sources */,
 				FD1EEEF22396C65800AE5562 /* ListRepositoriesInteractorUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

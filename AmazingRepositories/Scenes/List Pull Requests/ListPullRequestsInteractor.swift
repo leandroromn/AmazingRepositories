@@ -11,11 +11,11 @@ protocol ListPullRequestsDataStore {
 
 class ListPullRequestsInteractor: ListPullRequestsBusinessLogic, ListPullRequestsDataStore {
     var presenter: ListPullRequestsPresentationLogic?
-    var worker: ListPullRequestsWorker?
+    var worker: ListPullRequestsNetworkLogic?
     var author: String?
     var repository: String?
 
-    init(worker: ListPullRequestsWorker = ListPullRequestsWorker()) {
+    init(worker: ListPullRequestsNetworkLogic = ListPullRequestsWorker()) {
         self.worker = worker
     }
 
