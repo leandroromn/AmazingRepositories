@@ -1219,6 +1219,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandroromano.AmazingRepositories;
 				PRODUCT_NAME = AmazingRepositories;
 				SWIFT_VERSION = 5.0;
@@ -1238,6 +1239,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandroromano.AmazingRepositories;
 				PRODUCT_NAME = AmazingRepositories;
 				SWIFT_VERSION = 5.0;
